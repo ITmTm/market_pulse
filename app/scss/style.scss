@@ -5,71 +5,16 @@
 @use 'keyframes' as *;
 @use 'hovers' as *;
 
-
+@use "libs/fonts" as *;
 @use "libs/overall" as *;
 @use "libs/reset" as *;
+
 @use "libs/variables" as *;
 
 
 @use "blocks/header";
+@use "blocks/main-hero";
+
+@use "blocks/footer";
 
 @use 'media/index' as *;
-
-
-.main-hero {
-  .container {
-    padding-top: 20px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  &__left {
-    padding: 160px 30px 30px;
-    background: #3BA6B1 url(../images/main-hero-bg.avif) left bottom / contain no-repeat;
-    border-radius: 50px;
-  }
-}
-
-.header {
-  position: fixed;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  height: 45px;
-
-  &__left {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .container {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  &__logo {
-    display: block;
-    width: 204px;
-    height: 34px;
-    background: url(../images/logo.svg) center / contain no-repeat;
-  }
-
-  .menu {
-
-
-    &>.menu-item {
-      &>a {
-
-      }
-
-      &>.sub-menu {
-        display: none;
-      }
-    }
-  }
-}
