@@ -6,6 +6,9 @@ const uglify = require('gulp-uglify-es').default; //используется д�
 const browserSync = require('browser-sync').create(); // запускает локальный сервер
 const autoprefixer = require('gulp-autoprefixer'); // приводит css к кросбраузерности
 const clean = require('gulp-clean'); // удаление папок
+
+const merge = require('merge-stream'); // одновременно запускать три "ветки" обработки
+
 const avif = require('gulp-avif'); // конвертер в avif
 const webp = require('gulp-webp'); // конвертер в webp
 const imagemin = require('gulp-imagemin'); // сжимание картинок
@@ -34,21 +37,65 @@ function pages() {
         .pipe(browserSync.stream())
 }
 
+/*
+    Если есть необходимость в модульности (Создание картинок по папкам с секциями)
+*/
 function images() {
-    return src(['app/images/src/*.*', '!app/images/src/*.svg'])
-        .pipe(newer('app/images/'))
+    // const srcPattern = [
+    //     'app/images/src/**/*.*',    // все файлы во вложенных папках
+    //     '!app/images/src/**/*.svg'   // кроме SVG
+    // ];
+
+    const srcPattern = [
+        'app/images/src/**/*.*',
+        '!app/images/src/**/*.svg'
+    ];
+    const destPath = 'app/images';
+
+    // AVIF
+    const avifStream = src(srcPattern, { base: 'app/images/src' })
+        .pipe(newer(destPath))
         .pipe(avif({ quality: 90 }))
+        .pipe(dest(destPath));
 
-        .pipe(src('app/images/src/*.*'))
-        .pipe(newer('app/images/'))
+    // WebP
+    const webpStream = src(srcPattern, { base: 'app/images/src' })
+        .pipe(newer(destPath))
         .pipe(webp())
+        .pipe(dest(destPath));
 
-        .pipe(src('app/images/src/*.*'))
-        .pipe(newer('app/images/'))
-        .pipe(imagemin())
+    // Оригиналы (оптимизация)
+    const imgStream = src(srcPattern, { base: 'app/images/src' })
+        .pipe(newer(destPath))
+        .pipe(imagemin({
+            progressive: true,
+            interlaced: true
+            // при необходимости можно добавить плагины для конкретных форматов
+        }))
+        .pipe(dest(destPath));
 
-        .pipe(dest('app/images/'))
-        .pipe(browserSync.stream())
+    // Объединение всех трех потоков и стримим в браузер
+    return merge(avifStream, webpStream, imgStream)
+        .pipe(browserSync.stream());
+
+    /*
+        Если нет необходимости придерживаться модульности (Разбивать картинки по папкам - секциями)
+    */
+
+    // return src(['app/images/src/*.*', '!app/images/src/*.svg'])
+    //     .pipe(newer('app/images/'))
+    //     .pipe(avif({ quality: 90 }))
+    //
+    //     .pipe(src('app/images/src/*.*'))
+    //     .pipe(newer('app/images/'))
+    //     .pipe(webp())
+    //
+    //     .pipe(src('app/images/src/*.*'))
+    //     .pipe(newer('app/images/'))
+    //     .pipe(imagemin())
+    //
+    //     .pipe(dest('app/images/'))
+    //     .pipe(browserSync.stream())
 }
 
 function sprite() {
@@ -111,12 +158,12 @@ function watching() {
             baseDir: 'app/'
         }
     });
-    watch(['app/scss/**/*.scss'], styles)
-    watch(['app/images/src'], images)
-    watch(['app/js/main.js'], scripts)
-    watch(['app/components/**/*.html', 'app/pages/**/*.html'], pages)
-    watch(['app/*.html']).on('change', browserSync.reload)
-    watch(['app/upload/**/*'], resources)
+    watch(['app/scss/**/*.scss'], styles);
+    watch('app/images/src/**/*.*', images);    // было watch(['app/images/src'], images)
+    watch(['app/js/main.js'], scripts);
+    watch(['app/components/**/*.html', 'app/pages/**/*.html'], pages);
+    watch(['app/*.html']).on('change', browserSync.reload);
+    watch(['app/upload/**/*'], resources);
 }
 
 function cleanDist() {
