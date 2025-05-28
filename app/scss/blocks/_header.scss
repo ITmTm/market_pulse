@@ -46,15 +46,17 @@
     }
 
     &--lang {
-      color: var(--white-color);
-      display: inline;
-      font-size: 18px;
-      font-weight: 400;
-      border-radius: 22px;
-      background: rgba(89, 89, 89, 0.60);
-      padding: 10px 20px;
-      backdrop-filter: blur(2px);
-      margin-left: 30px;
+      a {
+        color: var(--white-color);
+        display: inline;
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 22px;
+        background: rgba(89, 89, 89, 0.60);
+        padding: 10px 20px;
+        backdrop-filter: blur(2px);
+        margin-left: 30px;
+      }
     }
 
     &>.sub-menu {
