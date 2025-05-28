@@ -1,0 +1,87 @@
+.container {
+  max-width: 1600px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;  // (если среднее по больнице);
+  font-weight: 400; // (условно)
+  line-height: 1.5; // (средняя высота строки, вычисляется высотка строки делится на размер шрифта)
+  background-color: #fff;
+  color: #000;
+}
+
+.upButton {
+  z-index: 1000;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 15px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  transform: scale(0);
+  pointer-events: none;
+  background: var(--yellow) url(../../images/up-btn-black.svg) center / 20px no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.2);
+
+  &.show {
+    transition: all 1s ease-in-out;
+    transform: scale(1);
+    pointer-events: all;
+  }
+}
+
+.cookies {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  margin-left: auto;
+  max-width: 450px;
+  gap: 20px;
+  align-items: start;
+  background: #333333;
+  padding: 25px;
+  border-radius: 5px;
+  color: var(--white);
+
+  p {
+    font-size: 16px;
+  }
+
+  a {
+    color: var(--white);
+  }
+
+  .btn {
+    margin-top: 10px;
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+}
+
+//.btn {
+//  color: var(--white-color);
+//  font-size: 16px;
+//  font-weight: 600;
+//  border-radius: 3px;
+//  background: #23a6a6;
+//  box-shadow: 5px 9px 4px 0 rgba(186, 100, 217, 0.00);
+//  cursor: pointer;
+//  border: none;
+//}
+//
+//hr {
+//  color: #d0d0d0;
+//  height: 1px;
+//  background-color: #d0d0d0;
+//  opacity: 0.35;
+//  border: none;
+//  margin: 0;
+//}
