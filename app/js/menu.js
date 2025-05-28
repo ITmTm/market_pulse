@@ -7,7 +7,7 @@ let headerMenu = $('.header .menu'); // меню хедера
 let headerBox = $('.header'); // блок внутри контейнера хедера, например если он в виде острова и при выпадении мобильного меню, нужно его дополнительно стилизовать
 
 menuItem.removeClass('active');
-subMenu.removeClass('active').slideUp();
+// subMenu.removeClass('active').slideUp();
 burger.removeClass('active');
 headerMenu.removeClass('active');
 headerBox.removeClass('active');
@@ -55,26 +55,26 @@ function navMenu() {
             })
         }
     } else {
-        for (let hover = 0; hover < menuItem.length; hover++) {
-            menuItem.eq(hover).on('mouseenter', function () {
-
-                if (!menuItem.eq(hover).hasClass('active')) {
-                    for (let other = 0; other < menuItem.length; other++) {
-                        if (menuItem.eq(other) != menuItem.eq(hover)) {
-                            subMenu.eq(other).removeClass('active').slideUp();
-                            menuItem.eq(other).removeClass('active');
-                        }
-                    }
-
-                    subMenu.eq(hover).addClass('active').slideDown();
-                    menuItem.eq(hover).addClass('active');
-                }
-            })
-
-            subMenu.eq(hover).on('mouseleave', function () {
-                subMenu.eq(hover).removeClass('active').slideUp();
-                menuItem.eq(hover).removeClass('active');
-            })
-        }
+        // for (let hover = 0; hover < menuItem.length; hover++) {
+        //     menuItem.eq(hover).on('mouseenter', function () {
+        //
+        //         if (!menuItem.eq(hover).hasClass('active')) {
+        //             for (let other = 0; other < menuItem.length; other++) {
+        //                 if (menuItem.eq(other) != menuItem.eq(hover)) {
+        //                     subMenu.eq(other).removeClass('active').slideUp();
+        //                     menuItem.eq(other).removeClass('active');
+        //                 }
+        //             }
+        //
+        //             subMenu.eq(hover).addClass('active').slideDown();
+        //             menuItem.eq(hover).addClass('active');
+        //         }
+        //     })
+        //
+        //     subMenu.eq(hover).on('mouseleave', function () {
+        //         subMenu.eq(hover).removeClass('active').slideUp();
+        //         menuItem.eq(hover).removeClass('active');
+        //     })
+        // }
     }
 }
