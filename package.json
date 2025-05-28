@@ -20,6 +20,7 @@
         "gulp-newer": "^1.4.0",
         "gulp-sass": "^5.1.0",
         "gulp-svg-sprite": "^2.0.3",
+        "gulp-svgmin": "^4.1.0",
         "gulp-typograf": "^4.1.0",
         "gulp-uglify-es": "^3.0.0",
         "gulp-webp": "^4.0.1",
