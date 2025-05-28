@@ -8,6 +8,7 @@ const autoprefixer = require('gulp-autoprefixer'); // приводит css к к
 const clean = require('gulp-clean'); // удаление папок
 
 const merge = require('merge-stream'); // одновременно запускать три "ветки" обработки
+const svgmin = require('gulp-svgmin'); // оптимизация .svg
 
 const avif = require('gulp-avif'); // конвертер в avif
 const webp = require('gulp-webp'); // конвертер в webp
@@ -41,14 +42,9 @@ function pages() {
         Если есть необходимость в модульности (Создание картинок по папкам с секциями)
     */
 function images() {
-    // const srcPattern = [
-    //     'app/images/src/**/*.*',    // все файлы во вложенных папках
-    //     '!app/images/src/**/*.svg'   // кроме SVG
-    // ];
-
     const srcPattern = [
-        'app/images/src/**/*.*',
-        '!app/images/src/**/*.svg'
+        'app/images/src/**/*.*',    // все файлы во вложенных папках
+        '!app/images/src/**/*.svg'  // кроме SVG
     ];
     const destPath = 'app/images';
 
@@ -64,7 +60,7 @@ function images() {
         .pipe(webp())
         .pipe(dest(destPath));
 
-    // Оригиналы (оптимизация)
+    // Оригиналы (PNG/JPG/GIF) — оптимизация
     const imgStream = src(srcPattern, { base: 'app/images/src' })
         .pipe(newer(destPath))
         .pipe(imagemin({
@@ -74,8 +70,14 @@ function images() {
         }))
         .pipe(dest(destPath));
 
+    // Чистая оптимизация SVG
+    const svgStream = src('app/images/src/**/*.svg', { base: 'app/images/src' })
+        .pipe(newer(destPath))
+        .pipe(svgmin())    // минимизация SVG
+        .pipe(dest(destPath));
+
     // Объединение всех трех потоков и стримим в браузер
-    return merge(avifStream, webpStream, imgStream)
+    return merge(avifStream, webpStream, imgStream, svgStream)
         .pipe(browserSync.stream());
 
         /*
