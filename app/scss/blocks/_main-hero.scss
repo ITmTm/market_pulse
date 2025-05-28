@@ -1,0 +1,115 @@
+.main-hero {
+  .container {
+    padding-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__left {
+    padding: 160px 30px 30px;
+    background: #3BA6B1 url(../images/main-hero/main-hero-bg.avif) left bottom /auto no-repeat;
+    border-radius: 50px;
+    min-height: 750px;
+
+    .title-m {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .text-m {
+      text-align: center;
+      margin-bottom: 185px;
+    }
+
+    .btn {
+      display: block;
+    }
+  }
+
+  &__right {
+    padding: 160px 30px 30px;
+    background: var(--light-grey-color) url(../images/main-hero/mine-hero-bg-traid.avif) right bottom / auto no-repeat;
+    border-radius: 50px;
+    min-height: 750px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: start;
+    row-gap: 5px;
+    min-height: 192px;
+    padding: 20px;
+    border-radius: 35px;
+    background: rgba(40, 40, 40, 0.60);
+    backdrop-filter: blur(2px);
+
+    &__item {
+      position: relative;
+      padding-left: 35px;
+
+      &--spreads::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px; height: 20px;
+        background: url("/images/main-hero/spreads.svg") center/contain no-repeat;
+      }
+      &--assets::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px; height: 20px;
+        background: url("/images/main-hero/assets.svg") center/contain no-repeat;
+      }
+      &--withdraw::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background: url("/images/main-hero/withdraw.svg") center/contain no-repeat;
+      }
+      &--instant::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        background: url("/images/main-hero/instant.svg") center/contain no-repeat;
+      }
+      &--mobile::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background: url("/images/main-hero/mobile.svg") center/contain no-repeat;
+      }
+      &--support::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background: url("/images/main-hero/support.svg") center/contain no-repeat;
+      }
+    }
+  }
+}
