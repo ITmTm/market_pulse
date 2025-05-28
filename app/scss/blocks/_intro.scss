@@ -1,8 +1,36 @@
 .intro {
   padding: 150px 0;
-  background: url(../images/intro/intro-bg.avif) center center / auto no-repeat ;
 
   .title-l {
     text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__cards {
+    position: relative;
+    overflow: visible;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  &__card {
+    width: 365px;
+    height: 357px;
+    padding: 32px;
+    border-radius: 55px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    position: static;
+    transform: none;
+
+    &:nth-child(1) {
+      background-color: var(--light-grey-color);
+    }
   }
 }

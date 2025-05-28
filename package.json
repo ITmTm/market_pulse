@@ -20,6 +20,7 @@
         "gulp-newer": "^1.4.0",
         "gulp-sass": "^5.1.0",
         "gulp-svg-sprite": "^2.0.3",
+        "merge-stream": "^2.0.0",
         "gulp-svgmin": "^4.1.0",
         "gulp-typograf": "^4.1.0",
         "gulp-uglify-es": "^3.0.0",
@@ -29,8 +30,5 @@
         "normalize.css": "^8.0.1",
         "sass": "^1.77.8",
         "swiper": "^11.1.10"
-    },
-    "dependencies": {
-        "merge-stream": "^2.0.0"
     }
 }

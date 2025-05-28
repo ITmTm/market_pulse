@@ -118,6 +118,7 @@ function scripts() {
         'node_modules/jquery/dist/jquery.js',
         'node_modules/jquery-ui/dist/jquery-ui.js',
         'node_modules/swiper/swiper-bundle.js',
+        'app/js/swiper-init.js', // инициализация свайпера
         'app/js/accordion.js', // аккордеоны
         'app/js/cookie.js', // уведомление о куки
         'app/js/menu.js', // меню хедера
