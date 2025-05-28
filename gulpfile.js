@@ -4,7 +4,7 @@ const scss = require('gulp-sass')(require('sass')); //преобразовани
 const concat = require('gulp-concat'); // объединение файлов
 const uglify = require('gulp-uglify-es').default; //используется для минификации js
 const browserSync = require('browser-sync').create(); // запускает локальный сервер
-const autoprefixer = require('gulp-autoprefixer'); // приводит css к кросбраузерности
+const autoprefixer = require('gulp-autoprefixer'); // приводит css к кроcсбраузерности
 const clean = require('gulp-clean'); // удаление папок
 
 const merge = require('merge-stream'); // одновременно запускать три "ветки" обработки
@@ -37,9 +37,9 @@ function pages() {
         .pipe(browserSync.stream())
 }
 
-/*
-    Если есть необходимость в модульности (Создание картинок по папкам с секциями)
-*/
+    /*
+        Если есть необходимость в модульности (Создание картинок по папкам с секциями)
+    */
 function images() {
     // const srcPattern = [
     //     'app/images/src/**/*.*',    // все файлы во вложенных папках
@@ -78,9 +78,9 @@ function images() {
     return merge(avifStream, webpStream, imgStream)
         .pipe(browserSync.stream());
 
-    /*
-        Если нет необходимости придерживаться модульности (Разбивать картинки по папкам - секциями)
-    */
+        /*
+            Если нет необходимости придерживаться модульности (Разбивать картинки по папкам - секциями)
+        */
 
     // return src(['app/images/src/*.*', '!app/images/src/*.svg'])
     //     .pipe(newer('app/images/'))
