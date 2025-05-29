@@ -1,7 +1,18 @@
 .intro {
-  padding: 150px 0;
+  padding: 150px 0 0;
   position: relative;
   z-index: 3;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    height: 1000px;
+    background: url(../images/parallax.avif) center / contain no-repeat;
+    z-index: -11;
+  }
 
   .title-l {
     text-align: center;
