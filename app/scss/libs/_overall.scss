@@ -145,9 +145,9 @@ body {
     height: 65px;
     padding: 20px;
     border-radius: 50px;
-    background: var(--white-color) url(../images/circle-button-arrow-black.svg) center center / contain no-repeat;
+    background: var(--white-color) url(../images/circle-button-arrow-black.svg) center center / 24px 24px no-repeat;
     &:hover {
-      background: #bd0cb6 url(../images/circle-button-arrow-white.svg) center center / contain no-repeat;
+      background: #bd0cb6 url(../images/circle-button-arrow-white.svg) center center / 24px 24px no-repeat;
       transition: .5s ease-out;
     }
     &:disabled {
