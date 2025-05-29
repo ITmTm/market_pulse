@@ -3,20 +3,17 @@
 
   .title-l {
     text-align: center;
-    margin-bottom: 40px;
-  }
-
-  &__cards {
-    position: relative;
-    overflow: visible;
   }
 
   .swiper-pagination {
     display: none;
   }
 
+  &__cards {
+    padding: 100px 10px 70px;
+  }
+
   &__card {
-    width: 365px;
     height: 357px;
     padding: 32px;
     border-radius: 55px;
@@ -24,13 +21,67 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 15px;
 
-    position: static;
-    transform: none;
-
-    &:nth-child(1) {
-      background-color: var(--light-grey-color);
+    .text-m {
+      color: var(--black-color);
     }
+
+    .btn-circle {
+      margin-top: auto;
+    }
+
+    .avatars {
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+      flex-wrap: nowrap;
+      margin-left: 15px;
+
+      .avatar {
+        width: 65px;
+        height: 65px;
+        cursor: pointer;
+        border-radius: 50%;
+        margin-left: -15px;
+
+        &-1 { background: var(--light-grey-color) url(../images/intro/human-1.avif) center center / auto  no-repeat; }
+        &-2 { background: var(--light-grey-color) url(../images/intro/human-2.avif) center center / auto  no-repeat; }
+        &-3 { background: var(--light-grey-color) url(../images/intro/human-3.avif) center center / auto  no-repeat; }
+        &-4 { background: var(--light-grey-color) url(../images/intro/human-4.avif) center center / auto  no-repeat; }
+        &-5 { background: var(--white-color) url(../images/intro/system.svg) center center / 24px 24px no-repeat; }
+      }
+    }
+
+    .accounts {
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+      flex-wrap: nowrap;
+      margin-left: 15px;
+
+      .account {
+        width: 64px;
+        height: 64px;
+        cursor: pointer;
+        border-radius: 64px;
+        margin-left: -15px;
+
+        &-1 { background: var(--white-color) url(../images/intro/vpay.svg) center center / auto  no-repeat; }
+        &-2 { background: var(--white-color) url(../images/intro/webmoney.svg) center center / auto  no-repeat; }
+        &-3 { background: var(--white-color) url(../images/intro/qiwi.svg) center center / auto  no-repeat; }
+        &-4 { background: var(--white-color) url(../images/intro/paypal.svg) center center / auto  no-repeat; }
+        &-5 { background: var(--white-color) url(../images/intro/mastercard.svg) center center / auto no-repeat; }
+
+        &:hover {
+          filter: hue-rotate(0.5turn)
+        }
+      }
+    }
+
+    &:nth-child(1) { background-color: var(--light-grey-color); transform: rotate(-10deg); left: 50px; }
+    &:nth-child(2) { background-color: var(--purpur-light-color); transform: rotate(10deg); top: 40px; z-index: 2 }
+    &:nth-child(3) { background-color: var(--light-grey-color); transform: rotate(-10deg); bottom: 30px; right: 10px; }
+    &:nth-child(4) { background-color: var(--brizz-light-color); transform: rotate(10deg); top: 40px; right: 30px; }
   }
 }
