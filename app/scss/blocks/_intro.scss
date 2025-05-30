@@ -59,11 +59,25 @@
         border-radius: 50%;
         margin-left: -15px;
 
-        &-1 { background: var(--light-grey-color) url(../images/intro/human-1.avif) center center / auto  no-repeat; }
-        &-2 { background: var(--light-grey-color) url(../images/intro/human-2.avif) center center / auto  no-repeat; }
-        &-3 { background: var(--light-grey-color) url(../images/intro/human-3.avif) center center / auto  no-repeat; }
-        &-4 { background: var(--light-grey-color) url(../images/intro/human-4.avif) center center / auto  no-repeat; }
-        &-5 { background: var(--white-color) url(../images/intro/system.svg) center center / 24px 24px no-repeat; }
+        &-1 {
+          background: var(--light-grey-color) url(../images/intro/human-1.avif) center center / auto no-repeat;
+        }
+
+        &-2 {
+          background: var(--light-grey-color) url(../images/intro/human-2.avif) center center / auto no-repeat;
+        }
+
+        &-3 {
+          background: var(--light-grey-color) url(../images/intro/human-3.avif) center center / auto no-repeat;
+        }
+
+        &-4 {
+          background: var(--light-grey-color) url(../images/intro/human-4.avif) center center / auto no-repeat;
+        }
+
+        &-5 {
+          background: var(--white-color) url(../images/intro/system.svg) center center / 24px 24px no-repeat;
+        }
       }
     }
 
@@ -81,11 +95,25 @@
         border-radius: 64px;
         margin-left: -15px;
 
-        &-1 { background: var(--white-color) url(../images/intro/vpay.svg) center center / auto  no-repeat; }
-        &-2 { background: var(--white-color) url(../images/intro/webmoney.svg) center center / auto  no-repeat; }
-        &-3 { background: var(--white-color) url(../images/intro/qiwi.svg) center center / auto  no-repeat; }
-        &-4 { background: var(--white-color) url(../images/intro/paypal.svg) center center / auto  no-repeat; }
-        &-5 { background: var(--white-color) url(../images/intro/mastercard.svg) center center / auto no-repeat; }
+        &-1 {
+          background: var(--white-color) url(../images/intro/vpay.svg) center center / auto no-repeat;
+        }
+
+        &-2 {
+          background: var(--white-color) url(../images/intro/webmoney.svg) center center / auto no-repeat;
+        }
+
+        &-3 {
+          background: var(--white-color) url(../images/intro/qiwi.svg) center center / auto no-repeat;
+        }
+
+        &-4 {
+          background: var(--white-color) url(../images/intro/paypal.svg) center center / auto no-repeat;
+        }
+
+        &-5 {
+          background: var(--white-color) url(../images/intro/mastercard.svg) center center / auto no-repeat;
+        }
 
         &:hover {
           filter: hue-rotate(0.5turn)
@@ -94,7 +122,10 @@
     }
 
     &:nth-child(1) {
-      background-color: var(--light-grey-color); transform: rotate(-10deg); left: 50px;
+      background-color: var(--light-grey-color);
+      transform: rotate(-10deg);
+      left: 50px;
+
       &::before {
         content: "Шаг 1";
         position: absolute;
@@ -108,8 +139,13 @@
         background: var(--purpur-color);
       }
     }
+
     &:nth-child(2) {
-      background-color: var(--purpur-light-color); transform: rotate(10deg); top: 40px; z-index: 2;
+      background-color: var(--purpur-light-color);
+      transform: rotate(10deg);
+      top: 40px;
+      z-index: 2;
+
       &::before {
         content: "Шаг 2";
         position: absolute;
@@ -123,8 +159,13 @@
         background: var(--purpur-color);
       }
     }
+
     &:nth-child(3) {
-      background-color: var(--light-grey-color); transform: rotate(-10deg); bottom: 30px; right: 10px;
+      background-color: var(--light-grey-color);
+      transform: rotate(-10deg);
+      bottom: 30px;
+      right: 10px;
+
       &::before {
         content: "Шаг 3";
         position: absolute;
@@ -138,8 +179,13 @@
         background: var(--purpur-color);
       }
     }
+
     &:nth-child(4) {
-      background-color: var(--brizz-light-color); transform: rotate(10deg); top: 40px; right: 30px;
+      background-color: var(--brizz-light-color);
+      transform: rotate(10deg);
+      top: 40px;
+      right: 30px;
+
       &::before {
         content: "Шаг 4";
         position: absolute;
@@ -153,18 +199,5 @@
         background: var(--purpur-color);
       }
     }
-
-    //&::before {
-    //  content: "Шаг 1";
-    //  position: absolute;
-    //  top: -15px;
-    //  left: 30px;
-    //  padding: 5px 20px;
-    //  border-radius: 30px;
-    //  color: var(--white-color);
-    //  font-size: 16px;
-    //  font-weight: 400;
-    //  background: var(--purpur-color);
-    //}
   }
 }
