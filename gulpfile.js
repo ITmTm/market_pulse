@@ -122,6 +122,7 @@ function scripts() {
         'app/js/accordion.js', // аккордеоны
         'app/js/cookie.js', // уведомление о куки
         'app/js/menu.js', // меню хедера
+        'app/js/header.js', // скролл для хедера
         'app/js/table.js', // таблица с табами
         'app/js/title.js', // установка title
         'app/js/up-btn.js', // кнопка наверх
