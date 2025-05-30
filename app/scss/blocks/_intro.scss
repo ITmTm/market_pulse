@@ -10,7 +10,7 @@
     left: 0;
     right: 0;
     height: 1000px;
-    background: url(../images/parallax.avif) center / contain no-repeat;
+    background: url(../images/intro/intro-bg.avif) center / contain no-repeat;
     z-index: -11;
   }
 
@@ -27,6 +27,7 @@
   }
 
   &__card {
+    position: relative;
     height: 357px;
     padding: 32px;
     border-radius: 55px;
@@ -92,9 +93,78 @@
       }
     }
 
-    &:nth-child(1) { background-color: var(--light-grey-color); transform: rotate(-10deg); left: 50px; }
-    &:nth-child(2) { background-color: var(--purpur-light-color); transform: rotate(10deg); top: 40px; z-index: 2 }
-    &:nth-child(3) { background-color: var(--light-grey-color); transform: rotate(-10deg); bottom: 30px; right: 10px; }
-    &:nth-child(4) { background-color: var(--brizz-light-color); transform: rotate(10deg); top: 40px; right: 30px; }
+    &:nth-child(1) {
+      background-color: var(--light-grey-color); transform: rotate(-10deg); left: 50px;
+      &::before {
+        content: "Шаг 1";
+        position: absolute;
+        top: -15px;
+        left: 30px;
+        padding: 5px 20px;
+        border-radius: 30px;
+        color: var(--white-color);
+        font-size: 16px;
+        font-weight: 400;
+        background: var(--purpur-color);
+      }
+    }
+    &:nth-child(2) {
+      background-color: var(--purpur-light-color); transform: rotate(10deg); top: 40px; z-index: 2;
+      &::before {
+        content: "Шаг 2";
+        position: absolute;
+        top: -15px;
+        left: 30px;
+        padding: 5px 20px;
+        border-radius: 30px;
+        color: var(--white-color);
+        font-size: 16px;
+        font-weight: 400;
+        background: var(--purpur-color);
+      }
+    }
+    &:nth-child(3) {
+      background-color: var(--light-grey-color); transform: rotate(-10deg); bottom: 30px; right: 10px;
+      &::before {
+        content: "Шаг 3";
+        position: absolute;
+        top: -15px;
+        left: 30px;
+        padding: 5px 20px;
+        border-radius: 30px;
+        color: var(--white-color);
+        font-size: 16px;
+        font-weight: 400;
+        background: var(--purpur-color);
+      }
+    }
+    &:nth-child(4) {
+      background-color: var(--brizz-light-color); transform: rotate(10deg); top: 40px; right: 30px;
+      &::before {
+        content: "Шаг 4";
+        position: absolute;
+        top: -15px;
+        left: 30px;
+        padding: 5px 20px;
+        border-radius: 30px;
+        color: var(--white-color);
+        font-size: 16px;
+        font-weight: 400;
+        background: var(--purpur-color);
+      }
+    }
+
+    //&::before {
+    //  content: "Шаг 1";
+    //  position: absolute;
+    //  top: -15px;
+    //  left: 30px;
+    //  padding: 5px 20px;
+    //  border-radius: 30px;
+    //  color: var(--white-color);
+    //  font-size: 16px;
+    //  font-weight: 400;
+    //  background: var(--purpur-color);
+    //}
   }
 }
