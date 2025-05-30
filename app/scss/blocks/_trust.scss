@@ -1,0 +1,117 @@
+.trust {
+  padding-bottom: 150px;
+
+  .title-l {
+    text-align: center;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  &__cards {
+    padding: 100px 10px 70px;
+  }
+
+  &__card {
+    position: relative;
+    height: 357px;
+    padding: 32px;
+    border-radius: 55px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    .text-m {
+      color: var(--black-color);
+    }
+
+    .avatars {
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+      flex-wrap: nowrap;
+      gap: 15px;
+
+      .avatar {
+        width: 45px;
+        height: 45px;
+        cursor: default;
+        border-radius: 50%;
+        &__text {
+          &:first-line {
+            color: var(--grey-color);
+            font-size: 16px;
+            font-weight: 300;
+          }
+          &:last-of-type {
+            color: var(--grey-color);
+            font-size: 12px;
+            font-weight: 300;
+          }
+        }
+
+        &-1 {
+          background: var(--light-grey-color) url(../images/trust/mariya.svg) center center / cover no-repeat;
+        }
+
+        &-2 {
+          background: var(--light-grey-color) url(../images/trust/arseniy.svg) center center / cover no-repeat;
+        }
+
+        &-3 {
+          background: var(--light-grey-color) url(../images/trust/nikolay.svg) center center / cover no-repeat;
+        }
+
+        &-4 {
+          background: var(--light-grey-color) url(../images/trust/sergey.svg) center center / cover no-repeat;
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      background-color: var(--light-grey-color);
+      transform: rotate(-10deg);
+      left: 50px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: var(--brizz-light-color);
+      transform: rotate(10deg);
+      top: 40px;
+      z-index: 2;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &:nth-child(3) {
+      background-color: var(--light-grey-color);
+      transform: rotate(-10deg);
+      bottom: 30px;
+      right: 10px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &:nth-child(4) {
+      background-color: var(--purpur-light-color);
+      transform: rotate(10deg);
+      top: 40px;
+      right: 30px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
