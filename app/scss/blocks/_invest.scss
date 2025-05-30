@@ -1,0 +1,17 @@
+.invest {
+  padding-bottom: 150px;
+
+  .container {
+    border-radius: 54px;
+    background: var(--purpur-color) url(../images/invest/invest-bg.avif) center center / cover no-repeat;
+    padding: 80px 250px 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .title-l {
+    color: var(--white-color);
+  }
+}
