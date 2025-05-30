@@ -1,0 +1,36 @@
+.bonuses {
+  padding-bottom: 150px;
+
+  .container {
+    background-color: var(--brizz-color);
+    border-radius: 55px;
+  }
+
+  &__wrapper {
+    display: flex;
+    padding: 32px 0;
+    justify-content: space-between;
+  }
+
+  &__text {
+    max-width: 706px;
+    text-align: center;
+
+    .title-l {
+      padding-top: 32px;
+      margin-bottom: 25px;
+      color: var(--white-color);
+    }
+
+    .text-m {
+      margin-bottom: 25px;
+      &:last-of-type {
+        margin-bottom: 100px;
+      }
+    }
+
+    .btn {
+      display: block;
+    }
+  }
+}
