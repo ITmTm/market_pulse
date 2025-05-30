@@ -31,6 +31,5 @@ const swiper = new Swiper('.swiper.intro__cards', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination.intro__cards',
-        clickable: true,
     },
 });
