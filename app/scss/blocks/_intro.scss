@@ -9,7 +9,7 @@
     top: 60%;
     left: 0;
     right: 0;
-    height: 1000px;
+    min-height: 1000px;
     background: url(../images/intro/intro-bg.avif) center / contain no-repeat;
     z-index: -11;
   }
@@ -28,21 +28,18 @@
 
   &__card {
     position: relative;
-    height: 357px;
+    min-height: 357px;
     padding: 32px;
     border-radius: 55px;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 15px;
 
     .text-m {
       color: var(--black-color);
-    }
-
-    .btn-circle {
-      margin-top: auto;
     }
 
     &:nth-child(1) {
@@ -128,9 +125,7 @@
   &__avatars {
     display: flex;
     align-items: center;
-    margin-top: auto;
     flex-wrap: nowrap;
-    margin-left: 15px;
 
     img {
       width: 65px;
@@ -140,12 +135,17 @@
     }
   }
 
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
   &__accounts {
     display: flex;
     align-items: center;
-    margin-top: auto;
     flex-wrap: nowrap;
-    margin-left: 15px;
 
     img {
       width: 64px;
