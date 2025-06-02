@@ -36,4 +36,12 @@
       display: block;
     }
   }
+
+  &__img {
+    img {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 22px;
+    }
+  }
 }
