@@ -7,23 +7,29 @@
   }
 
   &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 160px 30px 30px;
     background: #3BA6B1 url(../images/main-hero/main-hero-bg.avif) left bottom /auto no-repeat;
     border-radius: 50px;
     min-height: 750px;
+    gap: 20px;
 
     .title-m {
-      text-align: center;
       margin-bottom: 25px;
-    }
-
-    .text-m {
-      text-align: center;
-      margin-bottom: 185px;
     }
 
     .btn {
       display: block;
+    }
+  }
+
+  &_wrapp {
+    text-align: center;
+
+    p {
+      margin-bottom: 20px;
     }
   }
 
@@ -37,6 +43,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: stretch;
+    gap: 20px;
   }
 
   .features {
@@ -44,7 +51,7 @@
     grid-template-columns: 1fr 1fr;
     justify-items: start;
     align-items: center;
-    row-gap: 5px;
+    gap: 10px;
     min-height: 192px;
     padding: 20px;
     border-radius: 35px;
