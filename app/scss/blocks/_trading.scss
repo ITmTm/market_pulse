@@ -4,18 +4,12 @@
   padding: 150px 0;
 
   .container {
-    background-color: var(--brizz-color);
+    background: var(--brizz-color) url(../images/trading/trading.avif) top right / auto no-repeat;
     border-radius: 55px;
   }
 
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: -80px;
-  }
-
   &__text {
+    padding-top: 65px;
     max-width: 645px;
     text-align: left;
 
