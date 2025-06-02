@@ -6,10 +6,10 @@
   .container {
     background: var(--brizz-color) url(../images/trading/trading.avif) top right / auto no-repeat;
     border-radius: 55px;
+    padding: 65px 40px 32px;
   }
 
-  &__text {
-    padding-top: 65px;
+  &__info {
     max-width: 645px;
     text-align: left;
 
@@ -25,7 +25,6 @@
 
   &__cards {
     display: flex;
-    padding-bottom: 32px;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
@@ -34,6 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     padding: 25px;
     max-width: 472px;
     background-color: var(--light-grey-color);
@@ -43,9 +43,11 @@
     .text-m {
       color: var(--black-color);
     }
+  }
 
-    a {
-      margin-top: auto;
-    }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 }

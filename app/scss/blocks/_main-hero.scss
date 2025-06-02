@@ -67,7 +67,8 @@
         position: absolute;
         left: 0;
         top: 0;
-        width: 20px; height: 20px;
+        width: 20px;
+        height: 20px;
         background: url("/images/main-hero/spreads.svg") center/contain no-repeat;
       }
       &--assets::before {
@@ -75,7 +76,8 @@
         position: absolute;
         left: 0;
         top: 0;
-        width: 20px; height: 20px;
+        width: 20px;
+        height: 20px;
         background: url("/images/main-hero/assets.svg") center/contain no-repeat;
       }
       &--withdraw::before {
