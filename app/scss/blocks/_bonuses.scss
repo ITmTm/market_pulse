@@ -15,9 +15,12 @@
   &__text {
     max-width: 706px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
 
     .title-l {
-      padding-top: 32px;
       margin-bottom: 25px;
       color: var(--white-color);
     }
