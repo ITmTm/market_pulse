@@ -18,7 +18,7 @@
     margin-bottom: 60px;
   }
 
-  &__contacts {
+  &__contact {
     position: relative;
     &:after {
       content: "";
@@ -28,8 +28,15 @@
       left: -32px;
       width: 20px;
       height: 20px;
+      transition: .5s ease-in;
+    }
+
+    &:hover {
+      opacity: .5;
+      transition: .5s ease-in-out;
     }
   }
+
   &__mail {
     position: relative;
     padding-right: 150px;
@@ -41,9 +48,14 @@
       left: -40px;
       width: 20px;
       height: 20px;
+      transition: .5s ease-in;
+    }
+
+    &:hover {
+      opacity: .5;
+      transition: .5s ease-in-out;
     }
   }
-
 
 
   .menu {
@@ -59,6 +71,8 @@
 
   .menu-subtitle {
     color: var(--black-color);
+    font-size: 18px;
+    font-weight: 400;
   }
 
   .sub-menu {
@@ -68,6 +82,8 @@
     margin-top: 15px;
      li {
        color: var(--grey-color);
+       font-size: 16px;
+       font-weight: 300;
        transition: .4s ease-in;
 
        &:hover {
@@ -81,6 +97,4 @@
     color: var(--black-color);
     text-align: center;
   }
-
-
 }
