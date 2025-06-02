@@ -45,82 +45,6 @@
       margin-top: auto;
     }
 
-    .avatars {
-      display: flex;
-      align-items: center;
-      margin-top: auto;
-      flex-wrap: nowrap;
-      margin-left: 15px;
-
-      .avatar {
-        width: 65px;
-        height: 65px;
-        cursor: pointer;
-        border-radius: 50%;
-        margin-left: -15px;
-
-        &-1 {
-          background: var(--light-grey-color) url(../images/intro/human-1.avif) center center / auto no-repeat;
-        }
-
-        &-2 {
-          background: var(--light-grey-color) url(../images/intro/human-2.avif) center center / auto no-repeat;
-        }
-
-        &-3 {
-          background: var(--light-grey-color) url(../images/intro/human-3.avif) center center / auto no-repeat;
-        }
-
-        &-4 {
-          background: var(--light-grey-color) url(../images/intro/human-4.avif) center center / auto no-repeat;
-        }
-
-        &-5 {
-          background: var(--white-color) url(../images/intro/system.svg) center center / 24px 24px no-repeat;
-        }
-      }
-    }
-
-    .accounts {
-      display: flex;
-      align-items: center;
-      margin-top: auto;
-      flex-wrap: nowrap;
-      margin-left: 15px;
-
-      .account {
-        width: 64px;
-        height: 64px;
-        cursor: pointer;
-        border-radius: 64px;
-        margin-left: -15px;
-
-        &-1 {
-          background: var(--white-color) url(../images/intro/vpay.svg) center center / auto no-repeat;
-        }
-
-        &-2 {
-          background: var(--white-color) url(../images/intro/webmoney.svg) center center / auto no-repeat;
-        }
-
-        &-3 {
-          background: var(--white-color) url(../images/intro/qiwi.svg) center center / auto no-repeat;
-        }
-
-        &-4 {
-          background: var(--white-color) url(../images/intro/paypal.svg) center center / auto no-repeat;
-        }
-
-        &-5 {
-          background: var(--white-color) url(../images/intro/mastercard.svg) center center / auto no-repeat;
-        }
-
-        &:hover {
-          filter: hue-rotate(0.5turn)
-        }
-      }
-    }
-
     &:nth-child(1) {
       background-color: var(--light-grey-color);
       transform: rotate(-10deg);
@@ -198,6 +122,36 @@
         font-weight: 400;
         background: var(--purpur-color);
       }
+    }
+  }
+
+  &__avatars {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+
+    img {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      margin-left: -15px;
+    }
+  }
+
+  &__accounts {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 64px;
+      margin-left: -15px;
     }
   }
 }
