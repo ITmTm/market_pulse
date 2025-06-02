@@ -1,5 +1,26 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--purpur-color) var(--brizz-light-color);
+
+  &::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--white-color);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--purpur-color);
+    border-radius: 5px;
+    border: 3px solid var(--white-color);
+  }
 }
 
 *,
@@ -8,23 +29,6 @@
   margin: 0;
   padding: 0;
 
-  scrollbar-width: thin;
-  scrollbar-color: var(--black) var(--white);
-
-  &::-webkit-scrollbar {
-    height: 12px;
-    width: 12px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: var(--white);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--black);
-    border-radius: 5px;
-    border: 3px solid var(--white);
-  }
 }
 
 body,
