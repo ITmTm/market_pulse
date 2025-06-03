@@ -4,11 +4,12 @@
   .container {
     background-color: var(--brizz-color);
     border-radius: 55px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   &__wrapper {
     display: flex;
-    padding: 32px 0;
     justify-content: space-between;
   }
 
@@ -16,26 +17,28 @@
     max-width: 706px;
     text-align: center;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    margin-top: 32px;
 
     .title-l {
-      margin-bottom: 25px;
       color: var(--white-color);
     }
-
-    .text-m {
-      margin-bottom: 25px;
-      &:last-of-type {
-        margin-bottom: 100px;
-      }
-    }
-
     .btn {
       display: block;
     }
   }
+
+  &__descr {
+    p {
+      margin-bottom: 15px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
 
   &__img {
     img {
