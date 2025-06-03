@@ -2,7 +2,7 @@
   padding-bottom: 20px;
 
   .container {
-    background: var(--light-grey-color) url(../images/footer/footer-bg.avif) top right / auto no-repeat;
+    background: var(--light-grey-color) url(../images/footer-bg.avif) top right / auto no-repeat;
     border-radius: 50px;
     padding: 32px;
   }
@@ -23,7 +23,7 @@
     &:after {
       content: "";
       position: absolute;
-      background: url(../images/footer/phone.svg);
+      background: url(../images/phone.svg);
       top: 2px;
       left: -32px;
       width: 20px;
@@ -43,7 +43,7 @@
     &:after {
       content: "";
       position: absolute;
-      background: url(../images/footer/mail.svg);
+      background: url(../images/mail.svg);
       top: 3px;
       left: -40px;
       width: 20px;
@@ -64,15 +64,19 @@
     margin-bottom: 32px;
 
     &-descr {
-      max-width: 714px;
+      max-width: 650px;
       color: var(--grey-color);
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.4
     }
-  }
 
-  .menu-subtitle {
-    color: var(--black-color);
-    font-size: 18px;
-    font-weight: 400;
+    &-item > a {
+      cursor: text;
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--black-color);
+    }
   }
 
   .sub-menu {
@@ -81,14 +85,17 @@
     gap: 10px;
     margin-top: 15px;
      li {
-       color: var(--grey-color);
-       font-size: 16px;
-       font-weight: 300;
-       transition: .4s ease-in;
+       & > a {
+         cursor: pointer;
+         font-size: 16px;
+         color: var(--grey-color);
+         font-weight: 300;
+         transition: .4s ease-in;
 
-       &:hover {
-         color: var(--brizz-color);
-         transition: .4s ease-out;
+         &:hover {
+           color: var(--brizz-color);
+           transition: .4s ease-out;
+         }
        }
      }
   }

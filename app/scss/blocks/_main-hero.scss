@@ -1,4 +1,5 @@
 .main-hero {
+  padding-bottom: 150px;
   .container {
     padding-top: 20px;
     display: grid;
@@ -11,7 +12,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 160px 30px 30px;
-    background: #3BA6B1 url(../images/main-hero/main-hero-bg.avif) left bottom /auto no-repeat;
+    background: #3BA6B1 url(../images/main-hero-bg.avif) left bottom /auto no-repeat;
     border-radius: 50px;
     min-height: 750px;
     gap: 20px;
@@ -35,7 +36,7 @@
 
   &__right {
     padding: 160px 30px 30px;
-    background: var(--light-grey-color) url(../images/main-hero/mine-hero-bg-traid.avif) right bottom / auto no-repeat;
+    background: var(--light-grey-color) url(../images/mine-hero-bg-traid.avif) right bottom / auto no-repeat;
     border-radius: 50px;
     min-height: 750px;
 
@@ -69,7 +70,7 @@
         top: 0;
         width: 20px;
         height: 20px;
-        background: url("/images/main-hero/spreads.svg") center/contain no-repeat;
+        background: url("/images/spreads.svg") center/contain no-repeat;
       }
       &--assets::before {
         content: "";
@@ -78,7 +79,7 @@
         top: 0;
         width: 20px;
         height: 20px;
-        background: url("/images/main-hero/assets.svg") center/contain no-repeat;
+        background: url("/images/assets.svg") center/contain no-repeat;
       }
       &--withdraw::before {
         content: "";
@@ -88,7 +89,7 @@
         transform: translateY(-50%);
         width: 20px;
         height: 20px;
-        background: url("/images/main-hero/withdraw.svg") center/contain no-repeat;
+        background: url("/images/withdraw.svg") center/contain no-repeat;
       }
       &--instant::before {
         content: "";
@@ -97,7 +98,7 @@
         top: 0;
         width: 20px;
         height: 20px;
-        background: url("/images/main-hero/instant.svg") center/contain no-repeat;
+        background: url("/images/instant.svg") center/contain no-repeat;
       }
       &--mobile::before {
         content: "";
@@ -107,7 +108,7 @@
         transform: translateY(-50%);
         width: 20px;
         height: 20px;
-        background: url("/images/main-hero/mobile.svg") center/contain no-repeat;
+        background: url("/images/mobile.svg") center/contain no-repeat;
       }
       &--support::before {
         content: "";
@@ -117,7 +118,7 @@
         transform: translateY(-50%);
         width: 20px;
         height: 20px;
-        background: url("/images/main-hero/support.svg") center/contain no-repeat;
+        background: url("/images/support.svg") center/contain no-repeat;
       }
     }
   }
