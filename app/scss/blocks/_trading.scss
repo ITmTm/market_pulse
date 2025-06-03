@@ -1,10 +1,10 @@
 .trading {
   position: relative;
   z-index: 3;
-  padding: 150px 0;
+  padding-bottom: 150px;
 
   .container {
-    background: var(--brizz-color) url(../images/trading/trading.avif) top right / auto no-repeat;
+    background: var(--brizz-color) url(../images/trading.avif) top right / auto no-repeat;
     border-radius: 55px;
     padding: 65px 40px 32px;
   }

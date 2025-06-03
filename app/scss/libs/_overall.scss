@@ -4,11 +4,16 @@
   margin: 0 auto;
 }
 
+
 body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   background-color: var(--white-color);
+}
+
+main section:nth-of-type(n + 2) {
+  background: url(../images/intro-bg.avif) center/auto no-repeat fixed;
 }
 
 .upButton {
