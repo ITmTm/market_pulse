@@ -9,9 +9,6 @@
     display: none;
   }
 
-  &__cards {
-    padding: 100px 10px 70px;
-  }
 
   &__card {
     position: relative;
@@ -83,6 +80,7 @@
       width: 45px;
       height: 45px;
       border-radius: 50%;
+      margin-left: 0;
     }
   }
 
