@@ -12,7 +12,9 @@ body {
   background-color: var(--white-color);
 }
 
-main section:nth-of-type(n + 2) {
+//:nth-of-type(n + 2)
+
+main section {
   background: url(../images/intro-bg.avif) center/auto no-repeat fixed;
 }
 
