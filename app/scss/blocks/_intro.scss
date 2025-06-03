@@ -10,7 +10,7 @@
     left: 0;
     right: 0;
     min-height: 1000px;
-    background: url(../images/intro/intro-bg.avif) center / contain no-repeat;
+    background: url(../images/intro-bg.avif) center / contain no-repeat;
     z-index: -11;
   }
 
@@ -23,7 +23,7 @@
   }
 
   &__cards {
-    padding: 100px 10px 70px;
+    padding: 100px 10px 80px;
   }
 
   &__card {
@@ -119,6 +119,15 @@
         font-weight: 400;
         background: var(--purpur-color);
       }
+    }
+
+    transition: scale 0.4s ease-in;
+
+    &:hover {
+      scale: (1.1);
+      z-index: 10;
+      transition: scale 0.4s ease-in;
+
     }
   }
 
