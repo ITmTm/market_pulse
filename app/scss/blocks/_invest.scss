@@ -3,16 +3,23 @@
 
   &__wrapper {
     border-radius: 54px;
-    background: var(--purpur-color) url(../images/invest/invest-bg.avif) center center / cover no-repeat;
+    background: var(--purpur-color) url(../images/invest-bg.avif) center center / cover no-repeat;
     padding: 80px 250px 150px;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 25px;
 
     .title-l {
       color: var(--white-color);
+    }
+
+    .text-m {
+      margin-bottom: 10px;
+      &:first-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 
