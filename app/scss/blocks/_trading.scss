@@ -4,7 +4,8 @@
   padding-bottom: 150px;
 
   .container {
-    background: var(--brizz-color) url(../images/trading.avif) top right / auto no-repeat;
+    background: var(--brizz-color) url(../images/trading.avif)right / contain no-repeat;
+    background-position-y: -160px;
     border-radius: 55px;
     padding: 65px 40px 32px;
   }
