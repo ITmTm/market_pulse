@@ -1,44 +1,186 @@
 .about {
-  padding: 0 0 150px;
-
-  &__grid {
+  padding-bottom: 150px;
+  .container {
+    padding-top: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    min-height: 425px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 160px 30px 30px;
+    background-color: #3BA6B1;
+    border-radius: 50px;
+    gap: 25px;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    display: block;
+  }
+
+  &__right {
+    padding: 160px 30px 30px;
+    background:
+            linear-gradient(270deg, #F0F0F0 15%,
+                    rgba(240, 240, 240, 0.65) 30%,
+                    rgba(240, 240, 240, 0.00) 40%),
+            var(--light-grey-color)  url(../images/about.avif) left bottom / auto no-repeat;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 20px;
+  }
+}
+
+
+.about-market {
+  padding-bottom: 150px;
+  .container {
+    padding-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    min-height: 495px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 160px 30px 30px;
+    background: var(--purpur-light-color)  url(../images/market-pulse-bg.avif) center center / contain no-repeat;
+    border-radius: 50px;
+    gap: 25px;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    display: block;
+  }
+
+  &__right {
+    padding: 65px 30px 30px;
+    background-color: var(--light-grey-color);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: left;
+
+      .text-m {
+        color: var(--grey-color);
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+.about-trading {
+  position: relative;
+  z-index: 3;
+  padding-bottom: 150px;
+
+  .container {
+    min-height: 688px;
+    background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right /auto no-repeat;
+    border-radius: 55px;
+    padding: 65px 40px 32px;
+  }
+
+  .title-l {
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     gap: 20px;
   }
 
   &__card {
-    padding: 65px 32px;
-    border-radius: 55px;
-    .title-s {
-      margin-bottom: 15px;
-    }
-    .title-l {
-      margin-bottom: 25px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-between;
+    padding: 25px;
+    max-width: 472px;
+    min-height: 235px;
+    background-color: var(--light-grey-color);
+    border-radius: 22px;
+    gap: 30px 0;
+
     .text-m {
       color: var(--grey-color);
     }
+  }
 
-    &-1 {
-      background-color: var(--purpur-light-color);
-    }
-    &-2 {
-      background-color: var(--brizz-light-color);
-    }
-    &-3 {
-      grid-column: 2 / 3;
-      grid-row: 1 / 3;
-      text-align: center;
-      background: var(--light-grey-color) url(../images/about.avif) top 265px right 90px/contain no-repeat;
-      display: flex;
-      flex-direction: column;
-      padding: 65px 32px 32px;
-    }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 
-    .btn {
-      display: block;
-      margin-top: auto;
-    }
+
+.about-numbers {
+  position: relative;
+  z-index: 3;
+  padding-bottom: 150px;
+
+  .container {
+    min-height: 495px;
+    background: var(--brizz-color) url(../images/about-numbers-bg.avif) center center /100% 100% no-repeat;
+    border-radius: 55px;
+    padding: 65px 40px 32px;
+  }
+
+  .title-m {
+    color: var(--white-color);
+    text-align: center;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 60px;
+    margin-top: 95px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 25px;
+    max-width: 472px;
+    border-radius: 22px;
+    gap: 15px;
   }
 }
