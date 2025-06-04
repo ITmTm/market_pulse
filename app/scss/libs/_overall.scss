@@ -4,7 +4,6 @@
   margin: 0 auto;
 }
 
-
 body {
   font-size: 18px;
   font-weight: 400;
@@ -12,7 +11,7 @@ body {
   background-color: var(--white-color);
 }
 
-main section {
+.main-bg {
   background: url(../images/intro-bg.avif) center/auto no-repeat fixed;
 }
 
