@@ -5,6 +5,7 @@
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
+    min-height: 750px;
   }
 
   &__left {
@@ -14,7 +15,6 @@
     padding: 160px 30px 30px;
     background: #3BA6B1 url(../images/main-hero-bg.avif) left bottom /auto no-repeat;
     border-radius: 50px;
-    min-height: 750px;
     gap: 20px;
 
     .title-m {
@@ -38,7 +38,6 @@
     padding: 160px 30px 30px;
     background: var(--light-grey-color) url(../images/mine-hero-bg-traid.avif) right bottom / auto no-repeat;
     border-radius: 50px;
-    min-height: 750px;
 
     display: flex;
     flex-direction: column;
