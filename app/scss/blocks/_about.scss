@@ -183,3 +183,31 @@
     gap: 15px;
   }
 }
+
+
+.about-invest {
+  padding-bottom: 150px;
+
+  &__wrapper {
+    border-radius: 54px;
+    background: var(--purpur-color) url(../images/invest-bg.avif) center center / cover no-repeat;
+    padding: 80px 250px 150px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .title-l {
+      color: var(--white-color);
+    }
+
+    .text-m {
+      margin-bottom: 10px;
+    }
+  }
+
+  .btn {
+    width: 700px;
+  }
+}
