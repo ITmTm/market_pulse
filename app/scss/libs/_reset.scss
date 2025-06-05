@@ -12,6 +12,12 @@
     width: 12px;
   }
 
+  &:focus-visible {
+    outline: 1px solid var(--black-color);
+    box-shadow: 0 0 5px 2px var(--black-color);
+    outline-offset: 1px;
+  }
+
   &::-webkit-scrollbar-track {
     background: var(--white-color);
   }
