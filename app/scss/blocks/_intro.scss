@@ -16,6 +16,7 @@
   }
 
   &__card {
+    transition: scale 0.4s ease-in;
     position: relative;
     min-height: 357px;
     padding: 32px;
@@ -30,87 +31,6 @@
     .text-m {
       color: var(--black-color);
     }
-
-    &:nth-child(1) {
-      background-color: var(--light-grey-color);
-      transform: rotate(-10deg);
-      left: 50px;
-
-      &::before {
-        content: "Шаг 1";
-        position: absolute;
-        top: -15px;
-        left: 30px;
-        padding: 5px 20px;
-        border-radius: 30px;
-        color: var(--white-color);
-        font-size: 16px;
-        font-weight: 400;
-        background: var(--purpur-color);
-      }
-    }
-
-    &:nth-child(2) {
-      background-color: var(--purpur-light-color);
-      transform: rotate(10deg);
-      top: 40px;
-      z-index: 2;
-
-      &::before {
-        content: "Шаг 2";
-        position: absolute;
-        top: -15px;
-        left: 30px;
-        padding: 5px 20px;
-        border-radius: 30px;
-        color: var(--white-color);
-        font-size: 16px;
-        font-weight: 400;
-        background: var(--purpur-color);
-      }
-    }
-
-    &:nth-child(3) {
-      background-color: var(--light-grey-color);
-      transform: rotate(-10deg);
-      bottom: 30px;
-      right: 10px;
-
-      &::before {
-        content: "Шаг 3";
-        position: absolute;
-        top: -15px;
-        left: 30px;
-        padding: 5px 20px;
-        border-radius: 30px;
-        color: var(--white-color);
-        font-size: 16px;
-        font-weight: 400;
-        background: var(--purpur-color);
-      }
-    }
-
-    &:nth-child(4) {
-      background-color: var(--brizz-light-color);
-      transform: rotate(10deg);
-      top: 40px;
-      right: 30px;
-
-      &::before {
-        content: "Шаг 4";
-        position: absolute;
-        top: -15px;
-        left: 30px;
-        padding: 5px 20px;
-        border-radius: 30px;
-        color: var(--white-color);
-        font-size: 16px;
-        font-weight: 400;
-        background: var(--purpur-color);
-      }
-    }
-
-    transition: scale 0.4s ease-in;
 
     &:hover {
       scale: (1.1);
@@ -149,6 +69,85 @@
       height: 64px;
       border-radius: 64px;
       margin-left: -15px;
+    }
+  }
+
+  .mod-1 {
+    background-color: var(--light-grey-color);
+    transform: rotate(-10deg);
+    left: 50px;
+
+    &::before {
+      content: "Шаг 1";
+      position: absolute;
+      top: -15px;
+      left: 30px;
+      padding: 5px 20px;
+      border-radius: 30px;
+      color: var(--white-color);
+      font-size: 16px;
+      font-weight: 400;
+      background: var(--purpur-color);
+    }
+  }
+
+  .mod-2 {
+    background-color: var(--purpur-light-color);
+    transform: rotate(10deg);
+    top: 40px;
+    z-index: 2;
+
+    &::before {
+      content: "Шаг 2";
+      position: absolute;
+      top: -15px;
+      left: 30px;
+      padding: 5px 20px;
+      border-radius: 30px;
+      color: var(--white-color);
+      font-size: 16px;
+      font-weight: 400;
+      background: var(--purpur-color);
+    }
+  }
+
+  .mod-3 {
+    background-color: var(--light-grey-color);
+    transform: rotate(-10deg);
+    bottom: 30px;
+    right: 10px;
+
+    &::before {
+      content: "Шаг 3";
+      position: absolute;
+      top: -15px;
+      left: 30px;
+      padding: 5px 20px;
+      border-radius: 30px;
+      color: var(--white-color);
+      font-size: 16px;
+      font-weight: 400;
+      background: var(--purpur-color);
+    }
+  }
+
+  .mod-4 {
+    background-color: var(--brizz-light-color);
+    transform: rotate(10deg);
+    top: 40px;
+    right: 30px;
+
+    &::before {
+      content: "Шаг 4";
+      position: absolute;
+      top: -15px;
+      left: 30px;
+      padding: 5px 20px;
+      border-radius: 30px;
+      color: var(--white-color);
+      font-size: 16px;
+      font-weight: 400;
+      background: var(--purpur-color);
     }
   }
 }
