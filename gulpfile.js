@@ -133,7 +133,7 @@ function scripts() {
             mangle: false
         }))
         .pipe(dest('app/js'))
-        .pipe(browserSync.stream())
+        .pipe(browserSync.reload({ stream: true }))
 }
 
 function styles() {
@@ -162,8 +162,8 @@ function watching() {
         }
     });
     watch(['app/scss/**/*.scss'], styles);
-    watch('app/images/src/**/*.*', images);    // было watch(['app/images/src'], images)
-    watch(['app/js/main.js'], scripts);
+    watch('app/images/src/**/*.*', images);                            // было watch(['app/images/src'], images)
+    watch(['app/js/**/*.js', '!app/js/**/*.min.js'], scripts);        // следит за всеми js-ками кроме минимизированных
     watch(['app/components/**/*.html', 'app/pages/**/*.html'], pages);
     watch(['app/*.html']).on('change', browserSync.reload);
     watch(['app/upload/**/*'], resources);
