@@ -1,10 +1,23 @@
+// скролл для header
+const header = document.querySelector('.header');
+
+function onScroll() {
+    header.classList.toggle('scrolled', window.scrollY > 50);
+}
+
+window.addEventListener('scroll', onScroll);
+onScroll();
+
+
+
+
 // кнопка наверх
 
 $(window).on('scroll', trackScroll);
 $('.upButton').on('click', backToTop);
 
 function trackScroll() {
-    let scrolled = window.pageYOffset;
+    let scrolled = window.scrollY;
 
     if (scrolled > 100) {
         $('.upButton').addClass('show');
@@ -21,4 +34,4 @@ function backToTop() {
         top: 0,
         behavior: "smooth"
     });
-};
+}
