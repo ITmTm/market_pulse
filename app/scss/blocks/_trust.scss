@@ -25,49 +25,6 @@
     .text-m {
       color: var(--black-color);
     }
-
-    &:nth-child(1) {
-      background-color: var(--light-grey-color);
-      transform: rotate(-10deg);
-      left: 50px;
-
-      &::before {
-        display: none;
-      }
-    }
-
-    &:nth-child(2) {
-      background-color: var(--brizz-light-color);
-      transform: rotate(10deg);
-      top: 40px;
-      z-index: 2;
-
-      &::before {
-        display: none;
-      }
-    }
-
-    &:nth-child(3) {
-      background-color: var(--light-grey-color);
-      transform: rotate(-10deg);
-      bottom: 30px;
-      right: 10px;
-
-      &::before {
-        display: none;
-      }
-    }
-
-    &:nth-child(4) {
-      background-color: var(--purpur-light-color);
-      transform: rotate(10deg);
-      top: 40px;
-      right: 30px;
-
-      &::before {
-        display: none;
-      }
-    }
   }
 
   &__avatars {
@@ -94,6 +51,49 @@
       color: var(--grey-color);
       font-size: 12px;
       font-weight: 300;
+    }
+  }
+
+  .mod-1 {
+    background-color: var(--light-grey-color);
+    transform: rotate(-10deg);
+    left: 50px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .mod-2 {
+    background-color: var(--brizz-light-color);
+    transform: rotate(10deg);
+    top: 40px;
+    z-index: 2;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .mod-3 {
+    background-color: var(--light-grey-color);
+    transform: rotate(-10deg);
+    bottom: 30px;
+    right: 10px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .mod-4 {
+    background-color: var(--purpur-light-color);
+    transform: rotate(10deg);
+    top: 40px;
+    right: 30px;
+
+    &::before {
+      display: none;
     }
   }
 }
