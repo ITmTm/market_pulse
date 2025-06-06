@@ -125,6 +125,23 @@
     transition: border-color .15s;
   }
 
+  &__textarea {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 40px;
+
+    textarea {
+      resize: vertical;
+      max-height: 150px;
+
+      label {
+        .text-m {
+          color: var(--white-color);
+        }
+      }
+    }
+  }
+
   &__check {
     display: flex;
     align-items: center;
@@ -174,21 +191,6 @@
 
   }
 
-  &__textarea {
-    display: grid;
-    gap: 10px;
-    margin-bottom: 40px;
-
-    textarea {
-      resize: vertical;
-
-      label {
-        .text-m {
-          color: var(--white-color);
-        }
-      }
-    }
-  }
 
   .btn {
     display: block;
