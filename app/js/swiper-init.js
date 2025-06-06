@@ -26,8 +26,10 @@ function makeSwiper(rootSel, pagSel, mobileOnly = false) {
 }
 
 /* --- index.html --- mobile-only слайдеры */
-makeSwiper('.intro__cards',    '.swiper-pagination.intro__cards',    true);
-makeSwiper('.trust__cards',    '.swiper-pagination.trust__cards',    true);
+makeSwiper('.intro__cards',    '.swiper-pagination.intro__cards', true);
+makeSwiper('.trust__cards',    '.swiper-pagination.trust__cards', true);
+makeSwiper('.conditions-tariffs__cards',    '.swiper-pagination.conditions-tariffs__cards', true);
+makeSwiper('.conditions-intro__cards',    '.swiper-pagination.conditions-info__cards', true);
 
 /* --- documents.html (или другая страница) --- */
-makeSwiper('.documents-intro__cards','.swiper-pagination.documents-intro__cards',false);
+makeSwiper('.documents-intro__cards','.swiper-pagination.documents-intro__cards', false);
