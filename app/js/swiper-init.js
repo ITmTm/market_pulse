@@ -30,6 +30,7 @@ makeSwiper('.intro__cards',    '.swiper-pagination.intro__cards', true);
 makeSwiper('.trust__cards',    '.swiper-pagination.trust__cards', true);
 makeSwiper('.conditions-tariffs__cards',    '.swiper-pagination.conditions-tariffs__cards', true);
 makeSwiper('.conditions-intro__cards',    '.swiper-pagination.conditions-info__cards', true);
+makeSwiper('.platform-intro__cards',    '.swiper-pagination.platform-info__cards', true);
 
 /* --- documents.html (или другая страница) --- */
 makeSwiper('.documents-intro__cards','.swiper-pagination.documents-intro__cards', false);
