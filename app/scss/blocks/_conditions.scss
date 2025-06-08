@@ -50,11 +50,18 @@
 	margin-bottom: 25px;
   }
 
+  &__subtitle {
+	max-width: 750px;
+	margin: 0 auto;
+  }
+
+  .text-s {
+	text-align: center;
+  }
+
   .text-m {
 	color: var(--grey-color);
-	text-align: center;
-	max-width: 790px;
-	margin: 0 auto;
+	text-align: left;
   }
 
   .swiper-pagination {
@@ -70,7 +77,6 @@
   &__card {
 	transition: scale 0.4s ease-in;
 	position: relative;
-	flex-shrink: 0;
 	padding: 32px;
 	border-radius: 55px;
 
@@ -95,10 +101,10 @@
   &__items {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	align-items: flex-start;
 	gap: 20px;
 	margin-bottom: 85px;
+	max-width: 370px;
 
 	.text-m {
 	  margin: 0;
@@ -127,6 +133,7 @@
 	top: 30px;
 	left: 30px;
 	z-index: 2;
+	padding-left: 40px;
 
 	&:hover {
 	  scale: (1.1);
