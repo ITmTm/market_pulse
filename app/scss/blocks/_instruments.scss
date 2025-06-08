@@ -43,428 +43,115 @@
 
 
 .instruments-tabs {
-
   padding-bottom: 150px;
 
   .container {
-	background-color: var(--light-grey-color);
-	border-radius: 54px;
-  }
-}
-
-
-.platform-trader {
-  padding-bottom: 150px;
-
-  .container {
-	background-color: var(--light-grey-color);
+	background: var(--light-grey-color) url(../images/instruments-tabs-bg.avif) right 80px bottom 20px / auto no-repeat;;
 	border-radius: 55px;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	min-height: 385px;
+	min-height: 785px;
+  }
+
+  .swiper-btns {
 	position: relative;
-
-	&:before {
-	  content: '';
-	  background: var(--brizz-color) url(../images/platform-trader.svg) center center/ 50px 45px  no-repeat;
-	  position: absolute;
-	  top: -50px;
-	  right: 45px;
-	  width: 100px;
-	  height: 100px;
-	  border-radius: 22px;
-	  padding: 8px 5px;
-	  transform: rotate(10deg);
-	}
-  }
-
-  &__wrapper {
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-  }
-
-  &__text {
-	width: 770px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	text-align: left;
-	gap: 25px;
-
-	.title-l {
-	  color: var(--black-color);
-	}
-
-	.text-m {
-	  color: var(--grey-color);
-	}
-	.btn {
-	  width: 100%;
-	  display: block;
-	}
-  }
-  &__img {
-	img {
-	  position: absolute;
-	  right: 0;
-	  top: -90px;
-	}
-  }
-
-  &__descr {
-	p {
-	  max-width: 610px;
-	  margin-bottom: 10px;
-	}
-  }
-}
-
-
-.platform-mobile {
-  padding-bottom: 150px;
-
-  .container {
-	background-color: var(--light-grey-color);
-	border-radius: 55px;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	min-height: 385px;
-	position: relative;
-
-	&:before {
-	  content: '';
-	  background: var(--brizz-color) url(../images/platform-mobile.svg) center center/ 30px 45px  no-repeat;
-	  position: absolute;
-	  top: -50px;
-	  left: 45px;
-	  width: 100px;
-	  height: 100px;
-	  border-radius: 22px;
-	  padding: 8px 5px;
-	  transform: rotate(10deg);
-	}
-  }
-
-  &__wrapper {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row-reverse;
-	position: relative;
-  }
-
-  &__text {
-	width: 770px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	text-align: left;
-	gap: 25px;
-
-	.title-l {
-	  color: var(--black-color);
-	}
-
-	.text-m {
-	  color: var(--grey-color);
-	}
-	.btn {
-	  width: 100%;
-	  display: block;
-	}
-  }
-  &__img {
-	img {
-	  position: absolute;
-	  left: 0;
-	  top: -90px;
-	}
-  }
-
-  &__descr {
-	p {
-	  max-width: 495px;
-	  margin-bottom: 40px;
-	}
-  }
-}
-
-
-.platform-desktop {
-  padding-bottom: 150px;
-
-  .container {
-	background-color: var(--light-grey-color);
-	border-radius: 55px;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	min-height: 385px;
-	position: relative;
-
-	&:before {
-	  content: '';
-	  background: var(--brizz-color) url(../images/platform-desktop.svg) center center/ 50px 47px  no-repeat;
-	  position: absolute;
-	  top: -50px;
-	  right: 45px;
-	  width: 100px;
-	  height: 100px;
-	  border-radius: 22px;
-	  padding: 8px 5px;
-	  transform: rotate(10deg);
-	}
-  }
-
-  &__wrapper {
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-  }
-
-  &__text {
-	width: 770px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	text-align: left;
-	gap: 25px;
-
-	.title-l {
-	  color: var(--black-color);
-	}
-
-	.text-m {
-	  color: var(--grey-color);
-	}
-	.btn {
-	  width: 100%;
-	  display: block;
-	}
-  }
-  &__img {
-	img {
-	  position: absolute;
-	  width: 508px;
-	  height: 432px;
-	  right: 180px;
-	  top: -90px;
-	}
-  }
-
-  &__descr {
-	p {
-	  max-width: 610px;
-	  margin-bottom: 10px;
-	}
-  }
-}
-
-
-.platform-trading {
-  position: relative;
-  z-index: 3;
-  padding-bottom: 150px;
-
-  .container {
-	min-height: 688px;
-	background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right /auto no-repeat;
-	border-radius: 55px;
-	padding: 65px 40px 32px;
-  }
-
-  .title-l {
-	color: var(--white-color);
+	margin-bottom: 32px;
 	text-align: center;
-	margin-bottom: 40px;
-  }
 
-  &__cards {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	align-items: center;
-	gap: 20px;
-  }
-
-  &__card {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	text-align: left;
-	justify-content: space-between;
-	padding: 25px;
-	max-width: 472px;
-	min-height: 235px;
-	background-color: var(--light-grey-color);
-	border-radius: 22px;
-	gap: 30px 0;
-
-	.text-m {
+	.swiper-slide {
+	  position: relative;
+	  padding: 10px 0;
+	  font-size: 16px;
+	  font-weight: 500;
 	  color: var(--grey-color);
+	  //margin-right: 0 !important;
+	  cursor: pointer;
+	  transition: color 0.3s, border-color 0.3s;
+
+
+	  border-bottom: 3px solid var(--brizz-light-color);
+
+
+	  &.swiper-slide-thumb-active {
+		color: var(--black-color);
+		font-weight: 600;
+		border-bottom-color: var(--purpur-color);
+	  }
+
+	  &:hover {
+		color: var(--brizz-color);
+	  }
 	}
   }
 
-  &__text {
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
-  }
-}
+  .swiper-page {
+	.swiper-slide {
+	  display: flex;
+	  gap: 90px;
 
+	  .swiper-page__content {
+		display: flex;
+		flex-direction: column;
+		max-width: 845px;
+		gap: 65px;
+	  }
 
-.platform-intro {
-  padding-bottom: 150px;
+	  .swiper-page__top {
+		text-align: left;
 
-  .title-l {
-	text-align: center;
-  }
+		.title-l {
+		  margin-bottom: 25px;
+		}
 
-  .swiper-pagination {
-	display: none;
-  }
+		.text-m {
+		  color: var(--grey-color);
+		}
 
-  &__cards {
-	padding: 100px 10px 80px;
-  }
+		p {
+		  margin-bottom: 20px;
+		}
+	  }
 
-  &__card {
-	transition: scale 0.4s ease-in;
-	position: relative;
-	min-height: 357px;
-	padding: 32px;
-	border-radius: 55px;
+	  .swiper-page__bottom {
+		max-width: 815px;
 
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-between;
-	gap: 15px;
+		.title-s {
+		  margin-bottom: 25px;
+		}
 
-	.text-m {
-	  color: var(--black-color);
-	}
+		.text-m {
+		  color: var(--grey-color);
+		}
 
-	&:hover {
-	  scale: (1.1);
-	  z-index: 10;
-	  transition: scale 0.4s ease-in;
-	}
-  }
+		ul {
+		  display: flex;
+		  flex-direction: column;
+		  gap: 10px;
 
-  &__avatars {
-	display: flex;
-	align-items: center;
-	flex-wrap: nowrap;
+		  li {
+			position: relative;
+			padding-left: 25px;
 
-	img {
-	  width: 65px;
-	  height: 65px;
-	  border-radius: 50%;
-	  margin-left: -15px;
-	}
-  }
+			&::before {
+			  content: '';
+			  background: url(../images/arrow-instruments-right.svg) center center / cover no-repeat;
+			  position: absolute;
+			  width: 20px;
+			  height: 20px;
+			  left: 0;
+			  top: 50%;
+			  transform: translateY(-50%);
+			  color: #21B3A3;
+			  font-size: 12px;
 
-  &__descr {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 15px;
-  }
-
-  &__accounts {
-	display: flex;
-	align-items: center;
-	flex-wrap: nowrap;
-
-	img {
-	  width: 64px;
-	  height: 64px;
-	  border-radius: 64px;
-	  margin-left: -15px;
-	}
-  }
-
-  .mod-1 {
-	background-color: var(--light-grey-color);
-	transform: rotate(-10deg);
-	left: 50px;
-
-	&::before {
-	  content: "Шаг 1";
-	  position: absolute;
-	  top: -15px;
-	  left: 30px;
-	  padding: 5px 20px;
-	  border-radius: 30px;
-	  color: var(--white-color);
-	  font-size: 16px;
-	  font-weight: 400;
-	  background: var(--purpur-color);
-	}
-  }
-
-  .mod-2 {
-	background-color: var(--purpur-light-color);
-	transform: rotate(10deg);
-	top: 40px;
-	z-index: 2;
-
-	&::before {
-	  content: "Шаг 2";
-	  position: absolute;
-	  top: -15px;
-	  left: 30px;
-	  padding: 5px 20px;
-	  border-radius: 30px;
-	  color: var(--white-color);
-	  font-size: 16px;
-	  font-weight: 400;
-	  background: var(--purpur-color);
-	}
-  }
-
-  .mod-3 {
-	background-color: var(--light-grey-color);
-	transform: rotate(-10deg);
-	bottom: 30px;
-	right: 10px;
-
-	&::before {
-	  content: "Шаг 3";
-	  position: absolute;
-	  top: -15px;
-	  left: 30px;
-	  padding: 5px 20px;
-	  border-radius: 30px;
-	  color: var(--white-color);
-	  font-size: 16px;
-	  font-weight: 400;
-	  background: var(--purpur-color);
-	}
-  }
-
-  .mod-4 {
-	background-color: var(--brizz-light-color);
-	transform: rotate(10deg);
-	top: 40px;
-	right: 30px;
-
-	&::before {
-	  content: "Шаг 4";
-	  position: absolute;
-	  top: -15px;
-	  left: 30px;
-	  padding: 5px 20px;
-	  border-radius: 30px;
-	  color: var(--white-color);
-	  font-size: 16px;
-	  font-weight: 400;
-	  background: var(--purpur-color);
+			}
+		  }
+		}
+	  }
 	}
   }
 }
 
 
-.platform-invest {
+.instruments-invest {
   padding-bottom: 150px;
 
   .container {
@@ -491,9 +178,17 @@
 
   &__text {
 	margin-bottom: 10px;
+
+	.text-m {
+	  margin-bottom: 5px;
+	  &:last-of-type {
+		margin-bottom: 0;
+	  }
+	}
   }
 
   .btn {
 	width: 700px;
   }
 }
+
