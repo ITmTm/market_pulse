@@ -1,0 +1,237 @@
+.forecasts {
+  padding-bottom: 150px;
+
+  .container {
+	padding-top: 20px;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr;
+	min-height: 425px;
+  }
+
+  &__left {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 160px 30px 30px;
+	background-color: #3BA6B1;
+	border-radius: 50px;
+	gap: 25px;
+	text-align: center;
+	align-items: center;
+  }
+
+  p {
+	text-align: center;
+  }
+
+  &__right {
+	padding: 160px 30px 30px;
+	background: var(--light-grey-color) url(../images/forecasts-bg.avif) center center / auto no-repeat;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 20px;
+  }
+}
+
+
+.forecasts-state {
+  padding-bottom: 150px;
+
+  .title-l {
+	text-align: center;
+	margin-bottom: 25px;
+  }
+
+  .text-m {
+	color: var(--grey-color);
+	text-align: center;
+	max-width: 880px;
+	margin: 0 auto 65px auto;
+  }
+}
+
+.forecasts-intro {
+  padding-bottom: 150px;
+
+  .title-l {
+	text-align: center;
+  }
+
+  .swiper-pagination {
+	display: none;
+  }
+
+  &__cards {
+	padding: 100px 10px 80px;
+  }
+
+  &__card {
+	transition: scale 0.4s ease-in;
+	position: relative;
+	min-height: 357px;
+	padding: 32px;
+	border-radius: 55px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 15px;
+
+	.text-m {
+	  color: var(--black-color);
+	}
+
+	&:hover {
+	  scale: (1.1);
+	  z-index: 10;
+	  transition: scale 0.4s ease-in;
+	}
+  }
+
+  &__avatars {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+
+	img {
+	  width: 65px;
+	  height: 65px;
+	  border-radius: 50%;
+	  margin-left: -15px;
+	}
+  }
+
+  &__descr {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 15px;
+  }
+
+  &__accounts {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+
+	img {
+	  width: 64px;
+	  height: 64px;
+	  border-radius: 64px;
+	  margin-left: -15px;
+	}
+  }
+
+  .mod-1 {
+	background-color: var(--light-grey-color);
+	transform: rotate(-10deg);
+	left: 50px;
+
+	&::before {
+	  content: "Шаг 1";
+	  position: absolute;
+	  top: -15px;
+	  left: 30px;
+	  padding: 5px 20px;
+	  border-radius: 30px;
+	  color: var(--white-color);
+	  font-size: 16px;
+	  font-weight: 400;
+	  background: var(--purpur-color);
+	}
+  }
+
+  .mod-2 {
+	background-color: var(--purpur-light-color);
+	transform: rotate(10deg);
+	top: 40px;
+	z-index: 2;
+
+	&::before {
+	  content: "Шаг 2";
+	  position: absolute;
+	  top: -15px;
+	  left: 30px;
+	  padding: 5px 20px;
+	  border-radius: 30px;
+	  color: var(--white-color);
+	  font-size: 16px;
+	  font-weight: 400;
+	  background: var(--purpur-color);
+	}
+  }
+
+  .mod-3 {
+	background-color: var(--light-grey-color);
+	transform: rotate(-10deg);
+	bottom: 30px;
+	right: 10px;
+
+	&::before {
+	  content: "Шаг 3";
+	  position: absolute;
+	  top: -15px;
+	  left: 30px;
+	  padding: 5px 20px;
+	  border-radius: 30px;
+	  color: var(--white-color);
+	  font-size: 16px;
+	  font-weight: 400;
+	  background: var(--purpur-color);
+	}
+  }
+
+  .mod-4 {
+	background-color: var(--brizz-light-color);
+	transform: rotate(10deg);
+	top: 40px;
+	right: 30px;
+
+	&::before {
+	  content: "Шаг 4";
+	  position: absolute;
+	  top: -15px;
+	  left: 30px;
+	  padding: 5px 20px;
+	  border-radius: 30px;
+	  color: var(--white-color);
+	  font-size: 16px;
+	  font-weight: 400;
+	  background: var(--purpur-color);
+	}
+  }
+}
+
+
+.forecasts-invest {
+  padding-bottom: 150px;
+
+  .container {
+	background: var(--purpur-color) url(../images/invest-bg.avif) center center / cover no-repeat;
+	border-radius: 54px;
+	padding: 80px 250px 150px;
+  }
+
+  &__wrapper {
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+
+	.title-l {
+	  color: var(--white-color);
+	}
+
+	.text-m {
+	  max-width: 510px;
+	}
+  }
+
+  .btn {
+	width: 700px;
+  }
+}
