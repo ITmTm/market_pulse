@@ -32,6 +32,7 @@ makeSwiper('.conditions-tariffs__cards',    '.swiper-pagination.conditions-tarif
 makeSwiper('.conditions-intro__cards',    '.swiper-pagination.conditions-info__cards', true);
 makeSwiper('.platform-intro__cards',    '.swiper-pagination.platform-info__cards', true);
 makeSwiper('.forecasts-intro__cards',    '.swiper-pagination.forecasts-intro__cards', true);
+makeSwiper('.news-intro__cards',    '.swiper-pagination.news-intro__cards', true);
 
 /* --- documents.html (или другая страница) --- */
 makeSwiper('.documents-intro__cards','.swiper-pagination.documents-intro__cards', false);
