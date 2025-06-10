@@ -26,13 +26,8 @@
   }
 
   &__right {
-	padding: 160px 30px 30px;
 	background: var(--light-grey-color) url(../images/overview-bg.avif) right 70px bottom / auto no-repeat;
 	border-radius: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	gap: 20px;
   }
 }
 
