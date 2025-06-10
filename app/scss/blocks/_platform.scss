@@ -6,7 +6,7 @@
 	display: grid;
 	gap: 20px;
 	grid-template-columns: 1fr 1fr;
-	min-height: 380px;
+	height: 380px;
   }
 
   &__left {
@@ -26,18 +26,9 @@
 	text-align: center;
   }
 
-  .btn {
-	display: block;
-  }
-
   &__right {
-	padding: 160px 30px 30px;
 	background: var(--light-grey-color) url(../images/platform-bg.avif) 75% bottom / contain no-repeat;
 	border-radius: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	gap: 20px;
   }
 }
 
@@ -50,7 +41,7 @@
 	border-radius: 55px;
 	padding-top: 32px;
 	padding-bottom: 32px;
-	min-height: 385px;
+	height: 385px;
 	position: relative;
 
 	&:before {
@@ -69,7 +60,7 @@
 
   &__wrapper {
 	display: flex;
-	justify-content: space-between;
+	gap: 60px;
 	position: relative;
   }
 
@@ -95,9 +86,7 @@
   }
   &__img {
 	img {
-	  position: absolute;
-	  right: 0;
-	  top: -90px;
+	  margin-top: -80px;
 	}
   }
 
@@ -118,7 +107,7 @@
 	border-radius: 55px;
 	padding-top: 32px;
 	padding-bottom: 32px;
-	min-height: 385px;
+	height: 380px;
 	position: relative;
 
 	&:before {
@@ -131,7 +120,7 @@
 	  height: 100px;
 	  border-radius: 22px;
 	  padding: 8px 5px;
-	  transform: rotate(10deg);
+	  transform: rotate(-10deg);
 	}
   }
 
@@ -139,7 +128,6 @@
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row-reverse;
-	position: relative;
   }
 
   &__text {
@@ -164,9 +152,7 @@
   }
   &__img {
 	img {
-	  position: absolute;
-	  left: 0;
-	  top: -90px;
+	  margin-top: -90px;
 	}
   }
 
@@ -187,7 +173,7 @@
 	border-radius: 55px;
 	padding-top: 32px;
 	padding-bottom: 32px;
-	min-height: 385px;
+	height: 380px;
 	position: relative;
 
 	&:before {
@@ -206,7 +192,7 @@
 
   &__wrapper {
 	display: flex;
-	justify-content: space-between;
+	gap: 70px;
 	position: relative;
   }
 
@@ -232,11 +218,9 @@
   }
   &__img {
 	img {
-	  position: absolute;
 	  width: 508px;
 	  height: 432px;
-	  right: 180px;
-	  top: -90px;
+	  margin-top: -90px;
 	}
   }
 
@@ -281,8 +265,7 @@
 	text-align: left;
 	justify-content: space-between;
 	padding: 25px;
-	max-width: 472px;
-	min-height: 235px;
+	min-height: 245px;
 	background-color: var(--light-grey-color);
 	border-radius: 22px;
 	gap: 30px 0;
