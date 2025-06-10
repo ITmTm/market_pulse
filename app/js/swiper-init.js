@@ -2,21 +2,21 @@
  *  mobileOnly = true  → на десктопе спит (enabled:false)
  *  mobileOnly = false → активен и на десктопе
  */
-function makeSwiper(rootSel, pagSel, mobileOnly = false, desktopSlides = 4) {
+function makeSwiper(rootSel, pagSel, mobileOnly = false, desktopSlides = 4, loop = true, centered = false) {
 	const root = document.querySelector(rootSel);
 	if (!root) return;                       // на этой странице блока нет
 
 	new Swiper(root, {
 		slidesPerView: 'auto',
 		spaceBetween: 20,
-		loop: true,		// бесконечный цикл (переключение слайдеров)
+		loop: loop,		// бесконечный цикл (переключение слайдеров)
 		pagination: { el: pagSel, clickable: true },
 
 		breakpoints: {
 			992: {
 				enabled: !mobileOnly,              // главное условие
 				slidesPerView: desktopSlides,
-				loop: true,
+				centeredSlides: centered,			   // Отвечает за центрирование
 				allowTouchMove: !mobileOnly,
 				keyboard:   { enabled: !mobileOnly },
 				a11y:       { enabled: !mobileOnly },
@@ -35,7 +35,7 @@ makeSwiper('.forecasts-intro__cards',    '.swiper-pagination.forecasts-intro__ca
 makeSwiper('.news-intro__cards',    '.swiper-pagination.news-intro__cards', true);
 
 /* --- documents.html (или другая страница) --- */
-makeSwiper('.documents-intro__cards','.swiper-pagination.documents-intro__cards', false);
+makeSwiper('.documents-intro__cards','.swiper-pagination.documents-intro__cards', false , 4, false, true);
 
 
 /* --- instruments.html --- */		// Универсальная обобщенная функция, подходит если используется связка в других местах
