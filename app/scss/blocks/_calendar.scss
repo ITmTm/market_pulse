@@ -1,4 +1,4 @@
-.economic {
+.calendar {
   padding-bottom: 150px;
 
   .container {
@@ -22,22 +22,18 @@
   }
 
   p {
+	max-width: 560px;
 	text-align: center;
   }
 
   &__right {
-	padding: 160px 30px 30px;
 	background: var(--light-grey-color) url(../images/economic-bg.avif) bottom right -15px / auto no-repeat;
 	border-radius: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	gap: 20px;
   }
 }
 
 
-.economic-state {
+.calendar-state {
   padding-bottom: 150px;
 
   .title-l {
@@ -54,7 +50,7 @@
 }
 
 
-.economic-trading {
+.calendar-trading {
   position: relative;
   z-index: 3;
   padding-bottom: 150px;
@@ -92,8 +88,7 @@
 	text-align: left;
 	justify-content: space-between;
 	padding: 25px;
-	max-width: 472px;
-	min-height: 235px;
+	min-height: 245px;
 	background-color: var(--light-grey-color);
 	border-radius: 22px;
 	gap: 30px 0;
@@ -101,7 +96,7 @@
 }
 
 
-.economic-invest {
+.calendar-invest {
   padding-bottom: 150px;
 
   .container {
