@@ -20,22 +20,9 @@
 	text-align: center;
   }
 
-  p {
-	margin-bottom: 40px;
-  }
-
-  .btn {
-	display: block;
-  }
-
   &__right {
-	padding: 160px 30px 30px;
 	background: var(--light-grey-color) url(../images/documents-bg.avif) 75% bottom / contain no-repeat;
 	border-radius: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	gap: 20px;
   }
 }
 
@@ -49,6 +36,11 @@
 
   &__cards {
 	padding: 25px 0;
+	overflow: visible;
+  }
+
+  .swiper-wrapper {
+	justify-content: center;
   }
 
   &__card {
