@@ -5,7 +5,9 @@ const concat = require('gulp-concat'); // объединение файлов
 const uglify = require('gulp-uglify-es').default; //используется для минификации js
 const browserSync = require('browser-sync').create(); // запускает локальный сервер
 const autoprefixer = require('gulp-autoprefixer'); // приводит css к кроcсбраузерности
-const clean = require('gulp-clean'); // удаление папок
+const del = require('del'); // удаление папок
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
 
 const merge = require('merge-stream'); // одновременно запускать три "ветки" обработки
 const svgmin = require('gulp-svgmin'); // оптимизация .svg
@@ -17,6 +19,8 @@ const newer = require('gulp-newer'); // кэш
 const svgSprite = require('gulp-svg-sprite'); // объединение svg картинок в 1 файл
 const include = require('gulp-include'); // подключение html к html
 const typograf = require('gulp-typograf'); //расставляет неразрывные пробелы в нужных местах
+const fs = require('fs');   // проверка на существование файла
+const sourcemaps = require('gulp-sourcemaps');
 
 function resources() {
     return src('app/upload/**/*')
@@ -118,14 +122,8 @@ function scripts() {
         'node_modules/jquery/dist/jquery.js',
         'node_modules/jquery-ui/dist/jquery-ui.js',
         'node_modules/swiper/swiper-bundle.js',
-        'app/js/swiper-init.js', // инициализация свайпера
-        'app/js/accordion.js', // аккордеоны
-        'app/js/cookie.js', // уведомление о куки
-        'app/js/menu.js', // меню хедера
-        'app/js/table.js', // таблица с табами
-        'app/js/title.js', // установка title
-        'app/js/up-btn.js', // кнопка наверх
-        'app/js/main.js' // основной файл javascript
+        'app/js/**/*.js',
+        '!app/js/main.min.js',
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify({
@@ -138,28 +136,40 @@ function scripts() {
 
 function styles() {
     return src('app/scss/style.scss')
+        .pipe(plumber({
+            errorHandler: notify.onError({
+                title: 'SCSS Error',
+                message: 'Error: <% error.message %>'
+            })
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(autoprefixer({ overrideBrowserslist: ['last 10 version'] }))
         .pipe(concat('style.min.css'))
-
-        // без минификации
-        // .pipe(scss({
-        //     outputStyle: 'expanded'
-        // }))
-
-        // с минификацией
-        .pipe(scss({
-            outputStyle: 'compressed'
-        }))
-
+        .pipe(sourcemaps.write('.'))
         .pipe(dest('app/css'))
         .pipe(browserSync.stream())
 }
 
 function watching() {
+    const path = require('path');
+
+
     browserSync.init({
         server: {
-            baseDir: 'app/'
-        }
+            baseDir: 'app/',
+            middleware: function (req, res, next) {
+                const filePath = path.join(__dirname, 'app', req.url === '/' ? 'index.html' : req.url);
+
+                if (!fs.existsSync(filePath)) {
+                    req.url = '/404.html';
+                }
+
+                return next();
+            }
+        },
+        ghostMode: false,
+
     });
     watch(['app/scss/**/*.scss'], styles);
     watch('app/images/src/**/*.*', images);                            // было watch(['app/images/src'], images)
@@ -170,8 +180,7 @@ function watching() {
 }
 
 function cleanDist() {
-    return src('dist')
-        .pipe(clean())
+    return del.deleteAsync(['dist/**', '!dist']);
 }
 
 function building() {
@@ -184,7 +193,9 @@ function building() {
         // 'app/images/sprite.svg',
         'app/js/main.min.js',
         'app/*.html',
-        'app/upload/**/*'
+        'app/upload/**/*',
+        'app/web.config',
+        // 'app/favicon.png',
     ], { base: 'app' })
         .pipe(dest('dist'))
 }
