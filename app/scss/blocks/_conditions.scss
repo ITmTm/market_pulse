@@ -26,18 +26,9 @@
 	text-align: center;
   }
 
-  .btn {
-	display: block;
-  }
-
   &__right {
-	padding: 160px 30px 30px;
 	background: var(--light-grey-color) url(../images/conditions-bg.avif) 75% bottom / contain no-repeat;
 	border-radius: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	gap: 20px;
   }
 }
 
@@ -180,37 +171,51 @@
   }
 
   &__right {
-	padding: 65px 30px 30px;
+	padding: 65px 30px;
 	background-color: var(--light-grey-color);
 	border-radius: 50px;
 	display: flex;
 	flex-direction: column;
 	gap: 35px;
+  }
 
-	&-text {
-	  display: flex;
-	  flex-direction: column;
-	  gap: 20px;
-	  text-align: left;
+  &__list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	text-align: left;
 
-	  .text-m {
-		color: var(--grey-color);
-		margin-bottom: 0;
-	  }
-	}
-
-	&-items {
-	  display: flex;
-	  gap: 15px;
-	  justify-content: flex-start;
-	  align-items: center;
-
-	  img {
-		width: 20px;
-		height: 20px;
-	  }
+	.text-m {
+	  color: var(--grey-color);
+	  margin-bottom: 0;
 	}
   }
+
+  &__item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	&:before {
+	  content: "";
+	  flex: 0 0 20px;
+	  height: 20px;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  background-size: cover;
+	}
+  }
+
+  .is-protected::before { background-image: url(../images/conditions-market-protected.svg); }
+  .is-regulation::before { background-image: url(../images/conditions-market-regulation.svg); }
+  .is-platform::before { background-image: url(../images/conditions-market-platform.svg); }
+  .is-tools::before { background-image: url(../images/conditions-market-tools.svg); }
+  .is-spread::before { background-image: url(../images/conditions-market-spread.svg); }
+  .is-order::before { background-image: url(../images/conditions-market-order.svg); }
+  .is-support::before { background-image: url(../images/conditions-market-support.svg); }
+  .is-training::before { background-image: url(../images/conditions-market-training.svg); }
+  .is-funds::before { background-image: url(../images/conditions-market-funds.svg); }
+  .is-personal::before { background-image: url(../images/conditions-market-personal.svg); }
 }
 
 
