@@ -19,22 +19,10 @@
     text-align: center;
   }
 
-  p {
-    margin-bottom: 40px;
-  }
-
-  .btn {
-    display: block;
-  }
 
   &__right {
-    padding: 160px 30px 30px;
     background: var(--light-grey-color)  url(../images/contacts-bg.avif) 75% bottom / contain no-repeat;
     border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 20px;
   }
 }
 
@@ -48,7 +36,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 150px;
-    min-height: 688px;
     background: var(--brizz-color) url(../images/contacts-trading-bg.avif) center center /cover no-repeat;
     border-radius: 55px;
     padding: 65px 40px 32px;
