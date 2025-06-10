@@ -20,8 +20,7 @@ if (!document.title) {
             document.title = title;
             break;
 
-        case '/terms.html':
-        case '/terms-of-trade.html':
+        case '/conditions.html':
             title = lang == 'ru' ? 'Условия торговли' : 'Trading terms';
             document.title = title;
             break;
