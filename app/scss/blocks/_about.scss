@@ -152,18 +152,18 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    align-items: start;
     gap: 60px;
     margin-top: 95px;
   }
 
   &__card {
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    max-width: 410px;
     border-radius: 22px;
     gap: 15px;
   }
