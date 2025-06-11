@@ -58,7 +58,7 @@ function makeLinkedSwipers(tabsSelector, contentSelector) {
 	// разрешение свайпа только на мобилках
 	const allowTouch = !isDesktop;
 
-	const swiperBtns = new Swiper(tabsSelector, {
+	const swiperBtns = new Swiper(tabs, {
 		slidesPerView: 5,
 		spaceBetween: 10,
 		watchSlidesProgress: true,
@@ -79,7 +79,7 @@ function makeLinkedSwipers(tabsSelector, contentSelector) {
 
 	});
 
-	const swiperPage = new Swiper(contentSelector, {
+	const swiperPage = new Swiper(pages, {
 		spaceBetween: 100,
 		thumbs: {
 			swiper: swiperBtns,
