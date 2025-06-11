@@ -39,14 +39,10 @@
 	overflow: visible;
   }
 
-  .swiper-wrapper {
-	justify-content: center;
-  }
-
   &__card {
 	position: relative;
+	width: 430px;
 	min-height: 242px;
-	width: 430px !important;
 	padding: 32px 24px;
 	border-radius: 55px;
 
