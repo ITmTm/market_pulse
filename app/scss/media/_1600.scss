@@ -1,3 +1,15 @@
 @media (max-width: 1600px) {
+  .trading,
+  .bonuses,
+  .invest {
+	padding: 0 40px 150px;
+  }
 
+  .footer {
+	padding: 0 40px 32px;
+
+	.menu {
+	  gap: 30px;
+	}
+  }
 }
