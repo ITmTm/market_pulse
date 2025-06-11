@@ -40,7 +40,7 @@ body {
 
 .cookies {
   display: none;
-  align-items: flex-start;
+  align-items: center;
   position: fixed;
   z-index: 10;
   bottom: 40px;
@@ -51,7 +51,7 @@ body {
   gap: 20px;
   background: var(--black-color);
   color: var(--white-color);
-  padding: 25px;
+  padding: 20px 15px;
   border-radius: 5px;
 
   p {
