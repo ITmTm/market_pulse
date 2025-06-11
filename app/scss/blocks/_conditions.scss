@@ -110,12 +110,6 @@
 	transform: rotate(10deg);
 	left: 50px;
 	top: 40px;
-
-	&:hover {
-	  scale: (1.1);
-	  z-index: 300;
-	  transition: scale 0.4s ease-in;
-	}
   }
 
   .mod-2 {
@@ -125,12 +119,6 @@
 	left: 30px;
 	z-index: 2;
 	padding-left: 40px;
-
-	&:hover {
-	  scale: (1.1);
-	  z-index: 300;
-	  transition: scale 0.4s ease-in;
-	}
   }
 
   .mod-3 {
@@ -138,12 +126,6 @@
 	transform: rotate(10deg);
 	top: 40px;
 	z-index: 3;
-
-	&:hover {
-	  scale: (1.1);
-	  z-index: 300;
-	  transition: scale 0.4s ease-in;
-	}
   }
 }
 
@@ -249,12 +231,6 @@
 
 	.text-m {
 	  color: var(--black-color);
-	}
-
-	&:hover {
-	  scale: (1.1);
-	  z-index: 10;
-	  transition: scale 0.4s ease-in;
 	}
   }
 
