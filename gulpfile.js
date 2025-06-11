@@ -195,7 +195,7 @@ function building() {
         'app/*.html',
         'app/upload/**/*',
         'app/web.config',
-        // 'app/favicon.png',
+        'app/favicon.png',
     ], { base: 'app' })
         .pipe(dest('dist'))
 }
