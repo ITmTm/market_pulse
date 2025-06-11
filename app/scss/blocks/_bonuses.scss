@@ -11,6 +11,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 50px;
   }
 
   &__text {
@@ -21,6 +22,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     margin-top: 32px;
+    gap: 30px;
 
     .title-l {
       color: var(--white-color);
