@@ -133,7 +133,7 @@ if (!document.title) {
             break;
 
         default:
-            document.title = 'Нужно установить title';
+            document.title = '';
             break;
     }
 }
