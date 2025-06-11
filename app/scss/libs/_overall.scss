@@ -68,9 +68,10 @@ body {
     padding: 10px 30px;
     font-size: 14px;
     color: var(--black-color);
-    &:hover {
-      background: var(--purpur-light-color);
-    }
+  }
+
+  &--close {
+    font-size: 55px;
   }
 }
 
@@ -130,11 +131,6 @@ body {
   &-white {
     color: var(--black-color);
     background: var(--white-color);
-    &:hover {
-      background: #bd0cb6;
-      color: var(--white-color);
-      transition: .5s ease-out;
-    }
     &:disabled {
       background: #ffe8fe;
       color: var(--purpur-color);
@@ -143,10 +139,6 @@ body {
   &-purpure {
     background: var(--purpur-color);
     color:  var(--white-color);
-    &:hover {
-      background: #bd0cb6;
-      transition: .5s ease-out;
-    }
     &:disabled {
       background: #ffe8fe;
       color: var(--purpur-color);
@@ -158,10 +150,6 @@ body {
     padding: 20px;
     border-radius: 50px;
     background: var(--white-color) url(../images/circle-button-arrow-black.svg) center center / 24px 24px no-repeat;
-    &:hover {
-      background: #bd0cb6 url(../images/circle-button-arrow-white.svg) center center / 24px 24px no-repeat;
-      transition: .5s ease-out;
-    }
     &:disabled {
       background: #ffe8fe url(../images/circle-button-arrow-purpur.svg) center center / contain no-repeat;
       transition: .5s ease-out;
