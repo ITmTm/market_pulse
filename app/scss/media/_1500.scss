@@ -1,3 +1,11 @@
 @media (max-width: 1500px) {
-
+  .bonuses {
+	&__descr {
+	  .text-m {
+		&:last-of-type {
+		  margin-bottom: 40px;
+		}
+	  }
+	}
+  }
 }
