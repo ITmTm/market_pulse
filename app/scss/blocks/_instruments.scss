@@ -6,7 +6,7 @@
 	display: grid;
 	gap: 20px;
 	grid-template-columns: 1fr 1fr;
-	min-height: 380px;
+	min-height: 425px;
   }
 
   &__left {
@@ -36,8 +36,11 @@
   padding-bottom: 150px;
 
   .container {
-	background: var(--light-grey-color) url(../images/instruments-tabs-bg.avif) right 80px bottom 20px / auto no-repeat;;
 	border-radius: 55px;
+	background-position: right 80px bottom 20px;
+	background-size: 450px 513px;
+	background-color: var(--light-grey-color);
+	background-repeat: no-repeat;
 	min-height: 785px;
   }
 
@@ -67,8 +70,6 @@
 	  color: var(--grey-color);
 	  cursor: pointer;
 	  transition: color .3s;
-
-	  &:hover { color: var(--brizz-color); }
 
 	  &.swiper-slide-thumb-active {
 		color: var(--black-color);

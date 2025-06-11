@@ -52,10 +52,6 @@
         backdrop-filter: blur(2px);
         transition: .5s ease-in background;
         display: block;
-        &:hover {
-          background: rgba(168, 139, 139, 0.3);
-          transition: .5s ease-in-out background;
-        }
       }
 
       &--lang {
@@ -87,28 +83,6 @@
         white-space: nowrap;
         color: var(--white-color);
         opacity: 0;
-      }
-
-      &:hover {
-        &>.sub-menu {
-          visibility: visible;
-          opacity: 1;
-
-
-          &>.menu-item {
-            a {
-              font-size: 18px;
-              font-weight: 400;
-              white-space: nowrap;
-              transition: .5s ease-in all;
-
-              &:hover {
-                color: var(--brizz-light-color);
-                transition: .5s ease-in-out all ;
-              }
-            }
-          }
-        }
       }
     }
 
