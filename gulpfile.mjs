@@ -1,6 +1,6 @@
 // Получение __dirname в gulpfile.mjs
 import { fileURLToPath } from 'url';
-import path from 'path';
+import path from 'path';                                // утилиты для работы с путями
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -9,22 +9,18 @@ const __dirname = path.dirname(__filename);
 import gulp from "gulp";
 const { src, dest, watch, parallel, series } = gulp;
 
+
 // ————————————————————————————————————————————
 // ПЛАГИНЫ ДЛЯ СТИЛЕЙ
 // ————————————————————————————————————————————
 
 import gulpSass from "gulp-sass";
 import * as dartSass from "sass";
-const scss = gulpSass(dartSass);
+const scss = gulpSass(dartSass);                        // компиляция SCSS → CSS через Dart Sass
 
-import autoprefixer from "gulp-autoprefixer";
-import sourcemaps from "gulp-sourcemaps";
-import concat from "gulp-concat";
-
-// const scss = require('gulp-sass')(require('sass'));                         	// компиляция SCSS → CSS через Dart Sass
-// const autoprefixer = require('gulp-autoprefixer');      		// проставляет вендорные префиксы для CSS
-// const sourcemaps = require('gulp-sourcemaps');                    		// генерирует sourcemaps для отладки стилей
-// const concat = require('gulp-concat');             		// объединяет несколько файлов в один
+import autoprefixer from "gulp-autoprefixer";           // проставляет вендорные префиксы для CSS
+import sourcemaps from "gulp-sourcemaps";               // генерирует sourcemaps для отладки стилей
+import concat from "gulp-concat";                       // объединяет несколько файлов в один
 
 
 // ————————————————————————————————————————————
@@ -32,14 +28,10 @@ import concat from "gulp-concat";
 // ————————————————————————————————————————————
 
 import uglify from 'gulp-uglify-es';
-const uglifyJs = uglify.default;
+const uglifyJs = uglify.default;                        // минификация JavaScript
 
-import plumber from "gulp-plumber";
-import gulpNotify from "gulp-notify";
-
-// const uglify = require('gulp-uglify-es').default;                       		// минификация JavaScript
-// const plumber = require('gulp-plumber');             		// предотвращает падение потока при ошибках
-// const gulpNotify = require('gulp-notify');                          		// пуш-уведомления об ошибках в процессе сборки
+import plumber from "gulp-plumber";                     // предотвращает падение потока при ошибках
+import gulpNotify from "gulp-notify";                   // пуш-уведомления об ошибках в процессе сборки
 
 
 // ————————————————————————————————————————————
@@ -47,52 +39,36 @@ import gulpNotify from "gulp-notify";
 // ————————————————————————————————————————————
 
 import browserSyncPkg from "browser-sync";
-const browserSync = browserSyncPkg.create();
-// const browserSync = require('browser-sync').create();              		// запускает локальный сервер и обновляет страницу в браузере
+const browserSync = browserSyncPkg.create();      // запускает локальный сервер и обновляет страницу в браузере
 
 
 // ————————————————————————————————————————————
 // АРХИВЫ, ФАЙЛЫ И ПАПКИ
 // ————————————————————————————————————————————
 
-import fs from "fs";
-
-
-// const del = require('del');                                        		// удаление файлов/папок
-// const fs = require('fs');                                          		// работа с файловой системой (проверка существования)
+import fs from "fs";                                  // работа с файловой системой (проверка существования)
+import { deleteAsync } from "del";                    // удаление файлов/папок
 
 
 // ————————————————————————————————————————————
 // ОПТИМИЗАЦИЯ И КОНВЕРТАЦИЯ ИЗОБРАЖЕНИЙ
 // ————————————————————————————————————————————
 
-import newer from "gulp-newer";
-import imagemin from "gulp-imagemin";
-import avif from "gulp-avif";
-import webp from 'gulp-webp';
-import svgmin from "gulp-svgmin";
-import merge from 'merge-stream';
-import svgSprite from "gulp-svg-sprite";
-
-// const newer = require('gulp-newer');                     // обрабатывать только новые/изменённые файлы
-// const imagemin = require('gulp-imagemin');               // сжатие PNG, JPG, GIF
-// const avif = require('gulp-avif');                          // конвертация в AVIF
-// const webp = require('gulp-webp');                          // конвертация в WebP
-// const svgmin = require('gulp-svgmin');                      // минификация  SVG
-// const merge = require('merge-stream');            // объединение нескольких потоков в один
-// const svgSprite = require('gulp-svg-sprite');    // сборка SVG-спрайта из отдельных иконок
+import newer from "gulp-newer";                       // обрабатывать только новые/изменённые файлы
+import imagemin from "gulp-imagemin";                 // сжатие PNG, JPG, GIF
+import avif from "gulp-avif";                         // конвертация в AVIF
+import webp from 'gulp-webp';                         // конвертация в WebP
+import svgmin from "gulp-svgmin";                     // минификация  SVG
+import merge from 'merge-stream';                     // объединение нескольких потоков в один
+import svgSprite from "gulp-svg-sprite";              // сборка SVG-спрайта из отдельных иконок
 
 
 // ————————————————————————————————————————————
 // ИНКЛЮДЫ И ТИПОГРАФИКА В HTML
 // ————————————————————————————————————————————
 
-import include from "gulp-include";
-import typograf from "gulp-typograf";
-
-// const include = require('gulp-include');        			// вставка частей HTML (шаблонизация)
-// const typograf = require('gulp-typograf');				// автоматическая типографика (расстановка кавычек, тире, nbsp)
-// const path = require('path');      							// утилиты для работы с путями
+import include from "gulp-include";                  // вставка частей HTML (шаблонизация)
+import typograf from "gulp-typograf";                // автоматическая типографика (расстановка кавычек, тире, nbsp)
 
 
 // ————————————————————————————————————————————
@@ -271,12 +247,12 @@ function styles() {
         })
       }))
       .pipe(sourcemaps.init())
-      .pipe(scss({ outputStyle: 'compressed' }))        // сжатый CSS
+      .pipe(scss({ outputStyle: 'compressed' }))      // сжатый CSS
       .pipe(autoprefixer({
         overrideBrowserslist: [ 'last 10 version' ]
       }))
       .pipe(concat('style.min.css'))                    // итоговый файл стилей
-      .pipe(sourcemaps.write('.'))                    // записать карты
+      .pipe(sourcemaps.write('.'))                  // записать карты
       .pipe(dest(paths.styles.dest))
       .pipe(browserSync.stream())
 }
@@ -285,8 +261,7 @@ function styles() {
 // 7. Очистка папки dist перед билдом
 async function cleanDist() {
   // полностью очищаем папку dist, но не удаляем саму папку
-  const del = (await import('del')).default;
-  await del.deleteAsync([ `${ paths.dist }/**`, `!${ paths.dist }` ]);
+  await deleteAsync([ `${ paths.dist }/**`, `!${ paths.dist }` ]);
 }
 
 
@@ -325,19 +300,10 @@ function building() {
 
 
 // Экспортируем публичные задачи
-export { styles, images, pages, sprite, scripts, resources, cleanDist as clean }
+export { styles, images, pages, sprite, scripts, resources, cleanDist}
 
 // Команда `gulp build` для production
 export const build = series(cleanDist, parallel(styles, images, scripts, pages, sprite, resources), building);
-// exports.build = series(
-//     cleanDist,
-//     parallel(styles, images, scripts, pages, sprite, resources),
-//     building
-// );
 
 // По умолчанию — сборка + слежка
 export default series(parallel(styles, images, scripts, pages, sprite), watching);
-// exports.default = series(
-//     parallel(styles, images, scripts, pages, sprite),
-//     watching
-// );
