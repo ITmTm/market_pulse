@@ -41,7 +41,7 @@ makeSwiper('.documents-intro__cards', '.swiper-pagination.documents-intro__cards
 /* --- instruments.html --- */		// Универсальная обобщенная функция, подходит если используется связка в других местах
 function makeLinkedSwipers(tabsSelector, contentSelector) {
 	const section = document.querySelector('.instruments-tabs');
-	const container = document.querySelector('.instruments-tabs .container');
+	const container = document.querySelector('.instruments-tabs__container');
 	const tabs = document.querySelector(tabsSelector);
 	const pages = document.querySelector(contentSelector);
 	if (!tabs || !pages || !container || !pages) return;
