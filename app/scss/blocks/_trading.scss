@@ -3,7 +3,7 @@
   z-index: 3;
   padding-bottom: 150px;
 
-  .container {
+  &__container {
     background: var(--brizz-color) url(../images/trading.avif) top right / 805px 506px no-repeat;
     border-radius: 55px;
 
