@@ -351,7 +351,7 @@
 .conditions-invest {
   padding-bottom: 150px;
 
-  .container {
+  &__container {
 	background: var(--purpur-color) url(../images/invest-bg.avif) center center / cover no-repeat;
 	border-radius: 54px;
 	padding: 80px 250px 150px;
