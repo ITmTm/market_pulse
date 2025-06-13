@@ -102,7 +102,7 @@
 .documents-trading {
   padding-bottom: 150px;
 
-  .container {
+  &__container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 150px;
