@@ -35,13 +35,14 @@
 .instruments-tabs {
   padding-bottom: 150px;
 
-  .container {
+  &__container {
 	border-radius: 55px;
 	background-position: right 80px bottom 20px;
 	background-size: 450px 513px;
 	background-color: var(--light-grey-color);
 	background-repeat: no-repeat;
 	min-height: 785px;
+	overflow: hidden;
   }
 
   .swiper-wrapper {
@@ -50,7 +51,7 @@
 
   .swiper-btns {
 	position: relative;
-	margin: 0 -40px 32px;
+	margin: 0 0 32px;
 	text-align: center;
 
 	&::before {
@@ -91,6 +92,7 @@
 
   .swiper-page {
 	.swiper-slide {
+	  padding-left: 32px;
 	  display: flex;
 	  gap: 90px;
 
@@ -161,7 +163,7 @@
 .instruments-invest {
   padding-bottom: 150px;
 
-  .container {
+  &__container {
 	background: var(--purpur-color) url(../images/invest-bg.avif) center center / cover no-repeat;
 	border-radius: 54px;
 	padding: 80px 250px 150px;
