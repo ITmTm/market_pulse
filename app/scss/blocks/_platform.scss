@@ -36,12 +36,10 @@
 .platform-trader {
   padding-bottom: 150px;
 
-  .container {
+  &__container {
 	background-color: var(--light-grey-color);
 	border-radius: 55px;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	height: 385px;
+	max-height: 385px;
 	position: relative;
 
 	&:before {
@@ -69,6 +67,8 @@
 	flex-direction: column;
 	align-items: flex-start;
 	text-align: left;
+	padding-top: 65px;
+	padding-left: 32px;
 	gap: 25px;
 
 	.title-l {
@@ -85,7 +85,7 @@
   }
   &__img {
 	img {
-	  margin-top: -80px;
+	  margin-top: -45px;
 	}
   }
 
@@ -101,13 +101,11 @@
 .platform-mobile {
   padding-bottom: 150px;
 
-  .container {
+  &__container {
 	background-color: var(--light-grey-color);
 	border-radius: 55px;
-	padding-top: 32px;
-	padding-bottom: 32px;
 	position: relative;
-	height: 380px;
+	max-height: 380px;
 
 	&:before {
 	  content: '';
@@ -131,6 +129,7 @@
   &__text {
 	width: 770px;
 	display: flex;
+	padding-top: 65px;
 	flex-direction: column;
 	align-items: flex-start;
 	text-align: left;
@@ -146,7 +145,7 @@
   }
   &__img {
 	img {
-	  margin-top: -90px;
+	  margin-top: -55px;
 	}
   }
 
@@ -171,11 +170,9 @@
 .platform-desktop {
   padding-bottom: 150px;
 
-  .container {
+  &__container {
 	background-color: var(--light-grey-color);
 	border-radius: 55px;
-	padding-top: 32px;
-	padding-bottom: 32px;
 	height: 380px;
 	position: relative;
 
@@ -194,7 +191,7 @@
 
   &__wrapper {
 	display: flex;
-	gap: 70px;
+	gap: 20px;
 	position: relative;
   }
 
@@ -204,6 +201,8 @@
 	flex-direction: column;
 	align-items: flex-start;
 	text-align: left;
+	padding-top: 65px;
+	padding-left: 32px;
 	gap: 25px;
 
 	.title-l {
@@ -222,7 +221,7 @@
 	img {
 	  width: 508px;
 	  height: 432px;
-	  margin-top: -90px;
+	  margin-top: -55px;
 	}
   }
 
@@ -240,7 +239,7 @@
   z-index: 3;
   padding-bottom: 150px;
 
-  .container {
+  &__container {
 	min-height: 688px;
 	background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right /auto no-repeat;
 	border-radius: 55px;
@@ -435,7 +434,7 @@
 .platform-invest {
   padding-bottom: 150px;
 
-  .container {
+  &__container {
 	background: var(--purpur-color) url(../images/invest-bg.avif) center center / cover no-repeat;
 	border-radius: 54px;
 	padding: 80px 250px 150px;
