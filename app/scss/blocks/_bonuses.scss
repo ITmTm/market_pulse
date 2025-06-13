@@ -1,11 +1,10 @@
 .bonuses {
   padding-bottom: 150px;
 
-  .container {
+  &__container {
     background-color: var(--brizz-color);
     border-radius: 55px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px;
   }
 
   &__wrapper {
