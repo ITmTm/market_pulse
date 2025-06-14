@@ -1,49 +1,57 @@
 @media (max-width: 1200px) {
-    .header {
-	  &__logo {
-		width: 140px;
-	  }
+  .header {
+    &__logo {
+      width: 140px;
+    }
 
-	  .container {
-		padding-bottom: 15px;
-	  }
-	}
+    &__container {
+      padding-bottom: 15px;
+    }
+  }
 
   .main-hero {
-	padding-bottom: 130px;
-	&__left {
-	  padding: 130px 30px 30px;
+    padding-bottom: 130px;
+    .container {
+      min-height: 670px
+    }
+    &__left {
+      padding: 130px 30px 30px;
 
-	  .title-m {
-		font-size: 37px;
-	  }
-	}
+      .title-m {
+        font-size: 37px;
+      }
+    }
 
-	.features {
-	  gap: 10px;
-	  grid-template-columns: 1fr;
-	}
+    .features {
+      gap: 10px;
+      grid-template-columns: 1fr;
+    }
   }
 
   .intro {
-	&__avatars {
-	  img {
-		width: 50px;
-		height: 50px;
-	  }
-	}
+    &__avatars {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
 
-	&__accounts {
-	  img {
-		width: 50px;
-		height: 50px;
-	  }
-	}
+    &__accounts {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
 
-	&__descr {
-	  .title-s {
-		font-size: 20px;
-	  }
-	}
+    &__descr {
+      .title-s {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .trading {
+    &__container {
+      background: var(--brizz-color) url(../images/trading-small.avif) top right / 480px 330px no-repeat;    }
   }
 }
