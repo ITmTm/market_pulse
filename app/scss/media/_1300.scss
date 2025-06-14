@@ -1,139 +1,179 @@
 @media (max-width: 1300px) {
-    .header {
-	  .menu {
-		& > .menu-item {
-		  & > a {
-			padding: 10px
-		  }
-		}
-	  }
-	}
+  .header {
+    .menu {
+      & > .menu-item {
+        & > a {
+          padding: 10px
+        }
+      }
+    }
+  }
 
   .main-hero {
-	&__left {
-	  .title-m {
-		font-size: 41px;
-	  }
-	}
+    &__left {
+      .title-m {
+        font-size: 41px;
+      }
+    }
 
-	.features {
-	  row-gap: 20px;
-	}
+    .features {
+      row-gap: 20px;
+    }
   }
 
   .intro {
-	&__avatars {
-	  img {
-		width: 55px;
-		height: 55px;
-	  }
-	}
+    &__avatars {
+      img {
+        width: 55px;
+        height: 55px;
+      }
+    }
 
-	&__accounts {
-	  img {
-		width: 55px;
-		height: 55px;
-	  }
-	}
+    &__accounts {
+      img {
+        width: 55px;
+        height: 55px;
+      }
+    }
 
-	&__descr {
-	  .text-m {
-		font-size: 16px;
-	  }
-	}
-  }
-
-  .account {
-	&__card {
-	  &-3 {
-		background: var(--light-grey-color) url(../images/account.avif) top 375px right 0px/contain no-repeat;
-	  }
-	}
-  }
-
-  .bonuses {
-	&__descr {
-	  .text-m {
-		font-size: 17px;
-	  }
-	}
-  }
-
-  .trust {
-	&__card {
-	  padding: 20px;
-	  .text-m {
-		font-size: 16px;
-	  }
-	}
-  }
-
-  .invest {
-	.container {
-	  padding: 80px 120px 120px;
-	}
-  }
-
-  .footer {
-	&__logo {
-	  width: 270px;
-	}
-
-	.menu {
-	  gap: 40px;
-	}
-
-	.menu-descr {
-	  max-width: 540px;
-	}
-  }
-
-  .intro {
-	&__card {
-	  min-height: 320px;
-	  padding: 32px 25px;
-	}
-
-	.mod-1:before {
-	  top: -15px;
-	  left: 35px;
-	  padding: 5px 15px;
-	  font-size: 15px;
-	}
-	.mod-2:before {
-	  top: -15px;
-	  left: 35px;
-	  padding: 5px 15px;
-	  font-size: 15px;
-	}
-	.mod-3:before {
-	  top: -15px;
-	  left: 35px;
-	  padding: 5px 15px;
-	  font-size: 15px;
-	}
-	.mod-4:before {
-	  top: -15px;
-	  left: 35px;
-	  padding: 5px 15px;
-	  font-size: 15px;
-	}
-
-	.btn-circle {
-	  width: 55px;
-	  height: 55px;
-	}
+    &__descr {
+      .text-m {
+        font-size: 16px;
+      }
+    }
   }
 
   .trading {
-	&__card {
-	  padding: 15px;
-	  max-width: 300px;
-	}
+    &__container {
+      background: var(--brizz-color) url(../images/trading.avif) top right / 550px 360px no-repeat;
+    }
 
-	.btn-circle {
-	  width: 55px;
-	  height: 55px;
-	}
+    &__info {
+      .text-m {
+        margin-bottom: 40px;
+      }
+    }
   }
+
+  .account {
+    &__card {
+      &-3 {
+        background: var(--light-grey-color) url(../images/account.avif) top 375px right 0px/contain no-repeat;
+      }
+    }
+  }
+
+  .bonuses {
+    &__descr {
+      .text-m {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .trust {
+    &__card {
+      padding: 20px;
+      .text-m {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .invest {
+    &__container {
+      padding: 80px 120px 120px;
+    }
+  }
+
+  .intro {
+    &__card {
+      min-height: 320px;
+      padding: 32px 25px;
+    }
+
+    .mod-1:before {
+      top: -15px;
+      left: 35px;
+      padding: 5px 15px;
+      font-size: 15px;
+    }
+    .mod-2:before {
+      top: -15px;
+      left: 35px;
+      padding: 5px 15px;
+      font-size: 15px;
+    }
+    .mod-3:before {
+      top: -15px;
+      left: 35px;
+      padding: 5px 15px;
+      font-size: 15px;
+    }
+    .mod-4:before {
+      top: -15px;
+      left: 35px;
+      padding: 5px 15px;
+      font-size: 15px;
+    }
+
+    .btn-circle {
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .trading {
+    &__card {
+      padding: 15px;
+      max-width: 300px;
+    }
+
+    .btn-circle {
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .footer {
+    &__logo {
+      width: 270px;
+    }
+
+    .menu {
+      gap: 40px;
+    }
+
+    .menu-descr {
+      max-width: 540px;
+    }
+
+    &__mail {
+      padding-right: 0;
+    }
+  }
+
+  //.trading {
+  //  &__container {
+  //    background: var(--brizz-color) url(../images/trading.avif) top right / 550px 350px no-repeat;
+  //    padding: 30px 40px 32px;
+  //  }
+  //
+  //  &__info {
+  //    .text-m {
+  //      margin-bottom: 40px;
+  //    }
+  //  }
+  //}
+  //
+  //.trust {
+  //  padding-bottom: 70px;
+  //}
+  //
+  //.invest {
+  //  padding: 0 0 150px;
+  //  &__container {
+  //    padding: 80px 60px 100px;
+  //  }
+  //}
 }
