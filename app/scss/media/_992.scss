@@ -1,8 +1,300 @@
 @media (max-width: 992px) {
-  .documents-intro {
 
-	.swiper-wrapper {
-	  justify-content: space-between;
-	}
+  .header {
+    &__logo {
+      width: 210px;
+    }
+    &__burger {
+      display: block;
+      background: transparent;
+      border: none;
+      order: 1;
+      width: 75px;
+      height: 50px;
+
+    }
+
+    .menu-item {
+      display: none;
+    }
+
+    .menu-item--lang {
+      display: block;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      path {
+        stroke: var(--white-color);
+        stroke-width: 2;
+        stroke-linecap: round;
+
+        transition: .5s;
+
+        &:nth-child(1) {
+          stroke-dasharray: 13 100;
+          stroke-dashoffset: -20;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          stroke-dasharray: 35 150;
+          stroke-dashoffset: -55;
+        }
+      }
+
+      &:hover path {
+        &:nth-child(1) {
+          stroke-dasharray: 22 100;
+          stroke-dashoffset: -20;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          stroke-dasharray: 35 150;
+          stroke-dashoffset: -64;
+        }
+      }
+
+
+      &.active path {
+        &:nth-child(1) {
+          stroke-dasharray: 5 100;
+          stroke-dashoffset: 20;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          stroke-dasharray: 32 150;
+          stroke-dashoffset: 0;
+        }
+      }
+    }
   }
+
+
+  .main-hero {
+    padding-bottom: 100px;
+
+    .container {
+      min-height: 645px;
+    }
+
+    &__left {
+      padding: 120px 30px 30px;
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -30px / auto no-repeat;
+      .title-m {
+        font-size: 28px;
+      }
+
+      .text-m {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .intro {
+    padding-bottom: 100px;
+
+    &__cards {
+      padding: 40px 0 0;
+      position: relative;
+    }
+
+    .mod-1,
+    .mod-2,
+    .mod-3,
+    .mod-4, {
+      transform: rotate(0);
+      left: initial;
+      right: initial;
+      top: initial;
+      bottom: initial;
+    }
+
+    &__descr {
+      gap: 30px;
+
+      .title-s {
+        font-size: 35px;
+      }
+
+      .text-m {
+        font-size: 20px;
+      }
+    }
+
+    &__avatars {
+      img {
+        width: initial;
+        height: initial;
+      }
+    }
+
+    &__accounts {
+      img {
+        width: initial;
+        height: initial;
+      }
+    }
+
+    .btn-circle {
+      width: 65px;
+      height: 65px;
+    }
+
+    .swiper-pagination {
+      display: block;
+    }
+
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: var(--swiper-pagination-bottom, 25px);
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--white-color);
+    }
+  }
+
+  .trading {
+    padding-bottom: 100px;
+
+    &__container {
+      background: var(--brizz-color) url(../images/trading-small.avif) top 80px right / 390px 280px no-repeat;
+    }
+
+    &__info {
+      max-width: 500px;
+    }
+
+    &__text {
+      .text-m {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .account {
+    padding: 0 0 100px;
+
+    &__grid {
+      gap: 15px;
+    }
+
+    &__card {
+      padding: 30px 20px;
+
+      &-3 {
+        background: var(--light-grey-color) url(../images/account.avif) top 400px right 0px / contain no-repeat;
+
+        .title-l {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+
+  .bonuses {
+    padding-bottom: 100px;
+
+    &__text {
+      .title-l {
+        font-size: 39px;
+      }
+    }
+  }
+
+  .trust {
+    padding-bottom: 100px;
+
+    &__cards {
+      padding: 40px 0 0;
+      position: relative;
+    }
+
+    .mod-1,
+    .mod-2,
+    .mod-3,
+    .mod-4, {
+      transform: rotate(0);
+      left: initial;
+      right: initial;
+      top: initial;
+      bottom: initial;
+    }
+
+    &__card {
+      padding: 35px;
+
+      .text-m {
+        font-size: 20px;
+      }
+    }
+
+    &__avatars {
+      img {
+        width: 65px;
+        height: 65px;
+      }
+    }
+
+    .swiper-pagination {
+      display: block;
+    }
+
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: var(--swiper-pagination-bottom, 25px);
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--white-color);
+    }
+  }
+
+  .invest {
+    padding-bottom: 100px;
+
+    &__container {
+      padding: 80px 40px;
+    }
+
+    &__wrapper {
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .footer {
+    &__container {
+      background: var(--light-grey-color) url(../images/footer-bg.avif) top right / 260px 180px no-repeat;
+    }
+
+    &__logo {
+      width: 200px;
+    }
+
+    .menu {
+      flex-wrap: wrap;
+      row-gap: 60px;
+      margin-bottom: 50px;
+
+      &-descr {
+        max-width: 100%;
+      }
+    }
+  }
+
 }
