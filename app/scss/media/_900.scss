@@ -1,3 +1,130 @@
 @media (max-width: 900px) {
-    
+  .main-bg {
+    background: url(../images/intro-bg.avif) center / 600px 600px no-repeat fixed;
+  }
+
+  .main-hero {
+    .container {
+      min-height: 600px;
+    }
+    &__left {
+      padding: 120px 22px 30px;
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -90px / auto no-repeat;
+    }
+    &__right {
+      padding: 120px 22px 30px;
+      background: var(--light-grey-color) url(../images/mine-hero-bg-traid.avif) right bottom / cover no-repeat;
+    }
+  }
+
+  .intro {
+    &__descr {
+      .title-s {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .trading {
+    &__container {
+      padding: 35px 20px 32px;
+      background: var(--brizz-color) url(../images/trading-small.avif) top 54px right/300px 230px no-repeat
+    }
+
+    &__info {
+      max-width: 460px;
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+
+    &__text {
+      .title-s {
+        font-size: 20px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+
+      .btn-circle {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  .account {
+    &__card {
+      &-3 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        height: 500px;
+        background: var(--light-grey-color) url(../images/account.avif) top 250px center / contain no-repeat;
+
+        .title-l {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  .bonuses {
+    &__container {
+      padding: 32px 22px;
+    }
+
+    &__wrapper {
+      gap: 30px;
+    }
+
+    &__text {
+      .title-l {
+        font-size: 30px;
+      }
+
+      a {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .invest {
+    &__container {
+      padding: 60px 32px;
+    }
+
+    &__wrapper {
+      .title-l {
+        font-size: 33px;
+      }
+    }
+
+    .btn {
+      width: 600px;
+    }
+  }
+
+  .footer {
+    &__container {
+      padding: 32px 22px;
+      background: var(--light-grey-color) url(../images/footer-bg.avif) top right / 230px 160px no-repeat;
+    }
+
+    &__top {
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    &__logo {
+      width: initial;
+      margin-bottom: 10px;
+    }
+
+    .menu {
+      row-gap: 40px;
+    }
+  }
 }
