@@ -1,8 +1,115 @@
 @media (max-width: 768px) {
-  .intro, .trust {
-    .swiper-pagination {
-      display: block;
+  .main-hero {
+    .container {
+      grid-template-columns: 1fr;
+    }
+    &__left {
+      min-height: 500px;
+      .title-m {
+        font-size: 32px;
+      }
+      .text-m {
+        font-size: 18px;
+      }
+    }
+    &__right {
+      min-height: 500px;
     }
   }
 
+  .intro {
+    .title-l {
+      font-size: 40px;
+    }
+
+    &__descr {
+      gap: 20px;
+      .title-s {
+        font-size: 25px;
+      }
+      .text-m {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .trading {
+    &__container {
+      background: var(--brizz-color);
+    }
+    &__info {
+      max-width: 100%;
+      .title-l {
+        font-size: 44px;
+      }
+    }
+    &__cards {
+      flex-direction: column;
+    }
+    &__card {
+      max-width: 100%;
+    }
+  }
+
+  .account {
+    &__card {
+      &-1 {
+        .title-s {
+          font-size: 20px;
+        }
+      }
+      &-2 {
+        .title-s {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .bonuses {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__text {
+      margin-top: initial;
+      max-width: 100%;
+      gap: 25px;
+
+      .title-l {
+        font-size: 40px;
+      }
+
+      .text-m {
+        &:last-of-type {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .trust {
+    padding-bottom: 50px;
+    .title-l {
+      font-size: 40px;
+    }
+
+    &__card {
+      padding: 32px 25px;
+    }
+  }
+
+  .invest {
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    &__top {
+      gap: 25px;
+    }
+    .sub-menu {
+      gap: 20px;
+    }
+  }
 }
