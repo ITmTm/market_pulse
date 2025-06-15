@@ -59,46 +59,38 @@
             <h2 class="title-l">Остались вопросы? Свяжитесь с нами, наши специалисты готовы вам помочь</h2>
           </div>
 
-          <form class="documents-trading__form" action="#">
+          <form class="documents-trading__form">
             <div class="documents-trading__wrapper">
-              <div class="documents-trading__items">
-                <label for="name" class="text-s">Имя</label>
-                <input id="name"
-                       name="name"
-                       type="text"
-                       required
-                       class="documents-trading__control text-m"
-                >
-              </div>
+              <p class="documents-trading__items">
+                <span class="text-s">Имя</span>
+                <span class="documents-trading__control-wrap">
+                  <input name="name" type="text" class="documents-trading__control text-m" required>
+                </span>
+              </p>
 
-              <div class="documents-trading__items">
-                <label for="email" class="text-s">Email</label>
-                <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    class="documents-trading__control text-m"
-                >
-              </div>
+              <p class="documents-trading__items">
+                <span class="text-s">Email</span>
+                <span class="documents-trading__control-wrap">
+                  <input name="email" type="email" class="documents-trading__control text-m" required>
+                </span>
+              </p>
             </div>
 
-            <div class="documents-trading__textarea">
-              <label for="message" class="text-s">Сообщение</label>
-              <textarea
-                  id="message"
-                  name="message"
-                  required
-                  rows="3"
-                  class="documents-trading__control text-m"></textarea>
-            </div>
+            <p class="documents-trading__textarea">
+              <span class="text-s">Сообщение</span>
+              <span class="documents-trading__control-wrap">
+                <textarea name="message" rows="3" class="documents-trading__control text-m" required></textarea>
+              </span>
+            </p>
 
-            <label class="documents-trading__check">
-              <input type="checkbox" required>
+            <p class="documents-trading__check">
+              <input type="checkbox" name="agree" required>
               <span class="text-s">Я согласен(а) c политикой конфиденциальности</span>
-            </label>
+            </p>
 
-            <input type="submit" class="btn btn-white" value="Отправить">
+            <p>
+              <input type="submit" class="btn btn-white" value="Отправить">
+            </p>
           </form>
         </div>
       </div>
