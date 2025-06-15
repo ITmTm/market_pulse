@@ -1,85 +1,76 @@
 <!--=include header.html -->
 
 <main>
-	<div class="main-bg">
-		<section class="contacts">
-			<div class="container">
-				<div class="contacts__left">
-					<h1 class="title-m">Контакты</h1>
-					<p class="text-m">Остались вопросы? Свяжитесь с нами, наши специалисты готовы вам помочь</p>
-				</div>
+  <div class="main-bg">
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__left">
+          <h1 class="title-m">Контакты</h1>
+          <p class="text-m">Остались вопросы? Свяжитесь с нами, наши специалисты готовы вам помочь</p>
+        </div>
 
-				<div class="contacts__right"></div>
-			</div>
-		</section>
+        <div class="contacts__right"></div>
+      </div>
+    </section>
 
-		<section class="contacts-trading">
-			<div class="container">
-				<div class="contacts-trading__container">
-					<div class="contacts-trading__info">
-						<div class="contacts-trading__item">
-							<img src="../images/contacts-trading-phone.svg" alt="phone">
-							<a class="text-m" href="tel:+3581754926">+358 17 54926</a>
-						</div>
+    <section class="contacts-trading">
+      <div class="container">
+        <div class="contacts-trading__container">
+          <div class="contacts-trading__info">
+            <div class="contacts-trading__item">
+              <img src="../images/contacts-trading-phone.svg" alt="phone">
+              <a class="text-m" href="tel:+3581754926">+358 17 54926</a>
+            </div>
 
-						<div class="contacts-trading__item">
-							<img src="../images/contacts-trading-mail.svg" alt="mail">
-							<a class="text-m" href="mailto:info@marketpulse.com">info@marketpulse.com</a>
-						</div>
+            <div class="contacts-trading__item">
+              <img src="../images/contacts-trading-mail.svg" alt="mail">
+              <a class="text-m" href="mailto:info@marketpulse.com">info@marketpulse.com</a>
+            </div>
 
-						<div class="contacts-trading__item">
-							<img src="../images/contacts-trading-address.svg" alt="address">
-							<address class="text-m">78 Coleman Grove, Mandyston, Canterbury, 3237</address>
-						</div>
-					</div>
+            <div class="contacts-trading__item">
+              <img src="../images/contacts-trading-address.svg" alt="address">
+              <address class="text-m">78 Coleman Grove, Mandyston, Canterbury, 3237</address>
+            </div>
+          </div>
 
+          <form class="contacts-trading__form">
+            <div class="contacts-trading__wrapper">
+              <p class="contacts-trading__items">
+                <span class="text-s">Имя</span>
+                <span class="contacts-trading__control-wrap">
+              <input name="name" type="text" class="contacts-trading__control text-m" required placeholder="Введите имя">
+            </span>
+              </p>
 
-					<form class="contacts-trading__form" action="#">
-						<div class="contacts-trading__wrapper">
-							<div class="contacts-trading__items">
-								<label for="name" class="text-s">Имя</label>
-								<input id="name"
-									   name="name"
-									   type="text"
-									   required
-									   class="contacts-trading__control text-m"
-								>
-							</div>
+              <p class="contacts-trading__items">
+                <span class="text-s">Email</span>
+                <span class="contacts-trading__control-wrap">
+              <input name="email" type="email" class="contacts-trading__control text-m" required placeholder="Введите email">
+            </span>
+              </p>
+            </div>
 
-							<div class="contacts-trading__items">
-								<label for="email" class="text-s">Email</label>
-								<input
-										id="email"
-										name="email"
-										type="email"
-										required
-										class="contacts-trading__control text-m"
-								>
-							</div>
-						</div>
+            <p class="contacts-trading__textarea">
+              <span class="text-s">Сообщение</span>
+              <span class="contacts-trading__control-wrap">
+            <textarea name="message" rows="3" class="contacts-trading__control text-m" required placeholder="Введите сообщение"></textarea>
+          </span>
+            </p>
 
-						<div class="contacts-trading__textarea">
-							<label for="message" class="text-s">Сообщение</label>
-							<textarea
-									id="message"
-									name="message"
-									required
-									rows="3"
-									class="contacts-trading__control text-m"></textarea>
-						</div>
+            <p class="contacts-trading__check">
+              <input type="checkbox" name="agree" required>
+              <span class="text-s">Я согласен(а) c политикой конфиденциальности</span>
+            </p>
 
-						<label class="contacts-trading__check">
-							<input type="checkbox" required>
-							<span class="text-s">Я согласен(а) c политикой конфиденциальности</span>
-						</label>
+            <p>
+              <input type="submit" class="btn btn-white" value="Отправить">
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
 
-						<input type="submit" class="btn btn-white" value="Отправить">
-					</form>
-				</div>
-			</div>
-		</section>
-
-	</div>
+  </div>
 </main>
 
 <!--=include footer.html -->
