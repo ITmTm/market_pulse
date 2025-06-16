@@ -1,5 +1,157 @@
 @media (max-width: 1200px) {
   .header {
+    .container {
+      padding-top: 35px;
+    }
+
+    &__left {
+      padding: 0 20px 0 20px;
+    }
+
+    .nav > .menu {
+      position: fixed;
+      top: 105px;
+      left: -100%;
+      width: 100%;
+      background: rgba(59, 166, 177, .9);
+      backdrop-filter: blur(5px);
+      height: 100vh;
+      z-index: 10;
+      visibility: hidden;
+      opacity: 0;
+      transition: .6s all ease-in-out;
+
+      &.active {
+        transition: 0.7s all ease;
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: baseline;
+      }
+
+      &>.menu-item {
+        position: relative;
+        padding: 20px 20px;
+        transition: initial;
+        &:before {
+          content: initial;
+        }
+
+        & > a {
+          display: inline-block;
+          border-radius: initial;
+          width: 300px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            width: 8px;
+            height: 8px;
+            border-right: 2px solid currentColor;
+            border-bottom: 2px solid currentColor;
+            transform: translateY(-50%) rotate(45deg);
+            transition: transform .3s;
+          }
+        }
+
+        & > .sub-menu.active {
+          //visibility: visible;
+          //opacity: 1;
+          //display: none;
+          //flex-direction: column;
+          //align-items: flex-start;
+          //text-align: left;
+          //left: 0;
+          //top: calc(100% + 10px);
+          //gap: 15px;
+          //padding: 15px 20px;
+          //background: #65b0b8;
+          //border-radius: 15px;
+          //transition: none;
+          display: none;              /* по умолчанию скрыто */
+          flex-direction: column;
+          gap: 15px;
+          margin-left: 20px;          /* отступ, чтобы было видно вложенность */
+          padding: 15px 20px;         /* можно убрать паддинги, если не нужны */
+          position: static;           /* УБРАТЬ absolute/top/left */
+          opacity: 1;                 /* не нужно, если display */
+          visibility: visible;        /* не нужно, если display */
+          //transition: none;
+          border-radius: initial;
+          transition: initial;
+        }
+
+        &.active > a::after {
+          transform: translateY(-50%) rotate(-135deg);
+        }
+      }
+    }
+
+
+    &__burger {
+      display: block;
+      background: transparent;
+      border: none;
+      order: 1;
+      width: 75px;
+      height: 50px;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      path {
+        stroke: var(--white-color);
+        stroke-width: 2;
+        stroke-linecap: round;
+
+        transition: .5s;
+
+        &:nth-child(1) {
+          stroke-dasharray: 13 100;
+          stroke-dashoffset: -20;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          stroke-dasharray: 35 150;
+          stroke-dashoffset: -55;
+        }
+      }
+
+      &:hover path {
+        &:nth-child(1) {
+          stroke-dasharray: 22 100;
+          stroke-dashoffset: -20;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          stroke-dasharray: 35 150;
+          stroke-dashoffset: -64;
+        }
+      }
+
+
+      &.active path {
+        &:nth-child(1) {
+          stroke-dasharray: 5 100;
+          stroke-dashoffset: 20;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          stroke-dasharray: 32 150;
+          stroke-dashoffset: 0;
+        }
+      }
+    }
 
     &__container {
       padding-bottom: 15px;
@@ -8,9 +160,11 @@
 
   .main-hero {
     padding-bottom: 130px;
+
     .container {
       min-height: 670px
     }
+
     &__left {
       padding: 130px 30px 30px;
 
@@ -49,6 +203,11 @@
 
   .trading {
     &__container {
-      background: var(--brizz-color) url(../images/trading-small.avif) top right / 480px 330px no-repeat;    }
+      background: var(--brizz-color) url(../images/trading-small.avif) top right / 480px 330px no-repeat;
+    }
   }
+}
+
+.scrolled {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
 }
