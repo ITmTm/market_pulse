@@ -13,7 +13,16 @@ body {
 }
 
 .main-bg {
-  background: url(../images/intro-bg.avif) center/auto no-repeat fixed;
+  position: fixed;
+  background: url(../images/intro-bg.avif) center/contain no-repeat;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  transform: translate(-50%, -50%) translateZ(0);
+  z-index: -1;
+  pointer-events: none;
+  will-change: transform;
 }
 
 .upButton {
@@ -59,7 +68,13 @@ body {
   }
 
   a {
-    color: var(--white-color);
+    color: var(--purpur-light-color);
+    text-decoration: underline;
+
+    &:hover {
+      opacity: .8;
+      text-decoration: none;
+    }
   }
 
   .btn {
