@@ -22,4 +22,61 @@
       font-size: 30px;
     }
   }
+
+  .trading {
+    &__info {
+      .title-l {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .account {
+    &__card {
+      &-3 {
+        background: var(--light-grey-color) url(../images/account.avif) top 310px center / contain no-repeat;
+        gap: 25px;
+        .title-l {
+          font-size: 30px;
+          margin-bottom: initial;
+        }
+      }
+
+      .btn {
+        margin-top: initial;
+      }
+    }
+  }
+
+  .bonuses {
+    &__text {
+      .title-l {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .trust {
+    .title-l {
+      font-size: 30px;
+    }
+
+    &__card {
+      padding: 20px;
+      .text-m {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .invest {
+    &__container {
+      padding: 50px 30px;
+    }
+    &__wrapper {
+      .title-l {
+        font-size: 30px;
+      }
+    }
+  }
 }
