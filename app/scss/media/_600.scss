@@ -1,3 +1,25 @@
 @media (max-width: 600px) {
-    
+  .main-bg {
+    background: url(../images/intro-bg.avif) center / 500px 500px no-repeat fixed;
+  }
+
+  .main-hero {
+    &__left {
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -150px / auto no-repeat;
+
+      .title-m {
+        font-size: 30px;
+      }
+    }
+
+    .features {
+      gap: 20px;
+    }
+  }
+
+  .intro {
+    .title-l {
+      font-size: 30px;
+    }
+  }
 }
