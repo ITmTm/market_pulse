@@ -87,10 +87,15 @@
                     gap: 20px;
                     padding: 20px 30px;
                     position: static;
-                    opacity: 1;
-                    visibility: visible;
+                    opacity: 0;
+                    visibility: hidden;
                     border-radius: initial;
                     border-top: 1px solid var(--white-color);
+
+                    &.active {
+                        opacity: 1;
+                        visibility: visible;
+                    }
                 }
 
                 &.active > a::after {
