@@ -8,6 +8,11 @@
       background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -125px / auto no-repeat;
       height: 100%;
     }
+    &__right {
+      padding: 60px 22px 30px;;
+      min-height: initial;
+      height: 100%;
+    }
   }
 
   .trading {
