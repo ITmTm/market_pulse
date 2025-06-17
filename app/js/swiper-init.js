@@ -3,29 +3,31 @@
  *  mobileOnly = false → активен и на десктопе
  */
 function makeSwiper(rootSel, pagSel, mobileOnly = false, desktopSlides = 4, loop = true) {
-	const root = document.querySelector(rootSel);
-	if (!root) return;                       // на этой странице блока нет
+    const root = document.querySelector(rootSel);
+    if (!root) return;                       // на этой странице блока нет
 
-	new Swiper(root, {
-		slidesPerView: 1.1,
-		spaceBetween: 60,
-		centeredSlides: true,
+    new Swiper(root, {
+        slidesPerView: 1.1,
+        spaceBetween: 60,
+        centeredSlides: true,
 
-		breakpoints: {
-			993: {
-				enabled: !mobileOnly,              // главное условие
-				slidesPerView: desktopSlides,
-				centeredSlides: false,			   // Отвечает за центрирование
-				spaceBetween: 20,
-				allowTouchMove: !mobileOnly,
-				keyboard: { enabled: !mobileOnly },
-				a11y: { enabled: !mobileOnly },
-			},
-		},
+        loop: loop,		// бесконечный цикл (переключение слайдеров)
+        pagination: { el: pagSel, clickable: true },
 
-		loop: loop,		// бесконечный цикл (переключение слайдеров)
-		pagination: { el: pagSel, clickable: true },
-	});
+        breakpoints: {
+            993: {
+                enabled: !mobileOnly,              // главное условие
+                slidesPerView: desktopSlides,
+                centeredSlides: false,			   // Отвечает за центрирование
+                spaceBetween: 20,
+                allowTouchMove: !mobileOnly,
+                keyboard: { enabled: !mobileOnly },
+                a11y: { enabled: !mobileOnly },
+            },
+        },
+
+
+    });
 }
 
 /* --- index.html --- mobile-only слайдеры */
@@ -43,70 +45,70 @@ makeSwiper('.documents-intro__cards', '.swiper-pagination.documents-intro__cards
 
 /* --- instruments.html --- */		// Универсальная обобщенная функция, подходит если используется связка в других местах
 function makeLinkedSwipers(tabsSelector, contentSelector) {
-	const section = document.querySelector('.instruments-tabs');
-	const container = document.querySelector('.instruments-tabs__container');
-	const tabs = document.querySelector(tabsSelector);
-	const pages = document.querySelector(contentSelector);
-	if (!tabs || !pages || !container || !pages) return;
+    const section = document.querySelector('.instruments-tabs');
+    const container = document.querySelector('.instruments-tabs__container');
+    const tabs = document.querySelector(tabsSelector);
+    const pages = document.querySelector(contentSelector);
+    if (!tabs || !pages || !container || !pages) return;
 
-	const bgList = [
-		'../images/instruments-currency-bg.avif',
-		'../images/instruments-stocks-bg.avif',
-		'../images/instruments-crypto-bg.avif',
-		'../images/instruments-commodities-bg.avif',
-		'../images/instruments-indices-bg.avif'
-	];
+    const bgList = [
+        '../images/instruments-currency-bg.avif',
+        '../images/instruments-stocks-bg.avif',
+        '../images/instruments-crypto-bg.avif',
+        '../images/instruments-commodities-bg.avif',
+        '../images/instruments-indices-bg.avif'
+    ];
 
-	const isDesktop = window.matchMedia('(pointer: fine) and (hover: hover)').matches;
-	// разрешение свайпа только на мобилках
-	const allowTouch = !isDesktop;
+    const isDesktop = window.matchMedia('(pointer: fine) and (hover: hover)').matches;
+    // разрешение свайпа только на мобилках
+    const allowTouch = !isDesktop;
 
-	const swiperBtns = new Swiper(tabs, {
-		slidesPerView: 5,
-		spaceBetween: 10,
-		watchSlidesProgress: true,
-		slideToClickedSlide: true,		// Переключение по клику
+    const swiperBtns = new Swiper(tabs, {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        watchSlidesProgress: true,
+        slideToClickedSlide: true,		// Переключение по клику
 
 
-		freeMode: allowTouch,			// только на мобилках - свободное листание списка
-		allowTouchMove: allowTouch,		// полностью дизейбл перетаскивание
-		simulateTouch: true,
+        freeMode: allowTouch,			// только на мобилках - свободное листание списка
+        allowTouchMove: allowTouch,		// полностью дизейбл перетаскивание
+        simulateTouch: true,
 
-		breakpoints: {
-			320:  { slidesPerView: 1 },
-			480:  { slidesPerView: 2 },
-			640:  { slidesPerView: 2 },
-			768:  { slidesPerView: 3 },
-			1024: { slidesPerView: 5 },
-		}
+        breakpoints: {
+            320: { slidesPerView: 1 },
+            480: { slidesPerView: 2 },
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 5 },
+        }
 
-	});
+    });
 
-	const swiperPage = new Swiper(pages, {
-		spaceBetween: 100,
-		thumbs: {
-			swiper: swiperBtns,
-		},
-		simulateTouch: true,
-		allowTouchMove: allowTouch,
+    const swiperPage = new Swiper(pages, {
+        spaceBetween: 100,
+        thumbs: {
+            swiper: swiperBtns,
+        },
+        simulateTouch: true,
+        allowTouchMove: allowTouch,
 
-	});
+    });
 
-	// удаление tabindex у оберток, чтобы Tab не мог зацепиться за них
-	if (isDesktop) {
-		swiperBtns.slides.forEach(s => s.removeAttribute('tabindex'));
-		swiperPage.slides.forEach(s => s.removeAttribute('tabindex'));
-	}
+    // удаление tabindex у оберток, чтобы Tab не мог зацепиться за них
+    if (isDesktop) {
+        swiperBtns.slides.forEach(s => s.removeAttribute('tabindex'));
+        swiperPage.slides.forEach(s => s.removeAttribute('tabindex'));
+    }
 
-	// смена фона у контейнера при каждом слайде
-	swiperPage.on('slideChange', () => {
-		const idx = swiperPage.activeIndex;
-		const url = bgList[idx] || bgList[0];
-		container.style.transition = 'background-image .4s ease-in-out';
-		container.style.backgroundImage = `url('${ url }')`;
-	});
-	// сразу запускает один раз чтобы установить стартовый фон
-	swiperPage.emit('slideChange');
+    // смена фона у контейнера при каждом слайде
+    swiperPage.on('slideChange', () => {
+        const idx = swiperPage.activeIndex;
+        const url = bgList[idx] || bgList[0];
+        container.style.transition = 'background-image .4s ease-in-out';
+        container.style.backgroundImage = `url('${ url }')`;
+    });
+    // сразу запускает один раз чтобы установить стартовый фон
+    swiperPage.emit('slideChange');
 }
 
 makeLinkedSwipers('.swiper-btns', '.swiper-page');
