@@ -20,7 +20,7 @@
         .nav > .menu {
             position: fixed;
             max-width: 480px;
-            inset: 105px 0 0 auto;
+            top: 105px;
             left: -100%;
             width: 100%;
             background: rgba(59, 166, 177, .9);
@@ -82,7 +82,7 @@
                     transition: none;
                     display: flex;
                     text-align: left;
-                    align-items: center;
+                    align-items: flex-start;
                     justify-content: flex-start;
                     gap: 20px;
                     padding: 20px 30px;
