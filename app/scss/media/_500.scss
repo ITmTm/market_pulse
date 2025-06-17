@@ -1,16 +1,244 @@
 @media (max-width: 500px) {
-    .cookies {
-        left: 20px;
-        right: 20px;
-        bottom: 20px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+  .main-bg {
+    background: url(../images/intro-bg.avif) center / 400px 400px no-repeat fixed;
+  }
 
-        .btn {
-            width: calc(100% + 30px);
-            margin-left: -15px;
-            margin-right: -15px;
-        }
+  .container {
+    padding: 0 20px;
+  }
+
+  .header {
+    &__left {
+      padding: 30px 30px 20px 50px;
     }
+
+    &__logo {
+      width: 145px;
+    }
+  }
+
+  .main-hero {
+    padding-bottom: 80px;
+
+    &__left {
+      border-radius: 30px;
+      padding: 100px 16px 15px;
+
+      .text-m {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__right {
+      border-radius: 30px;
+      padding: 0;
+    }
+
+    .features {
+      padding: 16px;
+    }
+  }
+
+  .intro {
+    padding-bottom: 80px;
+
+    &__card {
+      border-radius: 30px;
+      padding: 24px 16px 16px;
+    }
+
+    .title-l {
+      font-size: 24px;
+    }
+
+    &__descr {
+      .title-s {
+        font-size: 18px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+    .mod-1:before {
+      padding: 6px 20px;
+    }
+
+    .mod-2:before {
+      padding: 6px 20px;
+    }
+
+    .mod-3:before {
+      padding: 6px 20px;
+    }
+
+    .mod-4:before {
+      padding: 6px 20px;
+    }
+  }
+
+  .trading {
+    padding-bottom: 80px;
+
+    &__container {
+      border-radius: 30px;
+      padding: 25px 16px 16px;
+    }
+
+    &__info {
+      .title-l {
+        font-size: 24px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+    &__text {
+      .title-s {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .account {
+    padding: 0 0 80px;
+
+    &__card {
+      border-radius: 30px;
+      padding: 30px 16px;
+
+      &-1 {
+        .title-s {
+          font-size: 18px;
+        }
+      }
+
+      &-2 {
+        .title-s {
+          font-size: 18px;
+        }
+      }
+
+      &-3 {
+        max-height: 400px;
+        background: var(--light-grey-color) url(../images/account.avif) top 250px center / contain no-repeat;
+
+        .title-l {
+          font-size: 23px;
+        }
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .bonuses {
+    padding-bottom: 80px;
+
+    &__container {
+      border-radius: 30px;
+      padding: 16px;
+    }
+
+    &__text {
+      .title-l {
+        font-size: 24px;
+      }
+
+      .text-l {
+        font-size: 19px;
+      }
+    }
+
+    &__descr {
+      .text-m {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .trust {
+    .title-l {
+      font-size: 24px;
+    }
+
+    &__card {
+      border-radius: 30px;
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .invest {
+    &__container {
+      padding: 35px 16px 90px;
+      border-radius: 30px;
+    }
+
+    &__wrapper {
+      .title-l {
+        font-size: 24px;
+      }
+    }
+
+    &__text {
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+    .btn {
+      font-size: 19px;
+    }
+  }
+
+  .footer {
+    &__container {
+      background: var(--light-grey-color) url(../images/footer-small-bg.avif) top right / auto no-repeat;
+      border-radius: 30px;
+      padding: 16px;
+    }
+
+    &__logo {
+      width: 240px;
+    }
+
+    &__top {
+      margin-bottom: 60px;
+    }
+
+    .menu {
+      row-gap: 20px;
+
+      &-descr {
+        font-size: 14px;
+      }
+    }
+  }
+
+
+  .cookies {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .btn {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
 }
+
+
