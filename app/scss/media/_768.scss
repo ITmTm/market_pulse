@@ -1,4 +1,25 @@
 @media (max-width: 768px) {
+  .header {
+    .container {
+      grid-template-columns: 1fr;;
+      padding: initial;
+    }
+
+    &__left {
+      padding: 30px 50px 20px 65px;
+    }
+
+    .nav > .menu {
+      top: 100px;
+      transition: none;
+    }
+
+    .menu-item {
+      &--lang {
+        display: none;
+      }
+    }
+  }
   .main-hero {
     .container {
       grid-template-columns: 1fr;
@@ -13,6 +34,7 @@
       }
     }
     &__right {
+      background: var(--light-grey-color) url(../images/mine-hero-bg-traid.avif) right bottom / contain no-repeat;
       min-height: 500px;
     }
   }
