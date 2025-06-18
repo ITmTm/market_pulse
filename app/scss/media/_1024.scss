@@ -1,2 +1,13 @@
 @media (max-width: 1024px) {
+  .trading {
+    &__container {
+      background: var(--brizz-color) url(../images/trading-small.avif) top 105px right/390px 310px no-repeat;
+    }
+
+    &__info {
+      .text-m {
+        margin-bottom: 35px;
+      }
+    }
+  }
 }
