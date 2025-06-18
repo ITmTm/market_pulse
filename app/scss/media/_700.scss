@@ -1,82 +1,77 @@
 @media (max-width: 700px) {
-  .main-bg {
-    background: url(../images/intro-bg.avif) center / 600px 600px no-repeat fixed;
-  }
-
-  .main-hero {
-    &__left {
-      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -125px / auto no-repeat;
-      height: 100%;
-    }
-    &__right {
-      padding: 60px 22px 30px;;
-      min-height: initial;
-      height: 100%;
-    }
-  }
-
-  .trading {
-    &__info {
-      .title-l {
-        font-size: 40px;
-      }
+    .main-bg {
+        background: url(../images/intro-bg.avif) center / 600px 600px no-repeat fixed;
     }
 
-    &__card {
-      gap: 50px
+    .main-hero {
+        &__left {
+            background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -125px / auto no-repeat;
+            height: 100%;
+        }
+
+        &__right {
+            padding: 60px 22px 30px;;
+            min-height: initial;
+            height: 100%;
+        }
     }
 
-    .btn-circle {
-      width: 65px;
-      height: 65px;
-    }
-  }
+    .trading {
+        &__container {
+            background: var(--brizz-color) url(../images/trading-small.avif) top 340px center/370px 260px no-repeat;
+        }
 
-  .account {
-    &__grid {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-
-    &__card {
-      &-3 {
-        background: var(--light-grey-color) url(../images/account.avif) top 275px center / contain no-repeat;
-        order: -1;
-        grid-column: unset;
-        grid-row: unset;
-      }
-    }
-  }
-
-  .footer {
-    &__container {
-      background: var(--light-grey-color) url(../images/footer-bg.avif) top right / auto no-repeat;
-      padding: 25px;
+        &__info {
+            .title-l {
+                font-size: 40px;
+            }
+        }
     }
 
-    &__top {
-      align-items: flex-start;
-      gap: 10px;
+    .account {
+        &__grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        &__card {
+            &-3 {
+                background: var(--light-grey-color) url(../images/account.avif) top 220px center / contain no-repeat;
+                order: -1;
+                grid-column: unset;
+                grid-row: unset;
+            }
+        }
     }
 
-    &__logo {
-      width: 280px;
-      margin-bottom: 25px;
-    }
+    .footer {
+        &__container {
+            background: var(--light-grey-color) url(../images/footer-bg.avif) top right / auto no-repeat;
+        }
 
-    .menu {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 30px;
-    }
+        &__top {
+            align-items: flex-start;
+            gap: 10px;
+        }
 
-    &__contact {
-      margin-left: 30px;
-      padding-left: 10px;
-    }
+        &__logo {
+            width: 280px;
+            margin-bottom: 25px;
+        }
 
-    &__mail {
-      margin-left: 40px;
+        &__contact {
+            margin-left: 30px;
+            padding-left: 10px;
+        }
+
+        &__mail {
+            margin-left: 40px;
+        }
+
+        .menu {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
     }
-  }
 }
