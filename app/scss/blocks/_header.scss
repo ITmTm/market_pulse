@@ -63,6 +63,10 @@
           padding: 10px 20px;
           backdrop-filter: blur(2px);
           margin-left: 30px;
+
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 1.4;
         }
       }
 
@@ -93,6 +97,10 @@
   }
 
   &__burger {
+    display: none;
+  }
+
+  .lang {
     display: none;
   }
 }
