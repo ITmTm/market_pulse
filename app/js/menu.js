@@ -18,7 +18,6 @@ function navMenu() {
     if ($(window).width() <= 1200) {
 
         burger.on('click', function () {
-            console.log('click on burger');
             burger.toggleClass('active');
             headerBox.toggleClass('active');
             headerMenu.toggleClass('active');
