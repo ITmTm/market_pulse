@@ -20,24 +20,6 @@
       }
     }
   }
-  .main-hero {
-    .container {
-      grid-template-columns: 1fr;
-    }
-    &__left {
-      min-height: 500px;
-      .title-m {
-        font-size: 32px;
-      }
-      .text-m {
-        font-size: 18px;
-      }
-    }
-    &__right {
-      background: var(--light-grey-color) url(../images/mine-hero-bg-traid.avif) right bottom / contain no-repeat;
-      min-height: 500px;
-    }
-  }
 
   .intro {
     .title-l {

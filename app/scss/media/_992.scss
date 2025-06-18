@@ -1,5 +1,18 @@
 @media (max-width: 992px) {
 
+  .header {
+    .menu {
+      & > .menu-item {
+        &:before {
+          content: none;
+        }
+        & > a {
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+
   .main-hero {
     padding-bottom: 100px;
 
@@ -9,10 +22,7 @@
 
     &__left {
       padding: 120px 30px 30px;
-      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -30px / auto no-repeat;
-      .title-m {
-        font-size: 28px;
-      }
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -90px / auto no-repeat;
 
       .text-m {
         font-size: 17px;
@@ -26,6 +36,12 @@
     &__cards {
       padding: 40px 0 0;
       position: relative;
+
+      &-pagination {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+      }
     }
 
     .mod-1,
@@ -33,49 +49,27 @@
     .mod-3,
     .mod-4, {
       transform: rotate(0);
-      left: initial;
-      right: initial;
-      top: initial;
-      bottom: initial;
+      inset: 0;
     }
 
     &__descr {
-      gap: 30px;
-
       .title-s {
-        font-size: 35px;
-      }
-
-      .text-m {
-        font-size: 20px;
+        font-size: 24px;
       }
     }
 
     &__avatars {
       img {
-        width: initial;
-        height: initial;
+        width: 65px;
+        height: 65px;
       }
     }
 
     &__accounts {
       img {
-        width: initial;
-        height: initial;
+        width: 65px;
+        height: 65px;
       }
-    }
-
-    .btn-circle {
-      width: 65px;
-      height: 65px;
-    }
-
-    .swiper-pagination {
-      display: block;
-    }
-
-    .swiper-pagination-bullets.swiper-pagination-horizontal {
-      bottom: var(--swiper-pagination-bottom, 25px);
     }
 
     .swiper-pagination-bullet {
@@ -92,11 +86,26 @@
     padding-bottom: 100px;
 
     &__container {
-      background: var(--brizz-color) url(../images/trading-small.avif) top 80px right / 390px 280px no-repeat;
+      display: flex;
+      gap: 200px;
+      flex-direction: column;
+      background: var(--brizz-color) url(../images/trading-small.avif) top 218px center / 410px 312px no-repeat;
+    }
+
+    &__cards {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__card {
+      max-width: 100%;
     }
 
     &__info {
-      max-width: 500px;
+      max-width: 100%;
+      .title-l {
+        font-size: 36px;
+      }
     }
 
     &__text {
@@ -142,7 +151,14 @@
     &__cards {
       padding: 40px 0 0;
       position: relative;
+
+      &-pagination {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+      }
     }
+
 
     .mod-1,
     .mod-2,
@@ -156,7 +172,7 @@
     }
 
     &__card {
-      padding: 35px;
+      padding: 20px 30px;
 
       .text-m {
         font-size: 20px;
@@ -170,21 +186,13 @@
       }
     }
 
-    .swiper-pagination {
-      display: block;
-    }
-
-    .swiper-pagination-bullets.swiper-pagination-horizontal {
-      bottom: var(--swiper-pagination-bottom, 25px);
-    }
-
     .swiper-pagination-bullet {
       width: 10px;
       height: 10px;
     }
 
     .swiper-pagination-bullet-active {
-      background: var(--white-color);
+      background: var(--purpur-color);
     }
   }
 
@@ -213,8 +221,7 @@
 
     .menu {
       flex-wrap: wrap;
-      row-gap: 60px;
-      margin-bottom: 50px;
+      row-gap: 40px;
 
       &-descr {
         max-width: 100%;

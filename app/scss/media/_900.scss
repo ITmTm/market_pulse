@@ -3,17 +3,36 @@
     background: url(../images/intro-bg.avif) center / 700px 700px no-repeat fixed;
   }
 
+  .header {
+    &__left {
+      padding: 0 0 0 20px;
+    }
+    .menu {
+      & > .menu-item--lang {
+        & > a {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+
   .main-hero {
     .container {
-      min-height: 600px;
+      grid-template-columns: 1fr;
     }
     &__left {
-      padding: 120px 22px 30px;
-      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -90px / auto no-repeat;
+      min-height: 500px;
+      .title-m {
+        font-size: 32px;
+      }
+      .text-m {
+        font-size: 18px;
+      }
     }
     &__right {
-      padding: 120px 22px 30px;
-      background: var(--light-grey-color) url(../images/mine-hero-bg-traid.avif) right bottom / cover no-repeat;
+      background: var(--light-grey-color) url(../images/mine-hero-bg-traid.avif) right bottom / contain no-repeat;
+      min-height: 500px;
     }
   }
 

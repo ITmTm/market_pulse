@@ -1,5 +1,109 @@
 @media (max-width: 360px) {
   .container {
-	padding: 0 15px;
+    padding: 0 15px;
+  }
+
+  .main-bg {
+    background: url(../images/intro-bg.avif) center / 300px 300px no-repeat fixed;
+  }
+
+  .header {
+    &__left {
+      padding: 30px 10px 20px 30px;;
+    }
+  }
+
+  .main-hero {
+    &__left {
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -160px / auto no-repeat;
+
+      .title-m {
+        font-size: 27px;
+      }
+    }
+  }
+
+  .intro {
+    .title-l {
+      font-size: 22px;
+    }
+  }
+
+  .trading {
+    &__info {
+      .title-l {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .account {
+    &__card {
+      &-3 {
+        .title-l {
+          font-size: 21px;
+        }
+      }
+
+      .btn {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .bonuses {
+    &__text {
+      .title-l {
+        font-size: 22px;
+      }
+
+      .text-l {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .trust {
+    .title-l {
+      font-size: 22px;
+    }
+  }
+
+  .invest {
+    &__container {
+      padding: 35px 16px 60px;
+    }
+
+    &__wrapper {
+      .title-l {
+        font-size: 22px;
+      }
+    }
+
+    .btn {
+      font-size: 17px;
+    }
+  }
+
+  .footer {
+    &__contact {
+      margin-left: 15px;
+
+      &:after {
+        left: -20px;
+      }
+    }
+
+    &__mail {
+      margin-left: 25px;
+
+      &:after {
+        left: -30px;
+      }
+    }
+
+    .text-m {
+      font-size: 17px;
+    }
   }
 }
