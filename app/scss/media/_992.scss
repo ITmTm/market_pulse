@@ -165,25 +165,7 @@
     .mod-3,
     .mod-4, {
       transform: rotate(0);
-      left: initial;
-      right: initial;
-      top: initial;
-      bottom: initial;
-    }
-
-    &__card {
-      padding: 20px 30px;
-
-      .text-m {
-        font-size: 20px;
-      }
-    }
-
-    &__avatars {
-      img {
-        width: 65px;
-        height: 65px;
-      }
+      inset: 0;
     }
 
     .swiper-pagination-bullet {
