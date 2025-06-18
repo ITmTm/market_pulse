@@ -30,13 +30,14 @@
 .documents-intro {
   padding-bottom: 150px;
 
-  .swiper-pagination {
-    display: none;
-  }
 
   &__cards {
     padding: 25px 0;
     overflow: visible;
+
+    &-pagination {
+      display: none;
+    }
   }
 
   &__card {
