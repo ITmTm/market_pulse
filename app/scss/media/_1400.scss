@@ -1,33 +1,40 @@
 @media (max-width: 1400px) {
   .header {
-	&__left {
-	  padding: 0 20px 0 10px;
-	}
+    &__left {
+      padding: 0 0 0 10px;
+    }
+
+    .menu {
+      padding-right: 20px;
+
+      & > .menu-item {
+        & > a {
+          padding: 10px 10px;
+        }
+      }
+    }
   }
 
-    .main-hero {
-	  &__left {
-		padding: 140px 30px 30px;
-	  }
+  .main-hero {
 
-	  &__right {
-		background: var(--light-grey-color) url(../images/mine-hero-bg-traid.avif) right bottom / contain no-repeat;
-	  }
-	}
+    &__right {
+      background: var(--light-grey-color) url(../images/mine-hero-bg-traid.avif) right bottom / contain no-repeat;
+    }
+  }
 
-  .trust {
-	&__card {
-	  padding: 25px;
-	}
+  .trading {
+    &__container {
+      background: var(--brizz-color) url(../images/trading.avif) top right / 715px 450px no-repeat;
+    }
   }
 
   .footer {
-	.menu-descr {
-	  max-width: 590px;
-	}
+    .menu-descr {
+      max-width: 550px;
+    }
 
-	&__logo {
-	  width: 300px;
-	}
+    &__logo {
+      width: 300px;
+    }
   }
 }
