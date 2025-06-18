@@ -56,12 +56,12 @@
     text-align: center;
   }
 
-  .swiper-pagination {
-    display: none;
-  }
-
   &__cards {
     padding: 100px 10px 80px;
+
+    &-pagination {
+      display: none;
+    }
   }
 
   &__card {
