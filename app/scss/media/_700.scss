@@ -17,11 +17,9 @@
     }
 
     .trading {
-        &__container {
-            background: var(--brizz-color) url(../images/trading-small.avif) top 340px center/370px 260px no-repeat;
-        }
-
         &__info {
+            background: var(--brizz-color) url(../images/trading-small.avif) center bottom / 400px 300px no-repeat;
+            padding: 32px 25px 245px;
             .title-l {
                 font-size: 40px;
             }
