@@ -9,6 +9,9 @@
 
 
   .header {
+    &__left {
+      padding: 0 0 0 10px;
+    }
     &__logo {
       width: 145px;
     }
@@ -89,18 +92,14 @@
   .trading {
     padding-bottom: 80px;
 
-    &__container {
-      border-radius: 30px;
-      padding: 25px 16px 16px;
-      background: var(--brizz-color) url(../images/trading-small.avif) top 356px center / 310px 230px no-repeat;
-      gap: 170px;
-    }
-
     &__card {
       padding: 16px;
     }
 
     &__info {
+      border-radius: 30px;
+      background: var(--brizz-color) url(../images/trading-small.avif) center bottom / 321px 260px no-repeat;
+      padding: 32px 25px 200px;
       .title-l {
         font-size: 24px;
       }
@@ -234,7 +233,7 @@
     }
 
     .menu {
-      row-gap: 20px;
+      row-gap: 30px;
 
       &-descr {
         font-size: 14px;
