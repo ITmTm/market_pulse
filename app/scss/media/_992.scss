@@ -87,9 +87,21 @@
 
     &__container {
       display: flex;
-      gap: 200px;
+      gap: 50px;
       flex-direction: column;
-      background: var(--brizz-color) url(../images/trading-small.avif) top 218px center / 410px 312px no-repeat;
+      background: none;
+      padding: 0;
+    }
+
+    &__info {
+      background: var(--brizz-color) url(../images/trading-small.avif) center bottom / 450px 340px no-repeat;
+      border-radius: 55px;
+      padding: 32px 25px 300px;
+      max-width: 100%;
+
+      .title-l {
+        font-size: 42px;
+      }
     }
 
     &__cards {
@@ -99,13 +111,7 @@
 
     &__card {
       max-width: 100%;
-    }
-
-    &__info {
-      max-width: 100%;
-      .title-l {
-        font-size: 36px;
-      }
+      gap: 50px;
     }
 
     &__text {
