@@ -73,15 +73,6 @@
     }
 
     .trading {
-        &__container {
-            padding: 35px 20px 32px;
-            background: var(--brizz-color) url(../images/trading-small.avif) top 275px center/400px 290px no-repeat;
-        }
-
-        &__info {
-            max-width: 100%;
-        }
-
         &__card {
             gap: 50px;
         }
