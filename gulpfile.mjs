@@ -147,7 +147,7 @@ function pages() {
       .pipe(include({ includePaths: paths.html.components }))
       .pipe(typograf({ locale: [ 'ru', 'en-US' ], safeTags: [ [ '<no-typography>', '</no-typography>' ] ] }))
       .pipe(dest(paths.html.dest))
-      .pipe(browserSync.stream())				// обновляем браузер
+      .pipe(browserSync.reload({ stream: true }))		  // обновляем браузер
 }
 
 
