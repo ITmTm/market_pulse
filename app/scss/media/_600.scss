@@ -3,13 +3,26 @@
     background: url(../images/intro-bg.avif) center / 500px 500px no-repeat fixed;
   }
 
+  .header {
+    &__logo {
+      width: 170px;
+    }
+
+    .lang {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+
   .main-hero {
     &__left {
       background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -150px / auto no-repeat;
+      padding: 100px 20px 30px;
+    }
 
-      .title-m {
-        font-size: 30px;
-      }
+    &__right {
+      padding: 30px 20px;
     }
 
     .features {
@@ -21,9 +34,24 @@
     .title-l {
       font-size: 30px;
     }
+
+    &__card {
+      min-height: 320px;
+    }
+
+    &__descr {
+      .title-s {
+        font-size: 25px;
+      }
+    }
   }
 
   .trading {
+    &__container {
+      padding: 30px 20px;
+      background: var(--brizz-color) url(../images/trading-small.avif) top 370px center / 370px 260px no-repeat;
+    }
+
     &__info {
       .title-l {
         font-size: 30px;
@@ -34,22 +62,29 @@
   .account {
     &__card {
       &-3 {
-        background: var(--light-grey-color) url(../images/account.avif) top 310px center / contain no-repeat;
+        background: var(--light-grey-color) url(../images/account.avif) top 265px center / contain no-repeat;
         gap: 25px;
+
         .title-l {
           font-size: 30px;
-          margin-bottom: initial;
+          margin-bottom: 0;
         }
       }
 
       .btn {
-        margin-top: initial;
+        margin-top: 0;
       }
     }
   }
 
   .bonuses {
+    &__container {
+      padding: 30px 20px;
+    }
+
     &__text {
+      margin-top: 0;
+
       .title-l {
         font-size: 30px;
       }
@@ -62,7 +97,8 @@
     }
 
     &__card {
-      padding: 20px;
+      padding: 30px 20px;
+
       .text-m {
         font-size: 18px;
       }
@@ -71,8 +107,10 @@
 
   .invest {
     &__container {
-      padding: 50px 30px;
+      padding: 50px 30px 100px;
+      background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / contain no-repeat;
     }
+
     &__wrapper {
       .title-l {
         font-size: 30px;
