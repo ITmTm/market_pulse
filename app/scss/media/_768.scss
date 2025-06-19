@@ -20,18 +20,6 @@
         }
     }
 
-    .trading {
-        &__container {
-            background: var(--brizz-color) url(../images/trading-small.avif) top 290px center / 400px 290px no-repeat;
-        }
-
-        &__info {
-            .title-l {
-                font-size: 42px;
-            }
-
-        }
-    }
 
     .account {
         &__card {
