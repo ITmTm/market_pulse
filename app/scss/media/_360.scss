@@ -9,7 +9,11 @@
 
   .header {
     &__left {
-      padding: 30px 10px 20px 30px;;
+      padding-left: 10px;
+    }
+
+    &__logo {
+      width: 130px;
     }
   }
 
@@ -18,33 +22,26 @@
       background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -160px / auto no-repeat;
 
       .title-m {
-        font-size: 27px;
+        font-size: 25px;
       }
     }
   }
 
-  .intro {
-    .title-l {
-      font-size: 22px;
-    }
-  }
 
   .trading {
+    &__container {
+      background: var(--brizz-color);
+      gap: 20px;
+    }
     &__info {
-      .title-l {
-        font-size: 22px;
+      .text-m {
+        margin-bottom: 0;
       }
     }
   }
 
   .account {
     &__card {
-      &-3 {
-        .title-l {
-          font-size: 21px;
-        }
-      }
-
       .btn {
         font-size: 17px;
       }
@@ -53,19 +50,9 @@
 
   .bonuses {
     &__text {
-      .title-l {
-        font-size: 22px;
-      }
-
       .text-l {
-        font-size: 17px;
+        font-size: 18px;
       }
-    }
-  }
-
-  .trust {
-    .title-l {
-      font-size: 22px;
     }
   }
 
@@ -74,18 +61,15 @@
       padding: 35px 16px 60px;
     }
 
-    &__wrapper {
-      .title-l {
-        font-size: 22px;
-      }
-    }
-
     .btn {
-      font-size: 17px;
+      font-size: 18px;
     }
   }
 
   .footer {
+    &__top {
+      gap: 20px;
+    }
     &__contact {
       margin-left: 15px;
 
@@ -100,6 +84,10 @@
       &:after {
         left: -30px;
       }
+    }
+
+    .menu {
+      row-gap: 30px;
     }
 
     .text-m {
