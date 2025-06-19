@@ -1,248 +1,250 @@
 @media (max-width: 1200px) {
-    .header {
-        .container {
-            padding-top: 35px;
-        }
-
-        &__left {
-            padding: 0 20px 0 20px;
-        }
-
-        &.scrolled,
-        &.active {
-            top: 0;
-            background: rgba(59, 166, 177, .9);
-            backdrop-filter: blur(5px);
-            box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
-            z-index: 300;
-        }
-
-        .nav > .menu {
-            position: fixed;
-            max-width: 480px;
-            top: 105px;
-            left: -100%;
-            width: 100%;
-            background: rgba(59, 166, 177, .9);
-            backdrop-filter: blur(5px);
-            height: 100vh;
-            z-index: 10;
-            transition: .5s ease-in-out;
-            visibility: hidden;
-            opacity: 0;
-
-            &.active {
-                padding: 0;
-                transition: .5s ease-in;
-                left: 0;
-                visibility: visible;
-                opacity: 1;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            & > .menu-item {
-                position: relative;
-                width: 100%;
-                transition: none;
-                border-bottom: 1px solid var(--white-color);
-
-                &:before {
-                    content: initial;
-                }
-
-                &:first-child {
-                    border-top: 1px solid var(--white-color);
-                }
-
-                & > a {
-                    display: flex;
-                    text-align: left;
-                    justify-content: space-between;
-                    align-items: center;
-                    border-radius: initial;
-                    width: 100%;
-                    padding: 20px 30px;
-
-                    &:after {
-                        content: '';
-                        position: absolute;
-                        right: 20px;
-                        top: 50%;
-                        width: 5px;
-                        height: 5px;
-                        border-right: 2px solid currentColor;
-                        border-bottom: 2px solid currentColor;
-                        transform: translateY(-50%) rotate(45deg);
-                        transition: transform .3s;
-                    }
-                }
-
-                & > .sub-menu {
-                    transition: none;
-                    display: flex;
-                    text-align: left;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    gap: 20px;
-                    padding: 20px 30px;
-                    position: static;
-                    opacity: 0;
-                    visibility: hidden;
-                    border-radius: initial;
-                    border-top: 1px solid var(--white-color);
-
-                    &.active {
-                        opacity: 1;
-                        visibility: visible;
-                    }
-                }
-
-                &.active > a::after {
-                    transform: translateY(-50%) rotate(-135deg);
-                }
-            }
-        }
-
-
-        &__burger {
-            display: block;
-            background: transparent;
-            border: none;
-            order: 1;
-            width: 75px;
-            height: 50px;
-        }
-
-        svg {
-            width: 100%;
-            height: 100%;
-
-            path {
-                stroke: var(--white-color);
-                stroke-width: 2;
-                stroke-linecap: round;
-
-                transition: .5s;
-
-                &:nth-child(1) {
-                    stroke-dasharray: 13 100;
-                    stroke-dashoffset: -20;
-                }
-
-                &:nth-child(2),
-                &:nth-child(3) {
-                    stroke-dasharray: 35 150;
-                    stroke-dashoffset: -55;
-                }
-            }
-
-            &:hover path {
-                &:nth-child(1) {
-                    stroke-dasharray: 22 100;
-                    stroke-dashoffset: -20;
-                }
-
-                &:nth-child(2),
-                &:nth-child(3) {
-                    stroke-dasharray: 35 150;
-                    stroke-dashoffset: -64;
-                }
-            }
-
-
-            &.active path {
-                &:nth-child(1) {
-                    stroke-dasharray: 5 100;
-                    stroke-dashoffset: 20;
-                }
-
-                &:nth-child(2),
-                &:nth-child(3) {
-                    stroke-dasharray: 32 150;
-                    stroke-dashoffset: 0;
-                }
-            }
-        }
-
-        &__container {
-            padding-bottom: 15px;
-        }
+  .header {
+    transition: .5s ease-in;
+    .container {
+      padding-top: 35px;
     }
 
-    .main-hero {
-        padding-bottom: 130px;
-
-        .container {
-            min-height: 670px
-        }
-
-        &__left {
-            padding: 130px 30px 30px;
-
-            .title-m {
-                font-size: 37px;
-            }
-        }
-
-        .features {
-            gap: 10px;
-            grid-template-columns: 1fr;
-        }
+    &__left {
+      padding: 0 10px 0 20px;
     }
 
-    .intro {
-        &__avatars {
-            img {
-                width: 65px;
-                height: 65px;
-            }
-        }
-
-        &__descr {
-            .title-s {
-                font-size: 20px;
-            }
-        }
+    &.scrolled,
+    &.active {
+      top: 0;
+      background: rgba(59, 166, 177, .9);
+      backdrop-filter: blur(5px);
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+      z-index: 300;
     }
 
-    .trading {
-        &__container {
-            background: var(--brizz-color) url(../images/trading-small.avif) top right / 480px 330px no-repeat;
+    .nav > .menu {
+      position: fixed;
+      max-width: 480px;
+      top: 105px;
+      left: -100%;
+      width: 100%;
+      background: rgba(59, 166, 177, .9);
+      backdrop-filter: blur(5px);
+      height: 100vh;
+      z-index: 10;
+      transition: .5s ease-in-out;
+      visibility: hidden;
+      opacity: 0;
+
+      &.active {
+        padding: 0;
+        transition: .5s ease-in;
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      & > .menu-item {
+        position: relative;
+        width: 100%;
+        transition: none;
+        border-bottom: 1px solid var(--white-color);
+
+        &:before {
+          content: initial;
         }
+
+        &:first-child {
+          border-top: 1px solid var(--white-color);
+        }
+
+        & > a {
+          display: flex;
+          text-align: left;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: initial;
+          width: 100%;
+          padding: 20px 30px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            width: 5px;
+            height: 5px;
+            border-right: 2px solid currentColor;
+            border-bottom: 2px solid currentColor;
+            transform: translateY(-50%) rotate(45deg);
+            transition: transform .3s;
+          }
+        }
+
+        & > .sub-menu {
+          transition: none;
+          display: flex;
+          text-align: left;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 20px;
+          padding: 20px 30px;
+          position: static;
+          opacity: 0;
+          visibility: hidden;
+          border-radius: initial;
+          border-top: 1px solid var(--white-color);
+
+          &.active {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        &.active > a::after {
+          transform: translateY(-50%) rotate(-135deg);
+        }
+      }
     }
 
-    .account {
-        &__grid {
-            .title-l {
-                font-size: 37px;
-            }
-        }
-        &__card {
-            &-3 {
-                background: var(--light-grey-color) url(../images/account.avif) top 465px center / contain no-repeat;
-            }
-        }
+
+    &__burger {
+      display: block;
+      background: transparent;
+      border: none;
+      order: 1;
+      width: 75px;
+      height: 50px;
     }
 
-    .bonuses {
-        &__text {
-            .title-l {
-                font-size: 44px;
-            }
+    svg {
+      width: 100%;
+      height: 100%;
+
+      path {
+        stroke: var(--white-color);
+        stroke-width: 2;
+        stroke-linecap: round;
+
+        transition: .5s;
+
+        &:nth-child(1) {
+          stroke-dasharray: 13 100;
+          stroke-dashoffset: -20;
         }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          stroke-dasharray: 35 150;
+          stroke-dashoffset: -55;
+        }
+      }
     }
 
-    .footer {
-        &__mail {
-            padding-right: 0;
-        }
+    &:hover svg path {
+      &:nth-child(1) {
+        stroke-dasharray: 22 100;
+        stroke-dashoffset: -20;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        stroke-dasharray: 35 150;
+        stroke-dashoffset: -64;
+      }
     }
 
-    .scrolled {
-        box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+
+    &.active svg path {
+      &:nth-child(1) {
+        stroke-dasharray: 5 100;
+        stroke-dashoffset: 20;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        stroke-dasharray: 32 150;
+        stroke-dashoffset: 0;
+      }
     }
+
+    &__container {
+      padding-bottom: 15px;
+    }
+  }
+
+  .main-hero {
+    padding-bottom: 130px;
+
+    .container {
+      min-height: 670px
+    }
+
+    &__left {
+      padding: 130px 30px 30px;
+
+      .title-m {
+        font-size: 37px;
+      }
+    }
+
+    .features {
+      gap: 10px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .intro {
+    &__avatars {
+      img {
+        width: 65px;
+        height: 65px;
+      }
+    }
+
+    &__descr {
+      .title-s {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .trading {
+    &__container {
+      background: var(--brizz-color) url(../images/trading-small.avif) top right / 480px 330px no-repeat;
+    }
+  }
+
+  .account {
+    &__grid {
+      .title-l {
+        font-size: 37px;
+      }
+    }
+
+    &__card {
+      &-3 {
+        background: var(--light-grey-color) url(../images/account.avif) top 465px center / contain no-repeat;
+      }
+    }
+  }
+
+  .bonuses {
+    &__text {
+      .title-l {
+        font-size: 44px;
+      }
+    }
+  }
+
+  .footer {
+    &__mail {
+      padding-right: 0;
+    }
+  }
+
+  .scrolled {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+  }
 
 }
 
