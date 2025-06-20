@@ -6,7 +6,7 @@
     }
 
     &__left {
-      padding: 0 10px 0 20px;
+      padding-left: 20px;
     }
 
     &.scrolled,
@@ -18,29 +18,33 @@
       z-index: 300;
     }
 
-    .nav > .menu {
+    .nav {
       position: fixed;
-      max-width: 480px;
+      width: 50%;
       top: 105px;
-      left: -100%;
-      width: 100%;
+      left: 0;
       background: rgba(59, 166, 177, .9);
       backdrop-filter: blur(5px);
       height: 100vh;
       z-index: 10;
       transition: .5s ease-in-out;
-      visibility: hidden;
-      opacity: 0;
+      //visibility: hidden;
+      //opacity: 0;
+    }
+
+      .nav > .menu {
+        flex-direction: column;
+        gap: 0;
 
       &.active {
-        padding: 0;
-        transition: .5s ease-in;
-        left: 0;
-        visibility: visible;
-        opacity: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        //padding: 0;
+        //transition: .5s ease-in;
+        //left: 0;
+        //visibility: visible;
+        //opacity: 1;
+        //display: flex;
+        //flex-direction: column;
+        //align-items: flex-start;
       }
 
       & > .menu-item {
@@ -89,8 +93,8 @@
           gap: 20px;
           padding: 20px 30px;
           position: static;
-          opacity: 0;
-          visibility: hidden;
+          opacity: 1;
+          visibility: visible;
           border-radius: initial;
           border-top: 1px solid var(--white-color);
 
@@ -103,6 +107,41 @@
         &.active > a::after {
           transform: translateY(-50%) rotate(-135deg);
         }
+      }
+    }
+
+    &__right {
+      //display: none;
+
+      &--mobile {
+        display: block;
+        inset: initial;
+        position: initial;
+        width: initial;
+        height: initial;
+
+        .menu {
+          &>.menu-item {
+            width: 100%;
+
+            &>a {
+              display: block;
+              width: 100%;
+              padding: 20px 40px !important;
+              border-radius: initial;
+            }
+
+            &>.sub-menu {
+              opacity: 1;
+              visibility: visible;
+              transition: none;
+            }
+          }
+        }
+      }
+
+      &--desktop {
+        display: none;
       }
     }
 
