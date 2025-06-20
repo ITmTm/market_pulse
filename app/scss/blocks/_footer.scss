@@ -20,6 +20,7 @@
 
   &__contact {
     position: relative;
+
     &:after {
       content: "";
       position: absolute;
@@ -35,6 +36,7 @@
   &__mail {
     position: relative;
     padding-right: 150px;
+
     &:after {
       content: "";
       position: absolute;
@@ -47,25 +49,27 @@
     }
   }
 
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin-bottom: 32px;
+  }
+
 
   .menu {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 
-    &-descr {
-      max-width: 650px;
-      color: var(--grey-color);
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4
-    }
-
-    &-item > a {
-      cursor: text;
-      font-size: 18px;
-      font-weight: 400;
-      color: var(--black-color);
+    &-item {
+      a {
+        cursor: text;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--black-color);
+      }
     }
   }
 
@@ -74,15 +78,23 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 15px;
-     li {
-       & > a {
-         cursor: pointer;
-         font-size: 16px;
-         color: var(--grey-color);
-         font-weight: 300;
-         transition: .4s ease-in;
-       }
-     }
+
+    li {
+      a {
+        cursor: pointer;
+        font-size: 16px;
+        color: var(--grey-color);
+        font-weight: 300;
+        transition: .4s ease-in;
+      }
+    }
+  }
+
+  &__risk {
+    color: var(--grey-color);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4
   }
 
   &__copyright {
