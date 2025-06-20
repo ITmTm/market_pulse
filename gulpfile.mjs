@@ -254,7 +254,9 @@ function styles() {
       .pipe(concat('style.min.css'))                    // итоговый файл стилей
       .pipe(sourcemaps.write('.'))                  // записать карты
       .pipe(dest(paths.styles.dest))
-      .pipe(browserSync.stream())
+      // .pipe(browserSync.stream())
+      .on('end', () => setTimeout(() => browserSync.reload(), 100)); // 100 мс пауза
+
 }
 
 
