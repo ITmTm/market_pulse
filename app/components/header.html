@@ -2,51 +2,60 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale = 1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale = 1.0">
 
-  <!-- Берется из js -->
-  <title></title>
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="stylesheet" href="css/style.min.css">
+    <!-- Берется из js -->
+    <title></title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 <div class="main-bg"></div>
 
 <header class="header">
-  <div class="container">
-    <div class="header__left">
-      <a class="header__logo" href="/"></a>
+    <div class="container">
+        <div class="header__left">
+            <a class="header__logo" href="/"></a>
 
 
-      <!-- кнопка-бургер -->
-      <button class="header__burger" aria-label="Open menu">
-        <svg width="53" height="35" viewBox="0 0 53 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 51.5 17.5 H 9"/>
-          <path d="M 32 29 L 9 5  C 0 -4 -3 10 9 10 H 32"/>
-          <path d="M 32 6  L 9 30 C 0 39 -3 25 9 25 H 32"/>
-        </svg>
-      </button>
+            <!-- кнопка-бургер -->
+            <button class="header__burger" aria-label="Open menu">
+                <svg width="53" height="35" viewBox="0 0 53 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 51.5 17.5 H 9"/>
+                    <path d="M 32 29 L 9 5  C 0 -4 -3 10 9 10 H 32"/>
+                    <path d="M 32 6  L 9 30 C 0 39 -3 25 9 25 H 32"/>
+                </svg>
+            </button>
 
-      <!--=include menu.html -->
+            <!--=include menu.html -->
+
+        </div>
+
+        <div class="header__right">
+            <nav class="nav">
+                <ul class="menu header__lang">
+                    <li class="menu-item">
+                        <a href="##">ENG</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="##">RU</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
 
-      <ul class="lang">
-        <li class="lang-item">
-          <a href="##">ENG</a>
-        </li>
-      </ul>
+        <!--    <ul class="menu">-->
+        <!--      <li class="menu-item&#45;&#45;lang">-->
+        <!--        <a href="##">ENG</a>-->
+        <!--      </li>-->
+        <!--    </ul>-->
+
 
     </div>
-
-    <ul class="menu">
-      <li class="menu-item--lang">
-        <a href="##">ENG</a>
-      </li>
-    </ul>
-
-
-
-  </div>
 </header>
