@@ -24,7 +24,7 @@
 
   &__left {
     display: flex;
-    padding: 0 0 0 30px;
+    padding-left: 30px;
     gap: 10px;
     align-items: center;
     justify-content: space-between;
@@ -82,6 +82,9 @@
   }
 
   &__right {
+    &--mobile {
+      display: none;
+    }
     .header__lang {
       & > .menu-item {
         > a {
@@ -102,7 +105,8 @@
         }
 
         & > .sub-menu {
-          left: 5px;
+          left: 50%;
+          transform: translateX(-50%);
           padding: 10px 20px;
         }
       }
@@ -125,10 +129,6 @@
     transition: .5s ease-in-out all;
     padding-top: 20px;
   }
-}
-
-.header__lang>.menu-item>a {
-
 }
 
 
