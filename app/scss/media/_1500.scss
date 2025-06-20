@@ -1,17 +1,8 @@
 @media (max-width: 1500px) {
-  .bonuses {
-    &__descr {
-      .text-m {
-        &:last-of-type {
-          margin-bottom: 40px;
-        }
-      }
-    }
-  }
 
   .trading {
     &__container {
-      background: var(--brizz-color) url(../images/trading.avif) top right / 760px 465px no-repeat;
+      background: var(--brizz-color) url(../images/trading.avif) top right / 720px 450px no-repeat;
     }
   }
 }
