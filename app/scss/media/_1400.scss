@@ -1,15 +1,14 @@
 @media (max-width: 1400px) {
   .header {
     &__left {
-      padding: 0 0 0 10px;
+      padding-left: 10px;
     }
 
     .menu {
-      padding-right: 20px;
 
       & > .menu-item {
         & > a {
-          padding: 10px 10px;
+          padding: 10px;
         }
       }
     }
@@ -29,8 +28,17 @@
   }
 
   .footer {
-    .menu-descr {
-      max-width: 550px;
+    &__container {
+      background: var(--light-grey-color) url(../images/footer-bg.avif) top -45px right / auto no-repeat;
+    }
+
+    &__box {
+      .menu {
+        gap: 40px;
+        &-item {
+          white-space: nowrap;
+        }
+      }
     }
 
     &__logo {
