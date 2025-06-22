@@ -1,11 +1,18 @@
 @media (max-width: 1300px) {
   .header {
-    .container {
-      gap: 40px;
-    }
 
     &__logo {
       width: 190px;
+    }
+
+    &__left {
+      .menu {
+        & > .menu-item {
+          a {
+            padding: 10px;
+          }
+        }
+      }
     }
   }
 
@@ -101,7 +108,7 @@
     &__box {
       .menu {
         &-item {
-          white-space: wrap;
+          white-space: normal;
         }
       }
     }
