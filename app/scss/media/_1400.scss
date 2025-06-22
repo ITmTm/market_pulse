@@ -1,14 +1,17 @@
 @media (max-width: 1400px) {
   .header {
+    .container {
+      gap: 40px;
+    }
     &__left {
       padding-left: 10px;
-    }
 
-    .menu {
 
-      & > .menu-item {
-        & > a {
-          padding: 10px;
+      .menu {
+        & > .menu-item {
+          a {
+            padding: 10px 15px;
+          }
         }
       }
     }
