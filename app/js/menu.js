@@ -1,79 +1,108 @@
-// мобильное меню
+// ---- Константы и кэш селекторов -----------------------------------------
+const BREAKPOINT = 1200;
+const $body = $('body');
+const $header = $('.header');
+const $burger = $('.header__burger');
+const $nav = $('.header .nav');
+const $overlay = $('.menu-overlay');
 
-let menuItem = $('.header .menu > .menu-item');
-let subMenu = $('.header .menu > .menu-item .sub-menu');
-let burger = $('.header__burger'); // кнопка открытия мобильного меню
-let headerMenu = $('.header .menu'); // меню хедера
-let headerBox = $('.header'); // блок внутри контейнера хедера, например если он в виде острова и при выпадении мобильного меню, нужно его дополнительно стилизовать
-
-menuItem.removeClass('active');
-// subMenu.removeClass('active').slideUp();
-burger.removeClass('active');
-headerMenu.removeClass('active');
-headerBox.removeClass('active');
-
-navMenu();
-
-function navMenu() {
-    if ($(window).width() <= 1200) {
-
-        burger.on('click', function () {
-            burger.toggleClass('active');
-            headerBox.toggleClass('active');
-            headerMenu.toggleClass('active');
-
-            subMenu.removeClass('active').slideUp();
-            menuItem.removeClass('active');
-        })
-
-        $('.upButton').on('click', function () {
-            burger.removeClass('active');
-            headerBox.removeClass('active');
-            headerMenu.removeClass('active');
-
-            subMenu.removeClass('active').slideUp();
-            menuItem.removeClass('active');
-        });
-
-        for (let click = 0; click < menuItem.length; click++) {
-            menuItem.eq(click).on('click', function () {
-                if (menuItem.eq(click).hasClass('active')) {
-                    menuItem.eq(click).removeClass('active');
-                    subMenu.eq(click).removeClass('active').slideUp();
-                } else {
-                    for (let other = 0; other < menuItem.length; other++) {
-                        if (menuItem.eq(other) != menuItem.eq(click)) {
-                            subMenu.eq(other).removeClass('active').slideUp();
-                            menuItem.removeClass('active');
-                        }
-                    }
-
-                    subMenu.eq(click).addClass('active').slideDown();
-                    menuItem.eq(click).addClass('active');
-                }
-            })
-        }
-    } else {
-        // for (let hover = 0; hover < menuItem.length; hover++) {
-        //     menuItem.eq(hover).on('mouseenter', function () {
-        //
-        //         if (!menuItem.eq(hover).hasClass('active')) {
-        //             for (let other = 0; other < menuItem.length; other++) {
-        //                 if (menuItem.eq(other) != menuItem.eq(hover)) {
-        //                     subMenu.eq(other).removeClass('active').slideUp();
-        //                     menuItem.eq(other).removeClass('active');
-        //                 }
-        //             }
-        //
-        //             subMenu.eq(hover).addClass('active').slideDown();
-        //             menuItem.eq(hover).addClass('active');
-        //         }
-        //     })
-        //
-        //     subMenu.eq(hover).on('mouseleave', function () {
-        //         subMenu.eq(hover).removeClass('active').slideUp();
-        //         menuItem.eq(hover).removeClass('active');
-        //     })
-        // }
-    }
+// ---- Хелперы -------------------------------------------------------------
+/** Скрывает все подменю и сбрасывает у всех пунктов .active */
+function closeAllSubmenus() {
+  $nav
+      .find('.menu-item.active').removeClass('active').end()
+      .find('.sub-menu').stop(true, true).hide();
 }
+
+/** Закрыть главное меню */
+function closeMenu() {
+  closeAllSubmenus();
+  $burger.removeClass('active');
+  $header.removeClass('active');
+  $nav.removeClass('active');
+  $overlay.removeClass('active');
+  $body.removeClass('lock-scroll');
+}
+
+/** Открыть главное меню */
+function openMenu() {
+  closeAllSubmenus();
+  $burger.addClass('active');
+  $header.addClass('active');
+  $nav.addClass('active');
+  $overlay.addClass('active');
+  $body.addClass('lock-scroll');
+}
+
+// ---- Мобильная навигация -----------------------------------------------
+function bindMobile() {
+  // гарантированно скрываем все подменю
+  closeAllSubmenus();
+
+  // клик по бургеру и оверлею
+  $burger.on('click.mobile', () => {
+    $header.hasClass('active') ? closeMenu() : openMenu();
+  });
+  $overlay.on('click.mobile', closeMenu);
+
+  // делегируем клик на пункты меню
+  $nav.on('click.mobile', '.menu-item > a', function (e) {
+    const $item = $(this).parent();
+    const $submenu = $item.children('.sub-menu');
+    if (!$submenu.length) return; // если нет подменю — обычная ссылка
+
+    e.preventDefault();
+    // свернём все соседи
+    $item
+        .siblings('.menu-item')
+        .removeClass('active')
+        .children('.sub-menu')
+        .stop(true, true)
+        .slideUp(200);
+
+    // переключим текущее
+    $item.toggleClass('active');
+    $submenu.stop(true, true).slideToggle(200);
+  });
+}
+
+function unbindMobile() {
+  // снимаем только пространство имён .mobile
+  $burger.off('.mobile');
+  $overlay.off('.mobile');
+  $nav.off('.mobile');
+  // и закрываем меню
+  closeMenu();
+
+  // сбрасываем все инлайн-свойства, которые мешают десктоп-CSS
+  $nav.find('.sub-menu').css({
+    display: '',
+    visibility: '',
+    opacity: '',
+    transform: ''
+  });
+}
+
+// ---- breakpoint через matchMedia ----------------------------------------
+const mq = window.matchMedia(`(max-width: ${ BREAKPOINT - 1 }px)`);
+
+/** Вызывается при изменении ширины */
+function handleBreakpoint(e) {
+  if (e.matches) {
+    bindMobile();
+  } else {
+    unbindMobile();
+    // десктопный показ подменю идёт через CSS :hover,
+    // поэтому JS ничего не делает
+  }
+}
+
+// подписываемся на события (новые и старые браузеры)
+if (mq.addEventListener) {
+  mq.addEventListener('change', handleBreakpoint);
+} else if (mq.addListener) {
+  mq.addListener(handleBreakpoint);
+}
+
+// первичная инициализация
+handleBreakpoint(mq);
