@@ -71,12 +71,13 @@
         padding: 15px 20px;
         background: #65b0b8;
         border-radius: 15px;
-        transition: .3s ease-in all;
         box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.25);
         visibility: hidden;
         white-space: nowrap;
         color: var(--white-color);
         opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.5s ease, transform 0.8s ease ;
       }
     }
   }
@@ -98,15 +99,10 @@
           font-size: 18px;
           font-weight: 400;
           line-height: 1.4;
-
-          &:hover {
-            background: rgba(168, 139, 139, .5);
-          }
         }
 
         & > .sub-menu {
-          left: 50%;
-          transform: translateX(-50%);
+          left: 5px;
           padding: 10px 20px;
         }
       }
