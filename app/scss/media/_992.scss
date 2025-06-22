@@ -1,13 +1,14 @@
 @media (max-width: 992px) {
 
   .header {
+    &__logo {
+      width: 205px;
+    }
+
     .menu {
       & > .menu-item {
         &:before {
           content: none;
-        }
-        & > a {
-          padding: 10px 20px;
         }
       }
     }
@@ -22,10 +23,10 @@
 
     &__left {
       padding: 120px 30px 30px;
-      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -90px / auto no-repeat;
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -100px / auto no-repeat;
 
-      .text-m {
-        font-size: 17px;
+      .title-m {
+        font-size: 37px;
       }
     }
   }
@@ -58,20 +59,6 @@
       }
     }
 
-    &__avatars {
-      img {
-        width: 65px;
-        height: 65px;
-      }
-    }
-
-    &__accounts {
-      img {
-        width: 65px;
-        height: 65px;
-      }
-    }
-
     .swiper-pagination-bullet {
       width: 10px;
       height: 10px;
@@ -100,24 +87,21 @@
       max-width: 100%;
 
       .title-l {
-        font-size: 42px;
+        font-size: 40px;
       }
     }
 
     &__cards {
-      flex-direction: column;
-      align-items: flex-start;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      justify-items: stretch;
+      align-items: center;
+      justify-content: start;
     }
 
     &__card {
       max-width: 100%;
-      gap: 50px;
-    }
-
-    &__text {
-      .text-m {
-        font-size: 17px;
-      }
+      gap: 70px;
     }
   }
 
@@ -146,7 +130,7 @@
 
     &__text {
       .title-l {
-        font-size: 39px;
+        font-size: 36px;
       }
     }
   }
@@ -207,11 +191,15 @@
       width: 200px;
     }
 
-    .menu {
-      flex-wrap: wrap;
+    &__top {
+      margin-bottom: 40px;
+    }
+
+    &__box {
+      grid-template-columns: 1fr;
       row-gap: 40px;
 
-      &-descr {
+      &__risk {
         max-width: 100%;
       }
     }
