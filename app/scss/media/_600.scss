@@ -4,29 +4,18 @@
   }
 
   .header {
-    &__logo {
-      width: 170px;
-    }
-
-    .lang {
-      a {
-        font-size: 16px;
-      }
+    .nav {
+      width: 70%;
     }
   }
 
   .main-hero {
     &__left {
-      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -150px / auto no-repeat;
-      padding: 100px 20px 30px;
+      border-radius: 30px;
     }
 
     &__right {
-      padding: 30px 20px;
-    }
-
-    .features {
-      gap: 20px;
+      border-radius: 30px;
     }
   }
 
@@ -36,18 +25,13 @@
     }
 
     &__card {
-      min-height: 320px;
-    }
-
-    &__descr {
-      .title-s {
-        font-size: 25px;
-      }
+      border-radius: 30px;
     }
   }
 
   .trading {
     &__info {
+      border-radius: 30px;
       .title-l {
         font-size: 30px;
       }
@@ -56,13 +40,14 @@
 
   .account {
     &__card {
+      border-radius: 30px;
       &-3 {
         background: var(--light-grey-color) url(../images/account.avif) top 265px center / contain no-repeat;
         gap: 25px;
 
         .title-l {
           font-size: 30px;
-          margin-bottom: 0;
+          margin-bottom: 10px;
         }
       }
 
@@ -74,12 +59,11 @@
 
   .bonuses {
     &__container {
+      border-radius: 30px;
       padding: 30px 20px;
     }
 
     &__text {
-      margin-top: 0;
-
       .title-l {
         font-size: 30px;
       }
@@ -93,23 +77,15 @@
 
     &__card {
       padding: 30px 20px;
-
-      .text-m {
-        font-size: 18px;
-      }
+      border-radius: 30px;
     }
   }
 
   .invest {
     &__container {
-      padding: 50px 30px 100px;
-      background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / contain no-repeat;
-    }
-
-    &__wrapper {
-      .title-l {
-        font-size: 30px;
-      }
+      padding: 50px 20px 100px;
+      border-radius: 30px;
+      background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
     }
   }
 }
