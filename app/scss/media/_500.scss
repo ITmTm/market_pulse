@@ -9,30 +9,44 @@
 
 
   .header {
-    &__left {
-      padding: 0 0 0 10px;
-    }
     &__logo {
-      width: 145px;
+      width: 180px;
     }
 
-    .lang {
-      padding: 0;
-
-      a {
-        padding: 10px 15px;
+    &__right {
+      &--mobile {
+        .menu {
+          & > .menu-item {
+            & > .sub-menu  {
+              padding: 20px 0;
+            }
+          }
+        }
       }
     }
-
   }
+
+  .header__right--mobile .menu>.menu-item>a {
+    padding: 20px 10px;
+  }
+
+  .header .nav>.menu>.menu-item a {
+    padding: 20px 10px;
+  }
+
+
 
 
   .main-hero {
     padding-bottom: 80px;
 
     &__left {
-      border-radius: 30px;
       padding: 100px 16px 16px;
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -150px / auto no-repeat;
+
+      .title-m {
+        font-size: 32px;
+      }
 
       .text-m {
         font-size: 16px;
@@ -41,7 +55,6 @@
     }
 
     &__right {
-      border-radius: 30px;
       padding: 0;
     }
 
@@ -54,8 +67,8 @@
     padding-bottom: 80px;
 
     &__card {
-      border-radius: 30px;
       padding: 30px 16px 16px;
+      min-height: 280px;
     }
 
     .title-l {
@@ -92,14 +105,18 @@
   .trading {
     padding-bottom: 80px;
 
+    &__container {
+      gap: 10px;
+    }
+
     &__card {
       padding: 16px;
     }
 
     &__info {
-      border-radius: 30px;
       background: var(--brizz-color) url(../images/trading-small.avif) center bottom / 321px 260px no-repeat;
       padding: 32px 25px 200px;
+
       .title-l {
         font-size: 24px;
       }
@@ -125,7 +142,6 @@
     padding: 0 0 80px;
 
     &__card {
-      border-radius: 30px;
       padding: 25px 16px;
 
       &-1 {
@@ -142,10 +158,10 @@
 
       &-3 {
         max-height: 400px;
-        background: var(--light-grey-color) url(../images/account.avif) top 250px center / contain no-repeat;
+        background: var(--light-grey-color) url(../images/account.avif) top 265px center / contain no-repeat;
 
         .title-l {
-          font-size: 24px;
+          font-size: 23px;
         }
       }
 
@@ -160,7 +176,6 @@
     padding-bottom: 80px;
 
     &__container {
-      border-radius: 30px;
       padding: 16px;
     }
 
@@ -170,12 +185,14 @@
 
     &__text {
       gap: 25px;
+
       .title-l {
         font-size: 24px;
       }
     }
 
     &__descr {
+      margin-bottom: 25px;
       .text-m {
         font-size: 16px;
       }
@@ -184,12 +201,12 @@
 
 
   .trust {
+    padding-bottom: 80px;
     .title-l {
       font-size: 24px;
     }
 
     &__card {
-      border-radius: 30px;
 
       .text-m {
         font-size: 16px;
@@ -198,9 +215,9 @@
   }
 
   .invest {
+    padding-bottom: 80px;
     &__container {
-      padding: 35px 16px 90px;
-      border-radius: 30px;
+      padding: 35px 16px 80px;
       background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
     }
 
@@ -220,7 +237,6 @@
   .footer {
     &__container {
       background: var(--light-grey-color) url(../images/footer-small-bg.avif) top right / auto no-repeat;
-      border-radius: 30px;
       padding: 16px;
     }
 
@@ -234,10 +250,10 @@
 
     .menu {
       row-gap: 30px;
+    }
 
-      &-descr {
-        font-size: 14px;
-      }
+    &__risk {
+      font-size: 14px;
     }
   }
 
