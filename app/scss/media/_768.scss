@@ -1,83 +1,56 @@
 @media (max-width: 768px) {
-    .header {
-        .container {
-            padding-top: 30px;
-        }
+  .main-hero {
+    &__left {
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -140px / auto no-repeat;
+      padding: 100px 30px 30px;
+    }
+  }
 
-        .nav > .menu {
-            top: 100px;
-            transition: none;
-        }
+  .intro {
+    .title-l {
+      font-size: 40px;
     }
 
-    .intro {
-        .title-l {
-            font-size: 40px;
-        }
+    &__card {
+      min-height: 330px;
+    }
+  }
 
-        &__descr {
-            gap: 20px;
+
+  .account {
+    &__card {
+      &-1 {
+        .title-s {
+          font-size: 22px;
         }
+      }
+
+      &-2 {
+        .title-s {
+          font-size: 22px;
+        }
+      }
+
+      &-3 {
+        height: 450px;
+        background: var(--light-grey-color) url(../images/account.avif) top 245px center / contain no-repeat;
+      }
+    }
+  }
+
+  .trust {
+    .title-l {
+      font-size: 40px;
     }
 
-
-    .account {
-        &__card {
-            &-1 {
-                .title-s {
-                    font-size: 22px;
-                }
-            }
-
-            &-2 {
-                .title-s {
-                    font-size: 22px;
-                }
-            }
-
-            &-3 {
-                height: 450px;
-                background: var(--light-grey-color) url(../images/account.avif) top 220px center / contain no-repeat;
-
-                .title-l {
-                    font-size: 40px;
-                }
-            }
-        }
+    &__card {
+      min-height: 300px;
     }
+  }
 
-    .bonuses {
-        &__text {
-            .title-l {
-                font-size: 40px;
-            }
-        }
+  .footer {
+    .sub-menu {
+      gap: 20px;
     }
-
-    .trust {
-        .title-l {
-            font-size: 40px;
-        }
-
-        &__card {
-            min-height: 300px;
-            padding: 32px 25px;
-        }
-    }
-
-    .invest {
-        &__container {
-            padding: 60px 30px;
-        }
-
-        .btn {
-            max-width: 100%;
-        }
-    }
-
-    .footer {
-        .sub-menu {
-            gap: 20px;
-        }
-    }
+  }
 }
