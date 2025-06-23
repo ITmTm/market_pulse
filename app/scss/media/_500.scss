@@ -12,28 +12,23 @@
     &__logo {
       width: 180px;
     }
+  }
 
-    &__right {
-      &--mobile {
-        .menu {
-          & > .menu-item {
-            & > .sub-menu  {
-              padding: 20px 0;
-            }
-          }
-        }
-      }
-    }
+  .header .nav>.menu>.menu-item>a {
+    padding: 20px 10px;
+  }
+
+  .header .nav>.menu>.menu-item>.sub-menu {
+    padding: 20px 10px;
   }
 
   .header__right--mobile .menu>.menu-item>a {
     padding: 20px 10px;
   }
 
-  .header .nav>.menu>.menu-item a {
+  .header__right--mobile .menu>.menu-item>.sub-menu {
     padding: 20px 10px;
   }
-
 
 
 
