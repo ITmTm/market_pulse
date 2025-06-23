@@ -75,4 +75,27 @@
       font-size: 16px;
     }
   }
+
+
+
+
+  .about {
+    &__right {
+      background: #f0f0f0 url(../images/about.avif) center center / contain no-repeat;
+      height: 165px;
+      max-height: 180px;
+    }
+
+    &-market {
+      &__left {
+        max-height: 280px;
+      }
+    }
+
+    &-invest {
+      .title-l {
+        font-size: 24px;
+      }
+    }
+  }
 }

@@ -14,22 +14,21 @@
     }
   }
 
-  .header .nav>.menu>.menu-item>a {
+  .header .nav > .menu > .menu-item > a {
     padding: 20px 10px;
   }
 
-  .header .nav>.menu>.menu-item>.sub-menu {
+  .header .nav > .menu > .menu-item > .sub-menu {
     padding: 20px 10px;
   }
 
-  .header__right--mobile .menu>.menu-item>a {
+  .header__right--mobile .menu > .menu-item > a {
     padding: 20px 10px;
   }
 
-  .header__right--mobile .menu>.menu-item>.sub-menu {
+  .header__right--mobile .menu > .menu-item > .sub-menu {
     padding: 20px 10px;
   }
-
 
 
   .main-hero {
@@ -188,6 +187,7 @@
 
     &__descr {
       margin-bottom: 25px;
+
       .text-m {
         font-size: 16px;
       }
@@ -197,6 +197,7 @@
 
   .trust {
     padding-bottom: 80px;
+
     .title-l {
       font-size: 24px;
     }
@@ -211,6 +212,7 @@
 
   .invest {
     padding-bottom: 80px;
+
     &__container {
       padding: 35px 16px 80px;
       background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
@@ -265,6 +267,110 @@
       width: calc(100% + 30px);
       margin-left: -15px;
       margin-right: -15px;
+    }
+  }
+
+
+  .about {
+    padding-bottom: 80px;
+
+    &__left {
+      padding: 100px 16px 16px;
+
+      .title-m {
+        font-size: 32px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+    &__right {
+      background: #f0f0f0 url(../images/about.avif) center center / cover no-repeat;
+      height: 260px;
+      max-height: 300px;
+    }
+
+    &-market {
+      padding-bottom: 80px;
+
+      &__left {
+        max-height: 320px;
+
+        .text-m {
+          font-size: 16px;
+        }
+      }
+
+      &__right {
+        padding: 16px;
+
+        .text-m {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-trading {
+      padding-bottom: 80px;
+
+      &__container {
+        padding: 16px;
+      }
+
+      .title-l {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      &__text {
+        .title-s {
+          font-size: 18px;
+        }
+
+        .text-m {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-numbers {
+      padding-bottom: 80px;
+      &__container {
+        padding: 25px 16px 16px;
+      }
+
+      .title-l {
+        font-size: 32px;
+      }
+
+      &__cards {
+        gap: 30px;
+      }
+
+      .title-m {
+        font-size: 18px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+    &-invest {
+      padding-bottom: 80px;
+      &__container {
+        padding: 30px 16px 80px;
+        background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
+      }
+      .title-l {
+        font-size: 26px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
     }
   }
 }
