@@ -103,8 +103,8 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
     gap: 20px;
+    align-items: stretch;
   }
 
   &__card {
@@ -142,6 +142,11 @@
     background: var(--brizz-color) url(../images/about-numbers-bg.avif) center center /100% 100% no-repeat;
     border-radius: 55px;
     padding: 65px 40px 95px;
+  }
+
+  .title-l {
+    color: var(--white-color);
+    text-align: center;
   }
 
   .title-m {
