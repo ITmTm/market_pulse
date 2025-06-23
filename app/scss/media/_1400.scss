@@ -12,6 +12,12 @@
           a {
             padding: 10px 15px;
           }
+
+          & > .sub-menu {
+            a {
+              padding: 0;
+            }
+          }
         }
       }
     }
