@@ -104,4 +104,76 @@
       margin-bottom: 10px;
     }
   }
+
+
+  .about {
+    .container {
+      grid-template-columns: 1fr;
+    }
+
+    &__right {
+      background: #F0F0F0 url(../images/about.avif) center center / cover no-repeat;
+      max-height: 400px;
+      height: 350px;
+    }
+
+    &-market {
+      .container {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+      }
+
+      &__left {
+        padding: 30px 20px;
+        order: 2;
+        max-height: 480px;
+        height: 480px;
+      }
+    }
+
+    &-trading {
+      &__container {
+        background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right / 625px 400px no-repeat;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+
+      &__cards {
+        grid-template-columns: 1fr;
+      }
+
+      &__card {
+        gap: 70px;
+      }
+    }
+
+    &-numbers {
+      &__container {
+        padding: 65px 40px 32px;
+        background: var(--brizz-color) url(../images/about-numbers-small-bg.avif) center center / cover no-repeat;
+      }
+
+      &__cards {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 40px;
+      }
+    }
+
+    &-invest {
+      &__container {
+        padding: 60px 40px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+
+      .btn {
+        max-width: 100%;
+      }
+    }
+  }
 }
