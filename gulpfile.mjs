@@ -14,9 +14,8 @@ const { src, dest, watch, parallel, series } = gulp;
 // ПЛАГИНЫ ДЛЯ СТИЛЕЙ
 // ————————————————————————————————————————————
 
-import gulpSass from "gulp-sass";
-import * as dartSass from "sass";
-const scss = gulpSass(dartSass);                        // компиляция SCSS → CSS через Dart Sass
+import sassCompiler from "gulp-dart-sass";
+
 
 import autoprefixer from "gulp-autoprefixer";           // проставляет вендорные префиксы для CSS
 import sourcemaps from "gulp-sourcemaps";               // генерирует sourcemaps для отладки стилей
@@ -247,7 +246,7 @@ function styles() {
         })
       }))
       .pipe(sourcemaps.init())
-      .pipe(scss({ outputStyle: 'compressed' }))      // сжатый CSS
+      .pipe(sassCompiler({ outputStyle: 'compressed' }).on('error', sassCompiler.logError))      // сжатый CSS
       .pipe(autoprefixer({
         overrideBrowserslist: [ 'last 10 version' ]
       }))
