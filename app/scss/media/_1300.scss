@@ -105,7 +105,6 @@
 
 
   .footer {
-
     &__box {
       .menu {
         &-item {
@@ -118,4 +117,23 @@
       width: 270px;
     }
   }
+
+  .about {
+    &__left {
+      .title-m {
+        font-size: 41px;
+      }
+    }
+
+    &__right {
+      background: linear-gradient(270deg, #F0F0F0 15%, rgba(240, 240, 240, 0.65) 25%, rgba(240, 240, 240, 0) 40%), var(--light-grey-color) url(../images/about.avif) left bottom / auto no-repeat;
+    }
+
+    &-invest {
+      &__container {
+        padding: 80px 120px 120px;
+      }
+    }
+  }
+
 }
