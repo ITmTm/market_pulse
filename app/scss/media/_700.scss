@@ -7,18 +7,6 @@
   .header {
     .nav {
       width: 60%;
-
-      & > .menu {
-        & > .menu-item {
-          a {
-            padding: 20px;
-          }
-
-          .sub-menu {
-            padding: 20px 0;
-          }
-        }
-      }
     }
   }
 
