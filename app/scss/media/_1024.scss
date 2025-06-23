@@ -19,4 +19,13 @@
       }
     }
   }
+
+
+  .about {
+    &-trading {
+      &__container {
+        background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right / 625px 400px no-repeat;
+      }
+    }
+  }
 }
