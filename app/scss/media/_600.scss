@@ -88,4 +88,60 @@
       background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
     }
   }
+
+  .footer {
+    &__container {
+      border-radius: 30px;
+    }
+  }
+
+
+
+
+  .about {
+    &__left {
+      border-radius: 30px;
+    }
+
+    &__right {
+      border-radius: 30px;
+    }
+
+    &-market {
+      &__left {
+        border-radius: 30px;
+      }
+      &__right {
+        border-radius: 30px;
+      }
+    }
+
+    &-trading {
+      &__container {
+        border-radius: 30px;
+        background: var(--brizz-color) url(../images/about-trading-bg.avif) center bottom / 500px 300px no-repeat;
+      }
+    }
+
+    &-numbers {
+      &__container {
+        border-radius: 30px;
+      }
+
+      .title-m {
+        font-size: 30px;
+      }
+    }
+
+    &-invest {
+      &__container {
+        border-radius: 30px;
+        padding: 60px 20px;
+      }
+
+      .title-l {
+        font-size: 29px;
+      }
+    }
+  }
 }
