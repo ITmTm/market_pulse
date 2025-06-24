@@ -2,8 +2,20 @@
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   z-index: 300;
+
+  &.scrolled {
+    background: rgba(59, 166, 177, 0.9);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+
+    .container {
+      transition: .5s ease-in-out all;
+      padding-top: 20px;
+    }
+  }
 
   .container {
     display: grid;
@@ -112,21 +124,6 @@
   &__burger {
     display: none;
   }
-
-  &.scrolled {
-    top: 0;
-    background: rgba(59, 166, 177, 0.9);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
-
-    .container {
-      transition: .5s ease-in-out all;
-      padding-top: 20px;
-    }
-  }
 }
-
-
-
 
 
