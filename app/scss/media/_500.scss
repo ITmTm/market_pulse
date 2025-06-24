@@ -12,6 +12,11 @@
     &__logo {
       width: 180px;
     }
+
+    .nav {
+      width: 100%;
+      background: rgba(59, 166, 177);
+    }
   }
 
   .header .nav > .menu > .menu-item > a {
@@ -35,7 +40,7 @@
     padding-bottom: 80px;
 
     &__left {
-      padding: 100px 16px 16px;
+      padding: 130px 16px 16px;
       background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -150px / auto no-repeat;
 
       .title-m {
@@ -50,10 +55,12 @@
 
     &__right {
       padding: 0;
+      background: var(--light-grey-color) url(../images/mine-hero-bg-traid.avif) right bottom / contain no-repeat;
     }
 
     .features {
       padding: 16px;
+      border-radius: 30px;
     }
   }
 
