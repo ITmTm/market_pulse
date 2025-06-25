@@ -1,6 +1,5 @@
 @media (max-width: 1300px) {
   .header {
-
     &__logo {
       width: 190px;
       background: url(../images/logo.svg) center / contain no-repeat;
@@ -132,6 +131,28 @@
     &-invest {
       &__container {
         padding: 80px 120px 120px;
+      }
+    }
+  }
+
+
+
+
+  .contacts {
+    &__left {
+      .title-m {
+        font-size: 41px;
+      }
+    }
+
+    &__right {
+      background: var(--light-grey-color) url(../images/contacts-bg.avif) center bottom / 400px 350px no-repeat;
+    }
+
+    &-trading {
+      &__container {
+        padding: 50px 30px 32px;
+        gap: 70px;
       }
     }
   }
