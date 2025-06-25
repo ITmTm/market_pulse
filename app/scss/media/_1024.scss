@@ -28,4 +28,20 @@
       }
     }
   }
+
+
+  .contacts {
+    &-trading {
+      &__container {
+        grid-template-columns: 1fr;
+      }
+
+      &__form {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+
 }
