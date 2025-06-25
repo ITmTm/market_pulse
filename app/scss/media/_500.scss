@@ -14,7 +14,7 @@
     }
 
     .nav {
-      width: 100%;
+      max-width: 100%;
       background: rgba(59, 166, 177);
     }
   }
@@ -282,8 +282,7 @@
     padding-bottom: 80px;
 
     &__left {
-      padding: 100px 16px 16px;
-
+      padding: 130px 16px 40px;
       .title-m {
         font-size: 32px;
       }
@@ -377,6 +376,50 @@
 
       .text-m {
         font-size: 16px;
+      }
+    }
+  }
+
+
+
+  .contacts {
+    padding-bottom: 80px;
+    &__left {
+      padding: 130px 30px 40px;
+      .title-m {
+        font-size: 32px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+    &__right {
+      background: var(--light-grey-color) url(../images/contacts-bg.avif) center bottom / 290px 270px no-repeat;
+    }
+
+    &-trading {
+      padding-bottom: 80px;
+
+      &__container {
+        padding: 30px 16px 16px;
+      }
+
+      &__form {
+        padding: 16px;
+      }
+
+      &__item {
+        .text-m {
+          font-size: 16px;
+        }
+      }
+
+      &__check {
+        .text-s {
+          font-size: 12px;
+        }
       }
     }
   }
