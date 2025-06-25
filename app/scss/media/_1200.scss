@@ -19,7 +19,7 @@
       z-index: 300;
 
       .container {
-        padding-right: 15px;
+        padding-right: 0;
       }
 
       .nav.active {
@@ -59,11 +59,7 @@
       z-index: 300;
 
       .container {
-        padding-right: 15px;
-      }
-
-      .header__burger {
-       transform: translateX(15px);
+        padding-right: 0;
       }
 
       svg {
@@ -93,7 +89,8 @@
 
     .nav {
       position: fixed;
-      width: 50%;
+      max-width: 400px;
+      width: 100%;
       top: 105px;
       right: -100%;
       background: rgba(59, 166, 177, .9);
@@ -393,58 +390,82 @@
       }
     }
   }
-}
 
 
-.menu-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, .7);
-  opacity: 0.5;
-  visibility: hidden;
-  transition: .3s ease;
-  z-index: 50;
-}
-
-.menu-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-body.lock-scroll {
-  overflow: hidden;
-}
-
-
-.about {
-  padding-bottom: 130px;
-
-  &__left {
-    padding: 130px 30px 30px;
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0.5;
+    visibility: hidden;
+    transition: .3s ease;
+    z-index: 50;
   }
 
-  &__right {
-    background: linear-gradient(270deg, #F0F0F0 15%, rgba(240, 240, 240, 0.65) 25%, rgba(240, 240, 240, 0) 40%), var(--light-grey-color) url(../images/about.avif) left -80px bottom / auto no-repeat;
+  .menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
   }
 
-  &-market {
-    padding-bottom: 130px;
+  body.lock-scroll {
+    overflow: hidden;
   }
 
-  &-trading {
-    padding-bottom: 130px;
-  }
 
-  &-numbers {
+  .about {
     padding-bottom: 130px;
 
-    .title-m {
-      font-size: 42px;
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &__right {
+      background: linear-gradient(270deg, #F0F0F0 15%, rgba(240, 240, 240, 0.65) 25%, rgba(240, 240, 240, 0) 40%), var(--light-grey-color) url(../images/about.avif) left -80px bottom / auto no-repeat;
+    }
+
+    &-market {
+      padding-bottom: 130px;
+    }
+
+    &-trading {
+      padding-bottom: 130px;
+    }
+
+    &-numbers {
+      padding-bottom: 130px;
+
+      .title-m {
+        font-size: 42px;
+      }
+    }
+
+    &-invest {
+      padding-bottom: 130px;
     }
   }
 
-  &-invest {
+
+  .contacts {
     padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &-trading {
+      padding-bottom: 130px;
+    }
   }
+
+
+
+
+
+
+
+
+
+
+
 }
 
