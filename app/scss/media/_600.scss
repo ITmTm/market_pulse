@@ -94,6 +94,7 @@
   .footer {
     &__container {
       border-radius: 30px;
+      padding: 30px 20px;
     }
   }
 
@@ -159,6 +160,7 @@
     &-trading {
       &__container {
         border-radius: 30px;
+        gap: 30px;
       }
 
       &__wrapper {
