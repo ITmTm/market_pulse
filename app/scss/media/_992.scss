@@ -264,4 +264,17 @@
     }
   }
 
+
+  .contacts {
+    padding-bottom: 100px;
+
+    &__right {
+      background: var(--light-grey-color) url(../images/contacts-bg.avif) center bottom / 360px 320px no-repeat;
+    }
+
+    &-trading {
+      padding-bottom: 100px;
+    }
+  }
+
 }
