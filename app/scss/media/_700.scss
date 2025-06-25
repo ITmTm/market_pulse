@@ -71,8 +71,7 @@
 
     &__box {
       .menu {
-        grid-template-columns: auto;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
       }
     }
   }
