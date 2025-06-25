@@ -5,7 +5,7 @@
 
   .header {
     .nav {
-      width: 70%;
+      max-width: 320px;
     }
   }
 
@@ -32,6 +32,7 @@
   .trading {
     &__info {
       border-radius: 30px;
+
       .title-l {
         font-size: 30px;
       }
@@ -41,6 +42,7 @@
   .account {
     &__card {
       border-radius: 30px;
+
       &-3 {
         background: var(--light-grey-color) url(../images/account.avif) top 265px center / contain no-repeat;
         gap: 25px;
@@ -96,8 +98,6 @@
   }
 
 
-
-
   .about {
     &__left {
       border-radius: 30px;
@@ -111,6 +111,7 @@
       &__left {
         border-radius: 30px;
       }
+
       &__right {
         border-radius: 30px;
       }
@@ -141,6 +142,41 @@
 
       .title-l {
         font-size: 29px;
+      }
+    }
+  }
+
+
+  .contacts {
+    &__left {
+      border-radius: 30px;
+    }
+
+    &__right {
+      border-radius: 30px;
+    }
+
+    &-trading {
+      &__container {
+        border-radius: 30px;
+      }
+
+      &__wrapper {
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      &__form {
+        border-radius: 30px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__check {
+        input[type=checkbox] {
+          width: 60px;
+        }
       }
     }
   }
