@@ -96,6 +96,17 @@
       .title-l {
         font-size: 24px;
       }
+
+      .btn {
+        padding: 20px;
+      }
+    }
+  }
+
+
+  .contacts {
+    &__right {
+      background: var(--light-grey-color) url(../images/contacts-bg.avif) center bottom / 270px 260px no-repeat;
     }
   }
 }
