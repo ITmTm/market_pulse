@@ -306,4 +306,79 @@
     }
   }
 
+
+  .overview {
+    padding-bottom: 100px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &__right {
+      background: var(--light-grey-color) url(../images/overview-bg.avif) center bottom / 350px 300px no-repeat;
+    }
+
+    &-state {
+      padding-bottom: 100px;
+
+      .text-m {
+        margin: 0 auto 50px auto;
+      }
+    }
+
+    &-market {
+      padding-bottom: 100px;
+
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      &__left {
+        padding: 32px 24px 24px;
+
+        .title-l {
+          font-size: 41px;
+        }
+
+        .text-m {
+          max-width: 100%;
+        }
+      }
+
+      &__right {
+        padding: 32px 24px 24px;
+
+        .title-l {
+          font-size: 41px;
+        }
+
+        .text-m {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &-graphics {
+      padding-bottom: 100px;
+
+      .text-m {
+        margin: 0 auto 50px auto;
+      }
+    }
+
+    &-invest {
+      padding-bottom: 100px;
+
+      &__container {
+        padding: 60px 40px;
+      }
+
+      &__wrapper {
+        .title-l {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
 }

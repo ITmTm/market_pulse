@@ -496,5 +496,33 @@
   }
 
 
+  .overview {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &__right {
+      background: var(--light-grey-color) url(../images/overview-bg.avif) center bottom / auto no-repeat;
+    }
+
+    &-state {
+      padding-bottom: 130px;
+    }
+
+    &-market {
+      padding-bottom: 130px;
+    }
+
+    &-graphics {
+      padding-bottom: 130px;
+    }
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
 }
 
