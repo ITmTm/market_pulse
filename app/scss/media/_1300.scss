@@ -157,4 +157,19 @@
     }
   }
 
+
+  .documents {
+    &__left {
+      .title-m {
+        font-size: 41px;
+      }
+    }
+
+    &-trading {
+      &__container {
+        gap: 70px;
+      }
+    }
+  }
+
 }
