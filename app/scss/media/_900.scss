@@ -234,4 +234,32 @@
       }
     }
   }
+
+  .overview {
+    .container {
+      grid-template-columns: 1fr;
+    }
+
+    &__left {
+      padding: 130px 30px 60px;
+    }
+
+    &__right {
+      max-height: 350px;
+      height: 300px;
+      background: var(--light-grey-color) url(../images/overview-bg.avif) center bottom / 350px 250px no-repeat;
+    }
+
+    &-invest {
+      .btn {
+        max-width: 100%;
+      }
+    }
+
+  }
+
+
+
+
+
 }

@@ -77,7 +77,6 @@
   }
 
 
-
   .about {
     &-invest {
       .title-l {
@@ -92,6 +91,21 @@
       &__info {
         .title-l {
           font-size: 35px;
+        }
+      }
+    }
+  }
+
+
+  .overview {
+    &-invest {
+      &__wrapper {
+        .title-l {
+          font-size: 35px;
+        }
+
+        .text-m {
+          margin-bottom: 10px;
         }
       }
     }
