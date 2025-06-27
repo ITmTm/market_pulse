@@ -454,17 +454,46 @@
 
     &-trading {
       padding-bottom: 130px;
+
+      &__wrapper {
+        margin-bottom: 20px;
+      }
+
+      &__control {
+        padding: 15px 15px;
+      }
     }
   }
 
+  .documents {
+    padding-bottom: 130px;
 
+    &__left {
+      padding: 130px 30px 30px;
+    }
 
+    &-intro {
+      padding-bottom: 130px;
+    }
 
+    &-trading {
+      padding-bottom: 130px;
 
+      &__wrapper {
+        margin-bottom: 20px;
+      }
 
+      &__info {
+        .title-l {
+          font-size: 40px;
+        }
+      }
 
-
-
+      &__control {
+        padding: 15px 15px;
+      }
+    }
+  }
 
 
 }
