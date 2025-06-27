@@ -108,5 +108,32 @@
     &__right {
       background: var(--light-grey-color) url(../images/contacts-bg.avif) center bottom / 270px 260px no-repeat;
     }
+
+    &-trading {
+      &__check {
+        .text-s {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+
+  .documents {
+    &-intro {
+      &__card {
+        .title-s {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &-trading {
+      &__check {
+        .text-s {
+          font-size: 12px;
+        }
+      }
+    }
   }
 }

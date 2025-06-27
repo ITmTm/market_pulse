@@ -283,6 +283,7 @@
 
     &__left {
       padding: 130px 16px 40px;
+
       .title-m {
         font-size: 32px;
       }
@@ -343,6 +344,7 @@
 
     &-numbers {
       padding-bottom: 80px;
+
       &__container {
         padding: 25px 16px 16px;
       }
@@ -366,10 +368,12 @@
 
     &-invest {
       padding-bottom: 80px;
+
       &__container {
         padding: 30px 16px 80px;
         background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
       }
+
       .title-l {
         font-size: 26px;
       }
@@ -381,11 +385,12 @@
   }
 
 
-
   .contacts {
     padding-bottom: 80px;
+
     &__left {
-      padding: 130px 30px 40px;
+      padding: 130px 16px 16px;
+
       .title-m {
         font-size: 32px;
       }
@@ -418,7 +423,64 @@
 
       &__check {
         .text-s {
-          font-size: 12px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .documents {
+    padding-bottom: 80px;
+
+    &__left {
+      padding: 130px 16px 16px;
+
+      .title-m {
+        font-size: 32px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+    &-intro {
+      padding-bottom: 80px;
+
+      &__card {
+        padding: 30px 16px 16px;
+        .title-s {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &-trading {
+      padding-bottom: 80px;
+
+      &__container {
+        padding: 30px 16px 16px;
+      }
+
+      &__info {
+        .title-l {
+          font-size: 27px;
+        }
+      }
+
+      &__form {
+        padding: 16px;
+      }
+
+      &__item {
+        .text-m {
+          font-size: 16px;
+        }
+      }
+
+      &__check {
+        .text-s {
+          font-size: 14px;
         }
       }
     }
