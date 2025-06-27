@@ -174,11 +174,51 @@
         display: flex;
         flex-direction: column;
       }
+    }
+  }
 
-      &__check {
-        input[type=checkbox] {
-          width: 60px;
+
+  .documents {
+    &__left {
+      border-radius: 30px;
+    }
+
+    &__right {
+      border-radius: 30px;
+    }
+
+    &-intro {
+      &__card {
+        border-radius: 30px;
+        .title-s {
+          font-size: 22px;
         }
+      }
+    }
+
+    &-trading {
+      &__container {
+        gap: 30px;
+        border-radius: 30px;
+      }
+
+      &__info {
+        .title-l {
+          font-size: 29px;
+        }
+      }
+
+      &__wrapper {
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+
+      &__form {
+        border-radius: 30px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
       }
     }
   }

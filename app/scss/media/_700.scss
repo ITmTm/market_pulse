@@ -85,4 +85,15 @@
       }
     }
   }
+
+
+  .documents {
+    &-trading {
+      &__info {
+        .title-l {
+          font-size: 35px;
+        }
+      }
+    }
+  }
 }
