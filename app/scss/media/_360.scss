@@ -27,6 +27,7 @@
   .trading {
     &__info {
       background: var(--brizz-color) url(../images/trading-small.avif) center bottom / 280px 210px no-repeat;
+
       .text-m {
         margin-bottom: 0;
       }
@@ -55,6 +56,7 @@
     &__top {
       gap: 20px;
     }
+
     &__contact {
       margin-left: 15px;
 
@@ -75,8 +77,6 @@
       font-size: 16px;
     }
   }
-
-
 
 
   .about {
@@ -132,6 +132,37 @@
       &__check {
         .text-s {
           font-size: 12px;
+        }
+      }
+    }
+  }
+
+
+  .overview {
+    &-market {
+      padding-bottom: 80px;
+
+      &__left {
+        padding: 24px 16px;
+        gap: 20px;
+
+        .title-l {
+          font-size: 24px;
+        }
+
+        .text-m {
+          font-size: 16px;
+        }
+      }
+
+      &__right {
+
+        .mch-widget-jwoy.mch-widget.mch-widget-leaders .widget-wrapper {
+          max-width: 260px;
+        }
+
+        .mch-widget-jywd.mch-widget-notifier .widget-wrapper {
+          max-width: 260px;
         }
       }
     }

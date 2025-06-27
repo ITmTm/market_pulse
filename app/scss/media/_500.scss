@@ -116,7 +116,7 @@
 
     &__info {
       background: var(--brizz-color) url(../images/trading-small.avif) center bottom / 321px 260px no-repeat;
-      padding: 32px 25px 200px;
+      padding: 32px 16px 200px;
 
       .title-l {
         font-size: 24px;
@@ -222,7 +222,6 @@
 
     &__container {
       padding: 35px 16px 80px;
-      background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
     }
 
     &__wrapper {
@@ -282,7 +281,7 @@
     padding-bottom: 80px;
 
     &__left {
-      padding: 130px 16px 40px;
+      padding: 130px 16px 60px;
 
       .title-m {
         font-size: 32px;
@@ -375,7 +374,7 @@
       }
 
       .title-l {
-        font-size: 26px;
+        font-size: 24px;
       }
 
       .text-m {
@@ -389,7 +388,7 @@
     padding-bottom: 80px;
 
     &__left {
-      padding: 130px 16px 16px;
+      padding: 130px 16px 60px;
 
       .title-m {
         font-size: 32px;
@@ -433,7 +432,7 @@
     padding-bottom: 80px;
 
     &__left {
-      padding: 130px 16px 16px;
+      padding: 130px 16px 60px;
 
       .title-m {
         font-size: 32px;
@@ -449,6 +448,7 @@
 
       &__card {
         padding: 30px 16px 16px;
+
         .title-s {
           font-size: 20px;
         }
@@ -485,6 +485,125 @@
       }
     }
   }
+
+
+  .overview {
+    padding-bottom: 80px;
+
+    &__left {
+      padding: 130px 16px 60px;
+
+      .title-m {
+        font-size: 32px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+    &__right {
+      background: var(--light-grey-color) url(../images/overview-bg.avif) center bottom / 250px 200px no-repeat;
+    }
+
+
+    &-state {
+      .container {
+        .title-l {
+          font-size: 24px;
+        }
+      }
+
+      .text-m {
+        font-size: 16px;
+        margin: 0 auto 32px auto;
+      }
+    }
+
+
+    &-market {
+      padding-bottom: 80px;
+
+      &__left {
+        padding: 24px 16px;
+        gap: 20px;
+
+        .title-l {
+          font-size: 24px;
+        }
+
+        .text-m {
+          font-size: 16px;
+        }
+      }
+
+      &__right {
+        padding: 24px 16px;
+        gap: 20px;
+
+        .title-l {
+          font-size: 24px;
+        }
+
+        .text-m {
+          font-size: 16px;
+        }
+      }
+
+      .mch-widget-jwoy.mch-widget.mch-widget-leaders {
+        width: 100%;
+      }
+
+      .mch-widget-jwoy.mch-widget.mch-widget-leaders .widget-wrapper {
+        max-width: 300px;
+      }
+
+      &__right {
+        .title-l {
+          font-size: 24px;
+        }
+
+        .title-m {
+          font-size: 16px;
+        }
+      }
+
+      .mch-widget-jywd.mch-widget-notifier .widget-wrapper {
+        max-width: 300px;
+      }
+    }
+
+    &-graphics {
+      padding-bottom: 80px;
+      .title-l {
+        font-size: 24px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+    &-invest {
+      padding-bottom: 80px;
+      &__container {
+        padding: 35px 16px 80px;
+      }
+
+      &__wrapper {
+        .title-l {
+          font-size: 24px;
+        }
+
+        .text-m {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+
+
 }
 
 

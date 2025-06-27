@@ -190,6 +190,7 @@
     &-intro {
       &__card {
         border-radius: 30px;
+
         .title-s {
           font-size: 22px;
         }
@@ -219,6 +220,60 @@
         gap: 10px;
         display: flex;
         flex-direction: column;
+      }
+    }
+  }
+
+
+  .overview {
+
+    &__left {
+      border-radius: 30px;
+    }
+
+    &__right {
+      border-radius: 30px;
+    }
+
+    &-market {
+      &__left {
+        border-radius: 30px;
+      }
+
+      &__right {
+        border-radius: 30px;
+      }
+    }
+
+
+    &-state {
+      .container {
+        .title-l {
+          font-size: 41px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+
+    &-graphics {
+      .title-l {
+        font-size: 41px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &-invest {
+      &__container {
+        padding: 50px 20px 100px;
+        border-radius: 30px;
+        background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
+      }
+
+      &__wrapper {
+        .title-l {
+          font-size: 33px;
+        }
       }
     }
   }
