@@ -71,4 +71,12 @@
       }
     }
   }
+
+  .news {
+    &-intro {
+      &__card {
+        min-height: 330px;
+      }
+    }
+  }
 }
