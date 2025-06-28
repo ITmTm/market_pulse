@@ -42,6 +42,16 @@
     }
   }
 
+  .bonuses {
+    &__container {
+      padding: 30px 16px;
+    }
+
+    .btn {
+      font-size: 18px;
+    }
+  }
+
   .invest {
     &__container {
       padding: 35px 16px 60px;
@@ -98,7 +108,7 @@
       }
 
       .btn {
-        padding: 20px;
+        padding: 18px;
       }
     }
   }
@@ -140,23 +150,7 @@
 
   .overview {
     &-market {
-      padding-bottom: 80px;
-
-      &__left {
-        padding: 24px 16px;
-        gap: 20px;
-
-        .title-l {
-          font-size: 24px;
-        }
-
-        .text-m {
-          font-size: 16px;
-        }
-      }
-
       &__right {
-
         .mch-widget-jwoy.mch-widget.mch-widget-leaders .widget-wrapper {
           max-width: 260px;
         }
@@ -164,6 +158,21 @@
         .mch-widget-jywd.mch-widget-notifier .widget-wrapper {
           max-width: 260px;
         }
+      }
+    }
+
+    &-invest {
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+  .forecasts {
+    &-invest {
+      .btn {
+        font-size: 18px;
       }
     }
   }
