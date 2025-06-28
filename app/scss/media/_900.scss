@@ -78,16 +78,6 @@
   }
 
   .invest {
-    &__container {
-      padding: 60px 40px;
-    }
-
-    &__wrapper {
-      .title-l {
-        font-size: 35px;
-      }
-    }
-
     .btn {
       max-width: 100%;
     }
@@ -167,10 +157,6 @@
     }
 
     &-invest {
-      &__container {
-        padding: 60px 40px;
-      }
-
       .title-l {
         font-size: 40px;
       }
@@ -255,7 +241,28 @@
         max-width: 100%;
       }
     }
+  }
 
+
+  .forecasts {
+    .container {
+      grid-template-columns: 1fr;
+    }
+
+    &__left {
+      padding: 130px 30px 60px;
+    }
+
+    &__right {
+      max-height: 350px;
+      height: 300px;
+    }
+
+    &-invest {
+      .btn {
+        max-width: 100%;
+      }
+    }
   }
 
 

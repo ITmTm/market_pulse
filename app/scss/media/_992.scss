@@ -52,12 +52,6 @@
       inset: 0;
     }
 
-    &__descr {
-      .title-s {
-        font-size: 24px;
-      }
-    }
-
     .swiper-pagination-bullet {
       width: 10px;
       height: 10px;
@@ -174,10 +168,8 @@
       padding: 80px 40px;
     }
 
-    &__wrapper {
-      .title-l {
-        font-size: 40px;
-      }
+    .title-l {
+      font-size: 40px;
     }
   }
 
@@ -310,10 +302,6 @@
   .overview {
     padding-bottom: 100px;
 
-    &__left {
-      padding: 130px 30px 30px;
-    }
-
     &__right {
       background: var(--light-grey-color) url(../images/overview-bg.avif) center bottom / 350px 300px no-repeat;
     }
@@ -370,13 +358,67 @@
       padding-bottom: 100px;
 
       &__container {
-        padding: 60px 40px;
+        padding: 80px 40px;
       }
 
-      &__wrapper {
-        .title-l {
-          font-size: 40px;
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
+
+  .forecasts {
+    padding-bottom: 100px;
+
+
+    &-state {
+      padding-bottom: 100px;
+    }
+
+    &-intro {
+      padding-bottom: 100px;
+
+      &__cards {
+        padding: 40px 0 0;
+        position: relative;
+
+        &-pagination {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
         }
+      }
+
+      .mod-1,
+      .mod-2,
+      .mod-3,
+      .mod-4, {
+        transform: rotate(0);
+        inset: 0;
+      }
+
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: var(--purpur-color);
+      }
+
+    }
+
+    &-invest {
+      padding-bottom: 100px;
+
+      &__container {
+        padding: 80px 40px;
+      }
+
+      .title-l {
+        font-size: 40px;
       }
     }
   }
