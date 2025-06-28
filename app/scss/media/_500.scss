@@ -210,7 +210,7 @@
     }
 
     &__card {
-
+      padding: 16px;
       .text-m {
         font-size: 16px;
       }
@@ -224,15 +224,14 @@
       padding: 35px 16px 80px;
     }
 
-    &__wrapper {
-      .title-l {
-        font-size: 24px;
-      }
+    .title-l {
+      font-size: 24px;
     }
 
     &__text {
       .text-m {
         font-size: 16px;
+        max-width: 100%;
       }
     }
   }
@@ -326,7 +325,7 @@
       }
 
       .title-l {
-        font-size: 32px;
+        font-size: 24px;
         margin-bottom: 20px;
       }
 
@@ -369,7 +368,7 @@
       padding-bottom: 80px;
 
       &__container {
-        padding: 30px 16px 80px;
+        padding: 35px 16px 80px;
         background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
       }
 
@@ -379,6 +378,7 @@
 
       .text-m {
         font-size: 16px;
+        max-width: 100%;
       }
     }
   }
@@ -508,6 +508,8 @@
 
 
     &-state {
+      padding-bottom: 80px;
+
       .container {
         .title-l {
           font-size: 24px;
@@ -575,6 +577,7 @@
 
     &-graphics {
       padding-bottom: 80px;
+
       .title-l {
         font-size: 24px;
       }
@@ -586,13 +589,61 @@
 
     &-invest {
       padding-bottom: 80px;
+
       &__container {
         padding: 35px 16px 80px;
       }
 
-      &__wrapper {
-        .title-l {
-          font-size: 24px;
+      .title-l {
+        font-size: 24px;
+      }
+
+      .text-m {
+        font-size: 16px;
+        max-width: 100%;
+      }
+    }
+  }
+
+
+  .forecasts {
+    padding-bottom: 80px;
+
+    &__left {
+      padding: 130px 16px 60px;
+
+      .title-m {
+        font-size: 31px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+    &__right {
+      background: var(--light-grey-color) url(../images/forecasts-small-bg.avif) center center / auto no-repeat;
+    }
+
+    &-state {
+      padding-bottom: 80px;
+    }
+
+    &-intro {
+      padding-bottom: 80px;
+
+      &__card {
+        padding: 30px 16px 16px;
+        min-height: 280px;
+      }
+
+      .title-l {
+        font-size: 24px;
+      }
+
+      &__descr {
+        .title-s {
+          font-size: 18px;
         }
 
         .text-m {
@@ -600,9 +651,24 @@
         }
       }
     }
+
+    &-invest {
+      padding-bottom: 80px;
+
+      &__container {
+        padding: 35px 16px 80px;
+      }
+
+      .title-l {
+        font-size: 24px;
+      }
+
+      .text-m {
+        font-size: 16px;
+        max-width: 100%;
+      }
+    }
   }
-
-
 
 }
 
