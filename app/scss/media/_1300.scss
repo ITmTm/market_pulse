@@ -58,13 +58,6 @@
       padding: 5px 15px;
       font-size: 15px;
     }
-
-    &__avatars {
-      img {
-        width: 60px;
-        height: 60px;
-      }
-    }
   }
 
 
@@ -136,8 +129,6 @@
   }
 
 
-
-
   .contacts {
     &__left {
       .title-m {
@@ -177,6 +168,27 @@
     &__left {
       .title-m {
         font-size: 41px;
+      }
+    }
+
+    &-invest {
+      &__container {
+        padding: 80px 120px 120px;
+      }
+    }
+  }
+
+
+  .forecasts {
+    &__left {
+      .title-m {
+        font-size: 41px;
+      }
+    }
+
+    &-intro {
+      &__card {
+        padding: 32px 20px;
       }
     }
 
