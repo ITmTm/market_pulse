@@ -325,12 +325,7 @@
   }
 
   .intro {
-    &__avatars {
-      img {
-        width: 65px;
-        height: 65px;
-      }
-    }
+    padding-bottom: 130px;
 
     .swiper {
       margin-right: -40px;
@@ -341,6 +336,7 @@
   }
 
   .trading {
+    padding-bottom: 130px;
     &__container {
       background: var(--brizz-color) url(../images/trading-small.avif) top 10px right / 440px 310px no-repeat;
     }
@@ -360,7 +356,12 @@
     }
   }
 
+  .account {
+    padding: 0 0 130px;
+  }
+
   .bonuses {
+    padding-bottom: 130px;
     &__text {
       .title-l {
         font-size: 42px;
@@ -369,12 +370,17 @@
   }
 
   .trust {
+    padding-bottom: 130px;
     .swiper {
       margin-right: -40px;
       margin-left: -40px;
       padding-left: 40px;
       padding-right: 40px;
     }
+  }
+
+  .invest {
+    padding-bottom: 130px;
   }
 
   .footer {
@@ -517,6 +523,34 @@
 
     &-graphics {
       padding-bottom: 130px;
+    }
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
+
+  .forecasts {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &-state {
+      padding-bottom: 130px;
+    }
+
+    &-intro {
+      padding-bottom: 130px;
+
+      .swiper {
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
     }
 
     &-invest {
