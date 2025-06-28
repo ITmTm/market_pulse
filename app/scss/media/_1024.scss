@@ -59,4 +59,13 @@
   }
 
 
+  .news {
+    &-state {
+      .mch-widget-jxpb.mch-widget-news.horizontal {
+        min-width: 100%;
+      }
+    }
+  }
+
+
 }
