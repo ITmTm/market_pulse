@@ -7,6 +7,7 @@ const __dirname = path.dirname(__filename);
 
 // Подключение методов из Gulp
 import gulp from "gulp";
+
 const { src, dest, watch, parallel, series } = gulp;
 
 
@@ -15,7 +16,6 @@ const { src, dest, watch, parallel, series } = gulp;
 // ————————————————————————————————————————————
 
 import sassCompiler from "gulp-dart-sass";
-
 
 import autoprefixer from "gulp-autoprefixer";           // проставляет вендорные префиксы для CSS
 import sourcemaps from "gulp-sourcemaps";               // генерирует sourcemaps для отладки стилей
@@ -27,6 +27,7 @@ import concat from "gulp-concat";                       // объединяет 
 // ————————————————————————————————————————————
 
 import uglify from 'gulp-uglify-es';
+
 const uglifyJs = uglify.default;                        // минификация JavaScript
 
 import plumber from "gulp-plumber";                     // предотвращает падение потока при ошибках
@@ -38,6 +39,7 @@ import gulpNotify from "gulp-notify";                   // пуш-уведомл
 // ————————————————————————————————————————————
 
 import browserSyncPkg from "browser-sync";
+
 const browserSync = browserSyncPkg.create();      // запускает локальный сервер и обновляет страницу в браузере
 
 
@@ -86,14 +88,8 @@ const paths = {
     dest: 'app/css'													 // выходная папка CSS
   },
   scripts: {
-    src: [
-      'node_modules/jquery/dist/jquery.js',
-      'node_modules/jquery-ui/dist/jquery-ui.js',
-      'node_modules/swiper/swiper-bundle.js',
-      'app/js/**/*.js',
-      '!app/js/main.min.js'											 // исключаем уже скомпилированный
-    ],
-    dest: 'app/js',													 // куда сбрасывать JS
+    src: [ 'node_modules/jquery/dist/jquery.js', 'node_modules/jquery-ui/dist/jquery-ui.js', 'node_modules/swiper/swiper-bundle.js', 'app/js/**/*.js', '!app/js/main.min.js'											 // исключаем уже скомпилированный
+    ], dest: 'app/js',													 // куда сбрасывать JS
     outputFile: 'main.min.js'										 // имя итогового файла
   },
   images: {
@@ -110,15 +106,7 @@ const paths = {
     dest: 'dist/upload'
   },
   build: [															// какие файлы копировать в папку dist для финального билда
-    'app/css/**/*.css',
-    'app/images/*.*',
-    '!app/images/**/*.html',
-    'app/js/main.min.js',
-    'app/*.html',
-    'app/upload/**/*',
-    'app/web.config',
-    'app/favicon.png',
-  ],
+    'app/css/**/*.css', 'app/images/*.*', '!app/images/**/*.html', 'app/js/main.min.js', 'app/*.html', 'app/upload/**/*', 'app/web.config', 'app/favicon.png', ],
   dist: 'dist',														// папка финального билда
   watch: {															// за чем следить для live-reload
     styles: 'app/scss/**/*.scss',
@@ -170,8 +158,7 @@ function images() {
   const imgStream = src(paths.images.src, { base: 'app/images/src' })
       .pipe(newer(destPath))
       .pipe(imagemin({
-        progressive: true,
-        interlaced: true
+        progressive: true, interlaced: true
         // при необходимости можно добавить плагины для конкретных форматов
       }))
       .pipe(dest(destPath));
@@ -228,8 +215,7 @@ function scripts() {
       .pipe(plumber({ errorHandler: gulpNotify.onError('JS Error: <%= error.message %>') }))    // не ломать поток
       .pipe(concat(paths.scripts.outputFile))                // объединить воедино
       .pipe(uglifyJs({								// минифицировать (без mangle)
-        compress: true,
-        mangle: false
+        compress: true, mangle: false
       }))
       .pipe(dest(paths.scripts.dest))
       .pipe(browserSync.reload({ stream: true }))		// перезагрузить браузер
@@ -241,8 +227,7 @@ function styles() {
   return src(paths.styles.main)
       .pipe(plumber({									// отлавливаем ошибки SCSS
         errorHandler: gulpNotify.onError({
-          title: 'SCSS Error',
-          message: 'Error: <%= error.message %>'
+          title: 'SCSS Error', message: 'Error: <%= error.message %>'
         })
       }))
       .pipe(sourcemaps.init())
@@ -270,8 +255,7 @@ async function cleanDist() {
 function watching() {
   browserSync.init({
     server: {
-      baseDir: paths.html.dest,
-      // если запрошенного файла нет — отдаем 404
+      baseDir: paths.html.dest, // если запрошенного файла нет — отдаем 404
       middleware: function (req, res, next) {
         const filePath = path.join(__dirname, paths.html.dest, req.url === '/' ? 'index.html' : req.url);
 
@@ -280,8 +264,7 @@ function watching() {
         }
         return next();
       }
-    },
-    ghostMode: false,
+    }, ghostMode: false,
   });
 
   // отслеживаем SCSS, картинки, JS, HTML-компоненты, html-страницы, ресурсы
@@ -301,7 +284,7 @@ function building() {
 
 
 // Экспортируем публичные задачи
-export { styles, images, pages, sprite, scripts, resources, cleanDist}
+export { styles, images, pages, sprite, scripts, resources, cleanDist }
 
 // Команда `gulp build` для production
 export const build = series(cleanDist, parallel(styles, images, scripts, pages, sprite, resources), building);
