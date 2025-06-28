@@ -312,6 +312,39 @@
         font-size: 29px;
       }
     }
+  }
 
+
+  .news {
+    &__left {
+      border-radius: 30px;
+    }
+
+    &__right {
+      border-radius: 30px;
+      background: var(--light-grey-color) url(../images/news-bg.avif) center right / cover no-repeat;
+    }
+
+    &-intro {
+      .title-l {
+        font-size: 30px;
+      }
+
+      &__card {
+        border-radius: 30px;
+      }
+    }
+
+    &-invest {
+      &__container {
+        padding: 50px 20px 100px;
+        border-radius: 30px;
+        background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
+      }
+
+      .title-l {
+        font-size: 29px;
+      }
+    }
   }
 }

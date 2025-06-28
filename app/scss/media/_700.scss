@@ -130,4 +130,20 @@
       }
     }
   }
+
+  .news {
+    &__right {
+      background: var(--light-grey-color) url(../images/news-bg.avif) center right / contain no-repeat;
+    }
+
+    &-invest {
+      &__container {
+        padding: 60px 40px;
+      }
+
+      .title-l {
+        font-size: 33px;
+      }
+    }
+  }
 }
