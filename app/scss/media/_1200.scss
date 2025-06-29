@@ -632,7 +632,31 @@
     &-invest {
       padding-bottom: 130px;
     }
+  }
 
+
+  .calendar {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &__right {
+      background: var(--light-grey-color) url(../images/economic-bg.avif) bottom right -15px / contain no-repeat;
+    }
+
+    &-state {
+      padding-bottom: 130px;
+    }
+
+    &-trading {
+      padding-bottom: 130px;
+    }
+
+    &-invest {
+      padding-bottom: 130px;
+    }
   }
 
 }
