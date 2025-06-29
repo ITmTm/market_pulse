@@ -127,7 +127,7 @@
 
     &-trading {
       &__container {
-        background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right / 625px 400px no-repeat;
+        background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right / 600px 360px no-repeat;
       }
 
       .title-l {
@@ -289,7 +289,69 @@
   }
 
 
+  .calendar {
+    .container {
+      grid-template-columns: 1fr;
+    }
 
+    &__left {
+      padding: 130px 30px 60px;
+    }
+
+    &__right {
+      max-height: 400px;
+      height: 350px;
+    }
+
+    &-market {
+      .container {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+      }
+
+      &__left {
+        padding: 30px 20px;
+        order: 2;
+        max-height: 480px;
+        height: 480px;
+      }
+    }
+
+    &-trading {
+      &__container {
+        background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right / 600px 350px no-repeat;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+
+      &__cards {
+        grid-template-columns: 1fr;
+      }
+
+      &__card {
+        gap: 70px;
+      }
+    }
+
+    &-invest {
+      .title-l {
+        font-size: 40px;
+      }
+
+      .text-m {
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .btn {
+        max-width: 100%;
+      }
+    }
+  }
 
 
 }
