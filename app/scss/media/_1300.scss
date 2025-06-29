@@ -268,4 +268,19 @@
     }
   }
 
+
+  .calendar {
+    &__left {
+      .title-m {
+        font-size: 41px;
+      }
+    }
+
+    &-invest {
+      &__container {
+        padding: 80px 120px 120px;
+      }
+    }
+  }
+
 }
