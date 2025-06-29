@@ -54,4 +54,19 @@
       width: 300px;
     }
   }
+
+
+  .calendar {
+    &-trading {
+      &__cards {
+        align-items: stretch;
+      }
+
+      &__card {
+        .title-s {
+          font-size: 22px;
+        }
+      }
+    }
+  }
 }
