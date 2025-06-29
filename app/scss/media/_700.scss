@@ -40,9 +40,11 @@
       font-size: 33px;
     }
 
-    .text-m {
-      &:first-of-type {
-        margin-bottom: 10px;
+    &__wrapper {
+      .text-m {
+        &:first-of-type {
+          margin-bottom: 10px;
+        }
       }
     }
   }
@@ -143,6 +145,19 @@
 
       .title-l {
         font-size: 33px;
+      }
+    }
+  }
+
+
+  .calendar {
+    &-invest {
+      &__container {
+        padding: 60px 40px;
+      }
+
+      .title-l {
+        font-size: 34px;
       }
     }
   }
