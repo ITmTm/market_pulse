@@ -283,4 +283,41 @@
     }
   }
 
+
+  .conditions {
+    &__left {
+      .title-m {
+        font-size: 41px;
+      }
+    }
+
+    &-intro {
+      &__card {
+        padding: 32px 20px;
+      }
+
+      &__avatars {
+        img {
+          &:first-of-type {
+            margin-left: -10px;
+          }
+        }
+      }
+
+      &__accounts {
+        img {
+          &:first-of-type {
+            margin-left: -10px;
+          }
+        }
+      }
+    }
+
+    &-invest {
+      &__container {
+        padding: 80px 120px 120px;
+      }
+    }
+  }
+
 }
