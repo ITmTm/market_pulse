@@ -206,10 +206,6 @@
     &-market {
       padding-bottom: 100px;
 
-      &__left {
-        padding: 40px 30px 30px;
-      }
-
       &__right {
         padding: 40px 30px 30px;
       }
@@ -370,6 +366,7 @@
 
   .forecasts {
     padding-bottom: 100px;
+
     &-state {
       padding-bottom: 100px;
     }
@@ -424,6 +421,7 @@
 
   .news {
     padding-bottom: 100px;
+
     &-state {
       padding-bottom: 100px;
     }
@@ -478,6 +476,7 @@
 
   .calendar {
     padding-bottom: 100px;
+
     &-state {
       padding-bottom: 100px;
     }
@@ -503,6 +502,113 @@
 
       .title-l {
         font-size: 44px;
+      }
+    }
+  }
+
+
+  .conditions {
+    padding-bottom: 100px;
+
+    &-tariffs {
+      padding-bottom: 100px;
+
+      .swiper-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      &__cards {
+        position: relative;
+        padding-bottom: 0;
+
+        &-pagination {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+
+      .mod-1,
+      .mod-2,
+      .mod-3,
+      .mod-4, {
+        transform: rotate(0);
+        inset: 0;
+      }
+
+      &__descr {
+        gap: 20px;
+      }
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: var(--purpur-color);
+      }
+    }
+
+
+    &-market {
+      padding-bottom: 100px;
+
+      &__left {
+        padding: 40px 30px 30px;
+        background: var(--brizz-color) url(../images/conditions-market-bg.avif) right bottom / auto no-repeat;
+      }
+
+      &__right {
+        padding: 40px 30px 30px;
+      }
+    }
+
+
+    &-intro {
+      padding-bottom: 100px;
+
+      &__cards {
+        padding: 40px 0 0;
+        position: relative;
+
+        &-pagination {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+
+      .mod-1,
+      .mod-2,
+      .mod-3,
+      .mod-4, {
+        transform: rotate(0);
+        inset: 0;
+      }
+
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: var(--purpur-color);
+      }
+
+    }
+
+    &-invest {
+      padding-bottom: 100px;
+
+      &__container {
+        padding: 80px 40px;
+      }
+
+      .title-l {
+        font-size: 40px;
       }
     }
   }

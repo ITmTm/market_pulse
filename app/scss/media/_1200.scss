@@ -659,5 +659,65 @@
     }
   }
 
+
+  .conditions {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &-tariffs {
+      padding-bottom: 130px;
+
+      .swiper {
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        overflow: hidden;
+      }
+
+      .mod-3 {
+        top: 18px;
+      }
+    }
+
+    &-market {
+      padding-bottom: 130px;
+    }
+
+    &-intro {
+      padding-bottom: 130px;
+
+      .swiper {
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      &__avatars {
+        img {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+
+      &__accounts {
+        img {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
 }
 
