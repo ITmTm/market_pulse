@@ -65,6 +65,7 @@
   }
 
   &__card {
+    cursor: default;
     transition: scale 0.4s ease-in;
     position: relative;
     min-height: 357px;
