@@ -330,6 +330,10 @@
         margin-bottom: 20px;
       }
 
+      &__card {
+        padding: 16px;
+      }
+
       &__text {
         .title-s {
           font-size: 18px;
@@ -734,6 +738,71 @@
       .text-m {
         font-size: 16px;
         max-width: 100%;
+      }
+    }
+  }
+
+
+  .calendar {
+    padding-bottom: 80px;
+
+    &__left {
+      padding: 130px 16px 60px;
+
+      .title-m {
+        font-size: 32px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+    &__right {
+      height: 260px;
+      max-height: 300px;
+    }
+
+    &-trading {
+      padding-bottom: 80px;
+
+      &__container {
+        padding: 16px;
+      }
+
+      .title-l {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      &__card {
+        padding: 16px;
+      }
+
+      .title-s {
+        font-size: 18px;
+      }
+    }
+
+    &-invest {
+      padding-bottom: 80px;
+
+      &__container {
+        padding: 35px 16px 80px;
+        background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
+      }
+
+      .title-l {
+        font-size: 22px;
+      }
+
+      .text-m {
+        font-size: 16px;
+        max-width: 100%;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
