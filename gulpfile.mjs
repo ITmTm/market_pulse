@@ -149,19 +149,19 @@ function images() {
       .pipe(dest(destPath));
 
   // WebP
-  const webpStream = src(paths.images.src, { base: 'app/images/src' })
-      .pipe(newer(destPath))
-      .pipe(webp())
-      .pipe(dest(destPath));
+  // const webpStream = src(paths.images.src, { base: 'app/images/src' })
+  //     .pipe(newer(destPath))
+  //     .pipe(webp())
+  //     .pipe(dest(destPath));
 
   // Оригиналы (PNG/JPG/GIF) — оптимизация
-  const imgStream = src(paths.images.src, { base: 'app/images/src' })
-      .pipe(newer(destPath))
-      .pipe(imagemin({
-        progressive: true, interlaced: true
-        // при необходимости можно добавить плагины для конкретных форматов
-      }))
-      .pipe(dest(destPath));
+  // const imgStream = src(paths.images.src, { base: 'app/images/src' })
+  //     .pipe(newer(destPath))
+  //     .pipe(imagemin({
+  //       progressive: true, interlaced: true
+  //       // при необходимости можно добавить плагины для конкретных форматов
+  //     }))
+  //     .pipe(dest(destPath));
 
   // Чистая оптимизация SVG
   const svgStream = src(paths.images.svg, { base: 'app/images/src' })
@@ -170,7 +170,7 @@ function images() {
       .pipe(dest(destPath));
 
   // Объединяем потоки и стримим в браузер
-  return merge(avifStream, webpStream, imgStream, svgStream)
+  return merge(avifStream, svgStream)
       .pipe(browserSync.stream());
 
   /*
