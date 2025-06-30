@@ -214,4 +214,17 @@
       }
     }
   }
+
+
+  .instruments {
+    &-invest {
+      .title-l {
+        font-size: 20px;
+      }
+
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
 }
