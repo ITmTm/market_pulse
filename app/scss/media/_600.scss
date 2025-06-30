@@ -382,4 +382,62 @@
       }
     }
   }
+
+
+  .conditions {
+    &__left {
+      border-radius: 30px;
+    }
+
+    &__right {
+      border-radius: 30px;
+    }
+
+    &-tariffs {
+      &__card {
+        border-radius: 30px;
+        min-height: 545px;
+      }
+
+      &__items {
+        padding-left: 30px;
+      }
+    }
+
+    &-market {
+      &__left {
+        border-radius: 30px;
+
+        .title-l {
+          font-size: 35px;
+        }
+      }
+
+      &__right {
+        border-radius: 30px;
+      }
+    }
+
+    &-intro {
+      .title-l {
+        font-size: 30px;
+      }
+
+      &__card {
+        border-radius: 30px;
+      }
+    }
+
+    &-invest {
+      &__container {
+        padding: 50px 20px 100px;
+        border-radius: 30px;
+        background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
+      }
+
+      .title-l {
+        font-size: 29px;
+      }
+    }
+  }
 }
