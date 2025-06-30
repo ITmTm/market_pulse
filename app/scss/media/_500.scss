@@ -914,6 +914,88 @@
       }
     }
   }
+
+
+  .instruments {
+    padding-bottom: 80px;
+
+    &__left {
+      padding: 130px 16px 60px;
+
+      .title-m {
+        font-size: 32px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+    &__right {
+      background: var(--light-grey-color) url(../images/instruments-bg.avif) bottom center / 300px 200px no-repeat;
+    }
+
+    &-tabs {
+      padding-bottom: 80px;
+
+      &__container {
+        background-size: 290px 350px;
+      }
+
+      .swiper-page .swiper-slide {
+        padding: 0 16px;
+      }
+
+      .swiper-page__top .title-l {
+        font-size: 24px;
+      }
+
+      .swiper-page .swiper-slide .swiper-page__top .title-l {
+        margin-bottom: 20px;
+      }
+
+      .swiper-page .swiper-slide .swiper-page__top p {
+        font-size: 16px;
+      }
+
+      .swiper-page .swiper-slide .swiper-page__content {
+        gap: 5px;
+      }
+
+      .swiper-page .swiper-slide .swiper-page__bottom .title-s {
+        font-size: 18px;
+      }
+
+      .swiper-page .swiper-slide .swiper-page__bottom ul li {
+        font-size: 16px;
+      }
+
+      .swiper-page .swiper-slide .swiper-page__bottom ul li::before {
+        left: -5px;
+      }
+
+      .swiper-page .swiper-slide {
+        gap: 32px;
+      }
+    }
+
+    &-invest {
+      padding-bottom: 80px;
+
+      &__container {
+        padding: 35px 16px 80px;
+      }
+
+      .title-l {
+        font-size: 22px;
+      }
+
+      .text-m {
+        font-size: 16px;
+        max-width: 100%;
+      }
+    }
+  }
 }
 
 
