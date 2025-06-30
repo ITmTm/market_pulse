@@ -77,4 +77,11 @@
   }
 
 
+  .instruments {
+    &__right {
+      background: var(--light-grey-color) url(../images/instruments-bg.avif) 75% bottom / 400px 270px no-repeat;
+    }
+  }
+
+
 }

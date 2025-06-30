@@ -613,4 +613,29 @@
     }
   }
 
+
+  .instruments {
+    padding-bottom: 100px;
+
+    &-tabs {
+      padding-bottom: 100px;
+
+      .swiper-page__top .title-l {
+        font-size: 35px;
+      }
+    }
+
+    &-invest {
+      padding-bottom: 100px;
+
+      &__container {
+        padding: 80px 40px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
 }
