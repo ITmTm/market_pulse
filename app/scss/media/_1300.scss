@@ -324,4 +324,30 @@
     }
   }
 
+
+  .instruments {
+    &__left {
+      .title-m {
+        font-size: 41px;
+      }
+    }
+
+    &-tabs {
+      .swiper-page {
+        &__top {
+          .title-l {
+            font-size: 41px;
+          }
+        }
+      }
+    }
+
+
+    &-invest {
+      &__container {
+        padding: 80px 120px 120px;
+      }
+    }
+  }
+
 }

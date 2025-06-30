@@ -719,5 +719,27 @@
     }
   }
 
+
+  .instruments {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &-tabs {
+      padding-bottom: 130px;
+
+      .swiper-page .swiper-slide .swiper-page__content {
+        gap: 40px;
+      }
+    }
+
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
 }
 
