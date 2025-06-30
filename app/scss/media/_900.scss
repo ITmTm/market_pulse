@@ -394,4 +394,53 @@
   }
 
 
+  .instruments {
+    .container {
+      grid-template-columns: 1fr;
+    }
+
+    &__left {
+      padding: 130px 30px 60px;
+    }
+
+    &__right {
+      max-height: 350px;
+      height: 300px;
+    }
+
+    &-tabs {
+      &__container {
+        background-position: center bottom;
+        background-size: 450px 560px;
+      }
+
+      .swiper-page .swiper-slide {
+        flex-direction: column;
+        gap: 60px;
+      }
+
+      .mch-widget-j.mch-widget.mch-widget-quotes.sf .widget-wrapper {
+        margin: 0 auto;
+      }
+
+      .swiper-page .swiper-slide .swiper-page__content {
+        gap: 30px;
+      }
+    }
+
+
+    &-invest {
+      &__text {
+        .text-m {
+          margin-bottom: 10px;
+        }
+      }
+
+      .btn {
+        max-width: 100%;
+      }
+    }
+  }
+
+
 }
