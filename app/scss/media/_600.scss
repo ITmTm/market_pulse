@@ -440,4 +440,37 @@
       }
     }
   }
+
+
+  .instruments {
+    &__left {
+      border-radius: 30px;
+    }
+
+    &__right {
+      border-radius: 30px;
+    }
+
+    &-tabs {
+      &__container {
+        border-radius: 30px;
+      }
+
+      .swiper-page__top .title-l {
+        font-size: 28px;
+      }
+    }
+
+    &-invest {
+      &__container {
+        padding: 50px 20px 100px;
+        border-radius: 30px;
+        background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
+      }
+
+      .title-l {
+        font-size: 29px;
+      }
+    }
+  }
 }
