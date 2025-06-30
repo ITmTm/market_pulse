@@ -800,6 +800,7 @@
         font-size: 16px;
         max-width: 100%;
         margin-bottom: 10px;
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -807,6 +808,112 @@
     }
   }
 
+
+  .conditions {
+    padding-bottom: 80px;
+
+    &__left {
+      padding: 130px 16px 60px;
+
+      .title-m {
+        font-size: 31px;
+      }
+
+      .text-m {
+        font-size: 16px;
+      }
+    }
+
+
+    &-tariffs {
+      padding-bottom: 80px;
+
+      .title-l {
+        font-size: 24px;
+      }
+
+      &__subtitle {
+        text-align: center;
+        font-size: 16px;
+      }
+
+      &__cards {
+        padding-top: 32px;
+      }
+
+      &__card {
+        padding: 25px 16px 16px;
+      }
+
+      &__items {
+        padding-left: 20px;
+        gap: 10px;
+        margin-bottom: 60px;
+      }
+    }
+
+    &-market {
+      padding-bottom: 80px;
+
+      &__left {
+        max-height: 320px;
+        padding: 25px 16px;
+        background: var(--brizz-color) url(../images/conditions-market-bg.avif) right -15px bottom / 270px 200px no-repeat;
+
+        .title-l {
+          font-size: 24px;
+        }
+      }
+
+      &__right {
+        padding: 25px 16px;
+
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-intro {
+      padding-bottom: 80px;
+
+      &__card {
+        padding: 30px 16px 16px;
+        min-height: 280px;
+      }
+
+      .title-l {
+        font-size: 24px;
+      }
+
+      &__descr {
+        .title-s {
+          font-size: 18px;
+        }
+
+        .text-m {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-invest {
+      padding-bottom: 80px;
+
+      &__container {
+        padding: 35px 16px 80px;
+      }
+
+      .title-l {
+        font-size: 22px;
+      }
+
+      .text-m {
+        font-size: 16px;
+        max-width: 100%;
+      }
+    }
+  }
 }
 
 
