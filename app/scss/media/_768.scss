@@ -79,4 +79,36 @@
       }
     }
   }
+
+
+  .conditions {
+    &-tariffs {
+      &__items {
+        width: 100%;
+        max-width: 450px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+
+    &-market {
+      &__left {
+        .title-l {
+          font-size: 40px;
+        }
+      }
+    }
+
+    &-intro {
+      &__card {
+        min-height: 330px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
 }
