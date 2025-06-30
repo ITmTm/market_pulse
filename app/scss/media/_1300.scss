@@ -1,4 +1,8 @@
 @media (max-width: 1300px) {
+  main {
+    overflow: hidden;
+  }
+
   .header {
     &__logo {
       width: 190px;
