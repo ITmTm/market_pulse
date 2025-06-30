@@ -69,4 +69,18 @@
       }
     }
   }
+
+
+  .instruments {
+    &-tabs {
+      &__container {
+        background-position: right 10px bottom 20px;
+        background-size: 350px 460px;
+      }
+
+      .mch-widget-j.mch-widget.mch-widget-quotes.sf .widget-wrapper {
+        margin-right: 10px;
+      }
+    }
+  }
 }
