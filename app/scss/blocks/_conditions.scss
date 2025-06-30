@@ -50,9 +50,16 @@
     text-align: center;
   }
 
-  .text-m {
+  &__subtitle {
     color: var(--grey-color);
     text-align: left;
+  }
+
+  &__items {
+    .text-m {
+      color: var(--grey-color);
+      text-align: left;
+    }
   }
 
   &__cards {
