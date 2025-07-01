@@ -88,8 +88,10 @@ const platformSwiper = new Swiper('.platform-intro__cards', {
     ...base,
     slidesPerView: 4,
     breakpoints: {
-        0: {slidesPerView: 1, centeredSlides: true},
-        993: {centeredSlides: false}
+        0: {slidesPerView: 1, spaceBetween: 20, centeredSlides: true},
+        768: {slidesPerView: 2, spaceBetween: 40, centeredSlides: false},
+        993: {centeredSlides: false, slidesPerView: 2.5},
+        1200: {centeredSlides: false, slidesPerView: 4},
     },
     pagination: {
         el: '.platform-info__cards-pagination',
