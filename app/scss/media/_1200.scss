@@ -353,6 +353,7 @@
 
   .trading {
     padding-bottom: 130px;
+
     &__container {
       background: var(--brizz-color) url(../images/trading-small.avif) top 10px right / 440px 310px no-repeat;
     }
@@ -378,6 +379,7 @@
 
   .bonuses {
     padding-bottom: 130px;
+
     &__text {
       .title-l {
         font-size: 42px;
@@ -387,6 +389,7 @@
 
   .trust {
     padding-bottom: 130px;
+
     .swiper {
       margin-right: -40px;
       margin-left: -40px;
@@ -735,6 +738,124 @@
       }
     }
 
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
+
+  .platform {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &-trader {
+      padding-bottom: 130px;
+
+      &__text {
+        margin-bottom: 20px;
+
+        .title-l {
+          font-size: 41px;
+        }
+      }
+
+      &__img {
+        img {
+          margin-left: 25px;
+          width: 430px;
+          height: 350px;
+          margin-top: -20px;
+        }
+      }
+    }
+
+    &-mobile {
+      padding-bottom: 130px;
+
+      &__text {
+        width: 460px;
+
+        .title-l {
+          font-size: 41px;
+        }
+      }
+
+      &__descr {
+        p {
+          margin-bottom: 20px;
+        }
+      }
+
+      &__btns {
+        a {
+          width: 100%;
+        }
+      }
+
+      &__img {
+        img {
+          width: 535px;
+          height: 350px;
+          margin-right: -65px;
+        }
+      }
+    }
+
+    &-desktop {
+      padding-bottom: 130px;
+
+      &__text {
+        width: 480px;
+
+        .title-l {
+          font-size: 41px;
+        }
+      }
+
+      &__img {
+        img {
+          width: 285px;
+          height: 325px;
+          margin-top: -25px;
+        }
+      }
+    }
+
+    &-trading {
+      padding-bottom: 130px;
+    }
+
+
+    &-intro {
+      padding-bottom: 130px;
+
+      .swiper {
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      &__avatars {
+        img {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+
+      &__accounts {
+        img {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+    }
 
     &-invest {
       padding-bottom: 130px;
