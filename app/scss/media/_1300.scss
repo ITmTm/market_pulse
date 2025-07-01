@@ -350,4 +350,96 @@
     }
   }
 
+
+  .platform {
+    &__left {
+      .title-m {
+        font-size: 41px;
+      }
+    }
+
+    &-trader {
+      &__text {
+        padding-top: 40px;
+      }
+
+      &__img {
+        img {
+          margin-left: 40px;
+          width: 500px;
+          height: 400px;
+          margin-top: -20px;
+          max-width: initial;
+        }
+      }
+    }
+
+    &-mobile {
+      &__text {
+        width: 620px;
+        padding-top: 40px;
+      }
+
+      &__img {
+        img {
+          width: 550px;
+          height: 400px;
+          margin-right: -50px;
+          max-width: initial;
+        }
+      }
+
+      &__btns {
+        max-width: 100%;
+      }
+    }
+
+    &-desktop {
+      &__text {
+        padding-top: 40px;
+      }
+
+      &__wrapper {
+        gap: 40px;
+      }
+
+      &__img {
+        img {
+          width: 370px;
+          height: 380px;
+          margin-top: -30px;
+        }
+      }
+    }
+
+    &-intro {
+      &__card {
+        padding: 32px 20px;
+      }
+
+      &__avatars {
+        img {
+          &:first-of-type {
+            margin-left: -10px;
+          }
+        }
+      }
+
+      &__accounts {
+        img {
+          &:first-of-type {
+            margin-left: -10px;
+          }
+        }
+      }
+    }
+
+
+    &-invest {
+      &__container {
+        padding: 80px 120px 120px;
+      }
+    }
+  }
+
 }
