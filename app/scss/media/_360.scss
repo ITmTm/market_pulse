@@ -217,6 +217,12 @@
 
 
   .instruments {
+    &-tabs {
+      &__container {
+        background-size: 280px 380px;
+      }
+    }
+
     &-invest {
       .title-l {
         font-size: 20px;
