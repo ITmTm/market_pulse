@@ -939,7 +939,15 @@
       padding-bottom: 80px;
 
       &__container {
-        background-size: 290px 350px;
+        background-size: 350px 450px;
+      }
+
+      .text-l {
+        font-size: 16px;
+      }
+
+      .swiper-btns .swiper-slide {
+        padding: 16px 0;
       }
 
       .swiper-page .swiper-slide {
@@ -976,6 +984,10 @@
 
       .swiper-page .swiper-slide {
         gap: 32px;
+      }
+
+      .mch-widget-j.mch-widget.mch-widget-quotes.sf .widget-wrapper {
+        max-width: 100%;
       }
     }
 
