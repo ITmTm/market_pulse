@@ -260,7 +260,8 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    align-items: stretch;
+
     gap: 20px;
   }
 
@@ -332,7 +333,7 @@
       width: 65px;
       height: 65px;
       border-radius: 50%;
-      margin-left: -15px;
+      margin-left: -20px;
     }
   }
 
@@ -352,7 +353,7 @@
       width: 64px;
       height: 64px;
       border-radius: 64px;
-      margin-left: -15px;
+      margin-left: -25px;
     }
   }
 
