@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
     if (!ticking) {
         window.requestAnimationFrame(() => {
             const angle = latestScrollY * 0.08;
-            bg.style.transform = `translate(-50%, -50%) rotate(${ angle }deg)`;
+            bg.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
             ticking = false;
         });
         ticking = true;
@@ -27,10 +27,10 @@ const introSwiper = new Swiper('.intro__cards', {
     slidesPerView: 4,
 
     breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 20, centeredSlides: true },
-        768: { slidesPerView: 2, spaceBetween: 40, centeredSlides: false },
-        993: { centeredSlides: false, slidesPerView: 2.5 },
-        1200: { centeredSlides: false, slidesPerView: 4 },
+        0: {slidesPerView: 1, spaceBetween: 20, centeredSlides: true},
+        768: {slidesPerView: 2, spaceBetween: 40, centeredSlides: false},
+        993: {centeredSlides: false, slidesPerView: 2.5},
+        1200: {centeredSlides: false, slidesPerView: 4},
     },
 
     pagination: {
@@ -43,10 +43,10 @@ const trustSwiper = new Swiper('.trust__cards', {
     ...base,
     slidesPerView: 4,
     breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 20, centeredSlides: true },
-        768: { slidesPerView: 2, spaceBetween: 40, centeredSlides: false },
-        993: { centeredSlides: false, slidesPerView: 2.5 },
-        1200: { centeredSlides: false, slidesPerView: 4 },
+        0: {slidesPerView: 1, spaceBetween: 20, centeredSlides: true},
+        768: {slidesPerView: 2, spaceBetween: 40, centeredSlides: false},
+        993: {centeredSlides: false, slidesPerView: 2.5},
+        1200: {centeredSlides: false, slidesPerView: 4},
     },
     pagination: {
         el: '.trust__cards-pagination',
@@ -58,10 +58,10 @@ const tariffsSwiper = new Swiper('.conditions-tariffs__cards', {
     ...base,
     slidesPerView: 3,           // desktopSlides = 3
     breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 20, centeredSlides: true },
-        768: { slidesPerView: 1.8, spaceBetween: 40, centeredSlides: false },
-        993: { centeredSlides: false, slidesPerView: 2 },
-        1200: { centeredSlides: false, slidesPerView: 3 },
+        0: {slidesPerView: 1, spaceBetween: 20, centeredSlides: true},
+        768: {slidesPerView: 1.8, spaceBetween: 40, centeredSlides: false},
+        993: {centeredSlides: false, slidesPerView: 2},
+        1200: {centeredSlides: false, slidesPerView: 3},
     },
     pagination: {
         el: '.conditions-tariffs__cards-pagination',
@@ -73,10 +73,10 @@ const conditionsIntroSwiper = new Swiper('.conditions-intro__cards', {
     ...base,
     slidesPerView: 4,
     breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 20, centeredSlides: true },
-        768: { slidesPerView: 2, spaceBetween: 40, centeredSlides: false },
-        993: { centeredSlides: false, slidesPerView: 2.5 },
-        1200: { centeredSlides: false, slidesPerView: 4 },
+        0: {slidesPerView: 1, spaceBetween: 20, centeredSlides: true},
+        768: {slidesPerView: 2, spaceBetween: 40, centeredSlides: false},
+        993: {centeredSlides: false, slidesPerView: 2.5},
+        1200: {centeredSlides: false, slidesPerView: 4},
     },
     pagination: {
         el: '.conditions-info__cards-pagination',
@@ -88,8 +88,8 @@ const platformSwiper = new Swiper('.platform-intro__cards', {
     ...base,
     slidesPerView: 4,
     breakpoints: {
-        0: { slidesPerView: 1, centeredSlides: true },
-        993: { centeredSlides: false }
+        0: {slidesPerView: 1, centeredSlides: true},
+        993: {centeredSlides: false}
     },
     pagination: {
         el: '.platform-info__cards-pagination',
@@ -101,10 +101,10 @@ const forecastsSwiper = new Swiper('.forecasts-intro__cards', {
     ...base,
     slidesPerView: 4,
     breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 20, centeredSlides: true },
-        768: { slidesPerView: 2, spaceBetween: 40, centeredSlides: false },
-        993: { centeredSlides: false, slidesPerView: 2.5 },
-        1200: { centeredSlides: false, slidesPerView: 4 },
+        0: {slidesPerView: 1, spaceBetween: 20, centeredSlides: true},
+        768: {slidesPerView: 2, spaceBetween: 40, centeredSlides: false},
+        993: {centeredSlides: false, slidesPerView: 2.5},
+        1200: {centeredSlides: false, slidesPerView: 4},
     },
 
     pagination: {
@@ -117,10 +117,10 @@ const newsSwiper = new Swiper('.news-intro__cards', {
     ...base,
     slidesPerView: 4,
     breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 20, centeredSlides: true },
-        768: { slidesPerView: 2, spaceBetween: 40, centeredSlides: false },
-        993: { centeredSlides: false, slidesPerView: 2.5 },
-        1200: { centeredSlides: false, slidesPerView: 4 },
+        0: {slidesPerView: 1, spaceBetween: 20, centeredSlides: true},
+        768: {slidesPerView: 2, spaceBetween: 40, centeredSlides: false},
+        993: {centeredSlides: false, slidesPerView: 2.5},
+        1200: {centeredSlides: false, slidesPerView: 4},
     },
 
     pagination: {
@@ -134,11 +134,11 @@ const documentsSwiper = new Swiper('.documents-intro__cards', {
     slidesPerView: 3,
 
     breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 20, centeredSlides: true },
-        768: { slidesPerView: 1.5, spaceBetween: 40, centeredSlides: false },
-        901: { slidesPerView: 1.8, spaceBetween: 40, centeredSlides: false },
-        993: { slidesPerView: 2.5, centeredSlides: false },
-        1200: { slidesPerView: 3, centeredSlides: false },
+        0: {slidesPerView: 1, spaceBetween: 20, centeredSlides: true},
+        768: {slidesPerView: 1.5, spaceBetween: 40, centeredSlides: false},
+        901: {slidesPerView: 1.8, spaceBetween: 40, centeredSlides: false},
+        993: {slidesPerView: 2.5, centeredSlides: false},
+        1200: {slidesPerView: 3, centeredSlides: false},
     },
 
     pagination: {
@@ -178,11 +178,10 @@ function makeLinkedSwipers(tabsSelector, contentSelector) {
         simulateTouch: true,
 
         breakpoints: {
-            320: { slidesPerView: 1 },
-            480: { slidesPerView: 2 },
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 5 },
+            320: {slidesPerView: 2},
+            640: {slidesPerView: 3},
+            768: {slidesPerView: 4},
+            1024: {slidesPerView: 5},
         }
     });
 
@@ -207,7 +206,7 @@ function makeLinkedSwipers(tabsSelector, contentSelector) {
         const idx = swiperPage.activeIndex;
         const url = bgList[idx] || bgList[0];
         container.style.transition = 'background-image .4s ease-in-out';
-        container.style.backgroundImage = `url('${ url }')`;
+        container.style.backgroundImage = `url('${url}')`;
     });
     // сразу запускает один раз чтобы установить стартовый фон
     swiperPage.emit('slideChange');
