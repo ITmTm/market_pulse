@@ -5,4 +5,25 @@
       background: var(--brizz-color) url(../images/trading.avif) top right / 720px 450px no-repeat;
     }
   }
+
+  .platform {
+    &-trader {
+      &__text {
+        width: 670px;
+      }
+    }
+
+    &-mobile {
+      &__text {
+        padding-right: 20px;
+        padding-bottom: 20px;
+      }
+    }
+
+    &-desktop {
+      &__text {
+        width: 670px;
+      }
+    }
+  }
 }
