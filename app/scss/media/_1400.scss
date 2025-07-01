@@ -83,4 +83,66 @@
       }
     }
   }
+
+
+  .platform {
+    &-trader {
+      &__container {
+        max-height: 100%;
+        &:before {
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      &__wrapper {
+        gap: 10px;
+      }
+
+      &__text {
+        width: 560px;
+        justify-content: space-between;
+      }
+
+      &__img {
+        img {
+          margin-left: 70px;
+        }
+      }
+    }
+
+    &-mobile {
+      &__container {
+        max-height: 100%;
+        &:before {
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      &__descr {
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &-desktop {
+      &__container {
+        max-height: 100%;
+        &:before {
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      &__wrapper {
+        gap: 10px;
+      }
+
+      &__text {
+        width: 560px;
+      }
+    }
+  }
 }
