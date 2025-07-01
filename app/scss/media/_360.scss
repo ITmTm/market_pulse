@@ -217,6 +217,10 @@
 
 
   .instruments {
+    &__right {
+      background: var(--light-grey-color) url(../images/instruments-bg.avif) bottom center / 280px 200px no-repeat;
+    }
+
     &-tabs {
       &__container {
         background-size: 280px 380px;
