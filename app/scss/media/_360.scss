@@ -237,4 +237,79 @@
       }
     }
   }
+
+
+  .platform {
+    &__right {
+      background: var(--light-grey-color) url(../images/platform-bg.avif) center bottom / 290px 265px no-repeat;
+    }
+
+    &-trader {
+      &__container {
+        &:before {
+          top: -25px;
+          right: 25px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      &__text {
+        gap: 20px;
+      }
+
+      .btn {
+        padding: 20px;
+        font-size: 18px;
+      }
+    }
+
+    &-mobile {
+      &__container {
+        &:before {
+          background: var(--brizz-color) url(../images/platform-mobile.svg) center center / 20px 30px no-repeat;
+          top: -25px;
+          right: 25px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      &__text {
+        gap: 20px;
+      }
+
+      .btn {
+        padding: 20px;
+        font-size: 18px;
+      }
+    }
+
+    &-desktop {
+      &__container {
+        &:before {
+          background: var(--brizz-color) url(../images/platform-desktop.svg) center center / 25px 25px no-repeat;
+          top: -25px;
+          right: 25px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      &__text {
+        gap: 20px;
+      }
+
+      .btn {
+        padding: 20px;
+        font-size: 18px;
+      }
+    }
+
+    &-invest {
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
 }

@@ -120,7 +120,7 @@
 
     &-trading {
       &__container {
-        padding: 40px 40px 32px;
+        padding: 32px;
         border-radius: 30px;
         background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right / contain no-repeat;
 
@@ -360,7 +360,7 @@
 
     &-trading {
       &__container {
-        padding: 40px 40px 32px;
+        padding: 32px;
         border-radius: 30px;
         background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right / contain no-repeat;
 
@@ -460,6 +460,135 @@
         font-size: 28px;
       }
     }
+
+    &-invest {
+      &__container {
+        padding: 50px 20px 100px;
+        border-radius: 30px;
+        background: var(--purpur-color) url(../images/invest-small-bg.avif) center center / cover no-repeat;
+      }
+
+      .title-l {
+        font-size: 29px;
+      }
+    }
+  }
+
+
+  .platform {
+    &__left {
+      border-radius: 30px;
+    }
+
+    &__right {
+      border-radius: 30px;
+      background: var(--light-grey-color) url(../images/platform-bg.avif) center bottom / 325px 280px no-repeat;
+    }
+
+    &-trader {
+      &__container {
+        border-radius: 30px;
+        &:before {
+          background: var(--brizz-color) url(../images/platform-trader.svg) center center / 30px 25px no-repeat;
+          top: -30px;
+          right: 30px;
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      &__text {
+        .title-l {
+          font-size: 35px;
+        }
+      }
+
+      &__img {
+        img {
+          width: 380px;
+          height: 280px;
+        }
+      }
+    }
+
+    &-mobile {
+      &__container {
+        border-radius: 30px;
+        &:before {
+          background: var(--brizz-color) url(../images/platform-mobile.svg) center center / 25px 35px no-repeat;
+          top: -30px;
+          right: 30px;
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      &__text {
+        .title-l {
+          font-size: 35px;
+        }
+      }
+
+      &__btns {
+        flex-direction: column;
+      }
+
+      &__img {
+        img {
+          width: 390px;
+          height: 250px;
+        }
+      }
+    }
+
+    &-desktop {
+      &__container {
+        border-radius: 30px;
+        &:before {
+          background: var(--brizz-color) url(../images/platform-desktop.svg) center center / 30px 30px no-repeat;
+          top: -30px;
+          right: 30px;
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      &__text {
+        .title-l {
+          font-size: 35px;
+        }
+      }
+
+      &__img {
+        img {
+          width: 270px;
+          height: 250px;
+        }
+      }
+    }
+
+    &-trading {
+      &__container {
+        padding: 32px;
+        border-radius: 30px;
+        background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right / contain no-repeat;
+
+        .title-l {
+          font-size: 35px;
+        }
+      }
+    }
+
+    &-intro {
+      .title-l {
+        font-size: 30px;
+      }
+
+      &__card {
+        border-radius: 30px;
+      }
+    }
+
 
     &-invest {
       &__container {

@@ -111,4 +111,18 @@
       }
     }
   }
+
+
+
+  .platform {
+    &-intro {
+      &__card {
+        min-height: 330px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
 }
