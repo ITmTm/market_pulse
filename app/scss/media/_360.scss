@@ -72,7 +72,7 @@
     }
 
     &__contact {
-      margin-left: 15px;
+      margin-left: 20px;
 
       &:after {
         left: -20px;
@@ -80,7 +80,7 @@
     }
 
     &__mail {
-      margin-left: 25px;
+      margin-left: 30px;
 
       &:after {
         left: -30px;
@@ -95,7 +95,7 @@
 
   .about {
     &__right {
-      background: #f0f0f0 url(../images/about.avif) center center / cover no-repeat;
+      background: #f0f0f0 url(../images/about.avif) bottom center / contain no-repeat;
     }
 
     &-market {
@@ -168,6 +168,12 @@
         font-size: 18px;
       }
     }
+
+    &-graphics {
+      .widget-box {
+        margin-left: -15px;
+      }
+    }
   }
 
 
@@ -190,8 +196,8 @@
 
   .calendar {
     &-state {
-      .mch-widget-jtqsi {
-        min-width: 300px;
+      .widget-box {
+        margin-left: -15px;
       }
     }
 
