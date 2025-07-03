@@ -766,4 +766,21 @@
     }
   }
 
+
+  .error-hero {
+    padding-bottom: 100px;
+    h1 {
+      font-size: 90px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    &__right {
+      background: var(--light-grey-color) url(../images/error.avif) right bottom / 400px 470px no-repeat;
+    }
+  }
+
 }
