@@ -643,6 +643,7 @@
     padding-bottom: 100px;
 
     &-trader {
+      padding-bottom: 100px;
       &__container {
         &:before {
           background: var(--brizz-color) url(../images/platform-trader.svg) center center / 45px 35px no-repeat;
@@ -658,17 +659,17 @@
         img {
           width: 350px;
           height: 300px;
-          margin-top: -5px;
+          margin-top: 50px;
         }
       }
     }
 
 
     &-mobile {
+      padding-bottom: 100px;
       &__container {
         &:before {
           background: var(--brizz-color) url(../images/platform-mobile.svg) center center / 30px 45px no-repeat;
-          right: 30px;
           top: -35px;
           width: 75px;
           height: 75px;
@@ -680,13 +681,14 @@
         img {
           width: 435px;
           height: 300px;
-          margin-top: -20px;
+          margin-top: 40px;
         }
       }
     }
 
 
     &-desktop {
+      padding-bottom: 100px;
       &__container {
         &:before {
           background: var(--brizz-color) url(../images/platform-desktop.svg) center center / 40px 40px no-repeat;
@@ -699,9 +701,9 @@
       }
 
       img {
-        width: 221px;
-        height: 250px;
-        margin-top: 45px;
+        width: 265px;
+        height: 270px;
+        margin-top: 70px;
       }
     }
 
