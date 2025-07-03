@@ -21,7 +21,7 @@
         режиме реального времени и анализировать динамику цен за разные периоды.</p>
 
       <script src="https://api.marketcheese.com/widgets/markets/widget.js"
-              data-config='{"language":"ru","orientation":"auto","defaultPeriod":"week","adaptive":true,"groups":[{"name":"Символы","symbols":"99,104,127,129,277,42,48,57,68,87,12,14,201"}]}'></script>
+              data-config='{"language":"ru","orientation":"auto","defaultPeriod":"week","adaptive":true,"groups":[{"name":"Символы","symbols":"99,104,127,129,277,42,48,57,68,87,12,14,201","devSource":"WDT"}]}'></script>
     </div>
   </section>
 
@@ -34,7 +34,7 @@
           лидерам роста и падения.</p>
 
         <script src="https://api.marketcheese.com/widgets/leaders/widget.js"
-                data-config='{"filters":{"segments":"14,4,16,8,5,7,15"},"language":"ru"}'></script>
+                data-config='{"filters":{"segments":"14,4,16,8,5,7,15"},"language":"ru","devSource":"WDT"}'></script>
       </div>
 
       <div class="overview-market__right">
@@ -43,7 +43,7 @@
           на рыночные изменения в режиме реального времени.</p>
 
         <script src="https://api.marketcheese.com/widgets/notifier/widget.js"
-                data-config='{"language":"ru","period":"all","multipleIndicators":true,"adaptive":true,"currencies":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19"}'></script>
+                data-config='{"language":"ru","period":"all","multipleIndicators":true,"adaptive":true,"currencies":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19","devSource":"WDT"}'></script>
       </div>
     </div>
   </section>
@@ -55,8 +55,10 @@
       <p class="text-m">Применяйте главный инструмент трейдера — проводите технический анализ финансовых активов на
         интерактивных графиках в режиме реального времени.</p>
 
-      <script src="https://api.marketcheese.com/widgets/chart/widget.js"
-              data-config='{"timeframe":"H1","barStyle":"Candle","offset":30,"colorScheme":"light","language":"ru","symbolsEnabled":true,"showTools":true,"terminalBtnVisible":false,"symbol":"EURUSD"}'></script>
+      <div class="widget-box">
+        <script src="https://api.marketcheese.com/widgets/chart/widget.js"
+                data-config='{"timeframe":"H1","barStyle":"Candle","offset":30,"colorScheme":"light","language":"ru","symbolsEnabled":true,"showTools":true,"terminalBtnVisible":false,"symbol":"EURUSD","devSource":"WDT"}'></script>
+      </div>
     </div>
   </section>
 
