@@ -602,4 +602,15 @@
       }
     }
   }
+
+
+  .error-hero {
+    h1 {
+      font-size: 52px;
+    }
+
+    &__right {
+      min-height: 400px;
+    }
+  }
 }
