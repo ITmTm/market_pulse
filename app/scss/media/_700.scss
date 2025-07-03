@@ -213,4 +213,19 @@
     }
   }
 
+
+  .error-hero {
+    h1 {
+      font-size: 65px;
+    }
+
+    &__left {
+      min-height: 520px;
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -70px / auto no-repeat;
+    }
+
+    &__right {
+      min-height: 520px;
+    }
+  }
 }
