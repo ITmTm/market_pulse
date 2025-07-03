@@ -569,4 +569,19 @@
   }
 
 
+  .error-hero {
+    .container {
+      grid-template-columns: 1fr;
+    }
+
+    &__left {
+      min-height: 570px;
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -40px / auto no-repeat;
+    }
+
+    &__right {
+      min-height: 570px;
+      background: var(--light-grey-color) url(../images/error.avif) right bottom / cover no-repeat;
+    }
+  }
 }
