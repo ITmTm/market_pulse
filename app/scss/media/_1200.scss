@@ -108,12 +108,20 @@
         right: 0;
         opacity: 1;
         padding: 0;
+
+        .menu-item {
+          width: 100%;
+          a {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+          }
+        }
       }
     }
 
     .nav > .menu {
       flex-direction: column;
-      gap: 0;
       width: 100%;
 
       & > .menu-item {
@@ -156,8 +164,8 @@
           text-align: left;
           align-items: flex-start;
           justify-content: flex-start;
-          gap: 20px;
-          padding: 20px;
+          gap: initial;
+          padding: initial;
           position: static;
           opacity: 1;
           visibility: visible;
@@ -223,7 +231,7 @@
               opacity: 1;
               visibility: visible;
               transition: none;
-              padding: 20px;
+              padding: 0;
               width: 100%;
               border-radius: initial;
               border-top: 1px solid var(--white-color);
