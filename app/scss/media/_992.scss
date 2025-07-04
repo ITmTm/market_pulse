@@ -741,7 +741,6 @@
         inset: 0;
       }
 
-
       .swiper-pagination-bullet {
         width: 10px;
         height: 10px;
@@ -750,7 +749,6 @@
       .swiper-pagination-bullet-active {
         background: var(--purpur-color);
       }
-
     }
 
     &-invest {
@@ -776,10 +774,6 @@
 
     p {
       margin-bottom: 30px;
-    }
-
-    &__right {
-      background: var(--light-grey-color) url(../images/error.avif) center center / 545px 750px no-repeat;
     }
   }
 
