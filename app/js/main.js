@@ -79,7 +79,7 @@ const conditionsIntroSwiper = new Swiper('.conditions-intro__cards', {
         1200: {centeredSlides: false, slidesPerView: 4},
     },
     pagination: {
-        el: '.conditions-info__cards-pagination',
+        el: '.conditions-intro__cards-pagination',
         clickable: true
     }
 });
@@ -94,7 +94,7 @@ const platformSwiper = new Swiper('.platform-intro__cards', {
         1200: {centeredSlides: false, slidesPerView: 4},
     },
     pagination: {
-        el: '.platform-info__cards-pagination',
+        el: '.platform-intro__cards-pagination',
         clickable: true
     }
 });
@@ -203,17 +203,30 @@ function makeLinkedSwipers(tabsSelector, contentSelector) {
         swiperPage.slides.forEach(s => s.removeAttribute('tabindex'));
     }
 
+    // функция, которая ставит или убирает фон
+    function updateBackground(idx) {
+        const url = bgList[idx] || bgList[0];
+        if (window.innerWidth > 500) {
+            container.style.transition = 'background-image .4s ease-in-out';
+            container.style.backgroundImage = `url('${url}')`;
+        } else {
+            // убираем bg-картинку
+            container.style.backgroundImage = 'none';
+        }
+    }
+
     // смена фона у контейнера при каждом слайде
     swiperPage.on('slideChange', () => {
-        const idx = swiperPage.activeIndex;
-        const url = bgList[idx] || bgList[0];
-        container.style.transition = 'background-image .4s ease-in-out';
-        container.style.backgroundImage = `url('${url}')`;
+        updateBackground(swiperPage.activeIndex);
     });
-    // сразу запускает один раз чтобы установить стартовый фон
-    swiperPage.emit('slideChange');
+
+    // при изменении окна
+    window.addEventListener('resize', () => {
+        updateBackground(swiperPage.activeIndex);
+    });
+
+    // начальная установка
+    updateBackground(swiperPage.activeIndex)
 }
 
 makeLinkedSwipers('.swiper-btns', '.swiper-page');
-
-
