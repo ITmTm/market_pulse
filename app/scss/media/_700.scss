@@ -78,6 +78,15 @@
         grid-template-columns: 1fr;
       }
     }
+
+    .sub-menu {
+      li {
+        a {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
   }
 
 
