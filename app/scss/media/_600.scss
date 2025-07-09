@@ -488,6 +488,7 @@
     &-trader {
       &__container {
         border-radius: 30px;
+
         &:before {
           background: var(--brizz-color) url(../images/platform-trader.svg) center center / 30px 25px no-repeat;
           top: -30px;
@@ -514,6 +515,7 @@
     &-mobile {
       &__container {
         border-radius: 30px;
+
         &:before {
           background: var(--brizz-color) url(../images/platform-mobile.svg) center center / 25px 35px no-repeat;
           top: -30px;
@@ -544,6 +546,7 @@
     &-desktop {
       &__container {
         border-radius: 30px;
+
         &:before {
           background: var(--brizz-color) url(../images/platform-desktop.svg) center center / 30px 30px no-repeat;
           top: -30px;
