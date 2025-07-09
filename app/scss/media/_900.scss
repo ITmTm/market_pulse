@@ -164,7 +164,6 @@
   }
 
 
-
   .contacts {
     .container {
       grid-template-columns: 1fr;
@@ -338,6 +337,7 @@
 
       .text-m {
         margin-bottom: 5px;
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -492,6 +492,7 @@
           transform: rotate(10deg);
         }
       }
+
       &__wrapper {
         flex-direction: column;
         padding: 32px;
@@ -521,6 +522,7 @@
       &__container {
         height: 100%;
       }
+
       &__wrapper {
         flex-direction: column;
         padding: 32px;
