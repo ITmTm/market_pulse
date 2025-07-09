@@ -644,6 +644,7 @@
 
     &-trader {
       padding-bottom: 100px;
+
       &__container {
         &:before {
           background: var(--brizz-color) url(../images/platform-trader.svg) center center / 45px 35px no-repeat;
@@ -667,6 +668,7 @@
 
     &-mobile {
       padding-bottom: 100px;
+
       &__container {
         &:before {
           background: var(--brizz-color) url(../images/platform-mobile.svg) center center / 30px 45px no-repeat;
@@ -689,6 +691,7 @@
 
     &-desktop {
       padding-bottom: 100px;
+
       &__container {
         &:before {
           background: var(--brizz-color) url(../images/platform-desktop.svg) center center / 40px 40px no-repeat;
@@ -767,6 +770,7 @@
 
   .error-hero {
     padding-bottom: 100px;
+
     h1 {
       font-size: 90px;
       margin-bottom: 30px;
