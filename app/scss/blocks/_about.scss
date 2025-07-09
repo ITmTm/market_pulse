@@ -1,5 +1,6 @@
 .about {
   padding-bottom: 150px;
+
   .container {
     padding-top: 20px;
     display: grid;
@@ -20,11 +21,10 @@
   }
 
   &__right {
-    background:
-            linear-gradient(270deg, #F0F0F0 15%,
-                    rgba(240, 240, 240, 0.65) 30%,
-                    rgba(240, 240, 240, 0.00) 40%),
-            var(--light-grey-color)  url(../images/about.avif) left bottom / auto no-repeat;
+    background: linear-gradient(270deg, #F0F0F0 15%,
+        rgba(240, 240, 240, 0.65) 30%,
+        rgba(240, 240, 240, 0.00) 40%),
+    var(--light-grey-color) url(../images/about.avif) left bottom / auto no-repeat;
     border-radius: 50px;
   }
 }
@@ -32,6 +32,7 @@
 
 .about-market {
   padding-bottom: 150px;
+
   .container {
     padding-top: 20px;
     display: grid;
@@ -45,7 +46,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 160px 30px 30px;
-    background: var(--purpur-light-color)  url(../images/market-pulse-bg.avif) center center / contain no-repeat;
+    background: var(--purpur-light-color) url(../images/market-pulse-bg.avif) center center / contain no-repeat;
     border-radius: 50px;
     gap: 25px;
     text-align: center;
