@@ -3,6 +3,7 @@
     .container {
       gap: 40px;
     }
+
     &__left {
       padding-left: 10px;
 
@@ -44,6 +45,7 @@
     &__box {
       .menu {
         gap: 40px;
+
         &-item {
           white-space: nowrap;
         }
@@ -89,6 +91,7 @@
     &-trader {
       &__container {
         max-height: 100%;
+
         &:before {
           width: 90px;
           height: 90px;
@@ -114,6 +117,7 @@
     &-mobile {
       &__container {
         max-height: 100%;
+
         &:before {
           width: 90px;
           height: 90px;
@@ -130,6 +134,7 @@
     &-desktop {
       &__container {
         max-height: 100%;
+
         &:before {
           width: 90px;
           height: 90px;
