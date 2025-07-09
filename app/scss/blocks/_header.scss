@@ -89,7 +89,7 @@
         color: var(--white-color);
         opacity: 0;
         transform: translateY(-10px);
-        transition: opacity 0.5s ease, transform 0.8s ease ;
+        transition: opacity 0.5s ease, transform 0.8s ease;
       }
     }
   }
@@ -98,6 +98,7 @@
     &--mobile {
       display: none;
     }
+
     .header__lang {
       & > .menu-item {
         > a {
