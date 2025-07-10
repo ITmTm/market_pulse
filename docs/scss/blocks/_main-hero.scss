@@ -1,0 +1,130 @@
+.main-hero {
+  padding-bottom: 150px;
+
+  .container {
+    padding-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    min-height: 750px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 160px 30px 30px;
+    background: #3BA6B1 url(../images/main-hero-bg.avif) left bottom /auto no-repeat;
+    border-radius: 50px;
+    gap: 20px;
+
+    .title-m {
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: block;
+    }
+  }
+
+  &_wrapp {
+    text-align: center;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__right {
+    padding: 160px 30px 30px;
+    background: var(--light-grey-color) url(../images/mine-hero-bg-traid.avif) right bottom / auto no-repeat;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+    gap: 20px;
+    min-height: 192px;
+    padding: 20px;
+    border-radius: 35px;
+    background: rgba(40, 40, 40, 0.60);
+    backdrop-filter: blur(2px);
+
+    &__item {
+      position: relative;
+      padding-left: 35px;
+
+      &--spreads::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        background: url("/images/spreads.svg") center/contain no-repeat;
+      }
+
+      &--assets::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        background: url("/images/assets.svg") center/contain no-repeat;
+      }
+
+      &--withdraw::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background: url("/images/withdraw.svg") center/contain no-repeat;
+      }
+
+      &--instant::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        background: url("/images/instant.svg") center/contain no-repeat;
+      }
+
+      &--mobile::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background: url("/images/mobile.svg") center/contain no-repeat;
+      }
+
+      &--support::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background: url("/images/support.svg") center/contain no-repeat;
+      }
+    }
+  }
+}

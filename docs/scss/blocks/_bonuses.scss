@@ -1,0 +1,52 @@
+.bonuses {
+  padding-bottom: 150px;
+
+  &__container {
+    min-height: 514px;
+    background-color: var(--brizz-color);
+    border-radius: 55px;
+    padding: 32px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: stretch;
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: 32px;
+
+    .title-l {
+      color: var(--white-color);
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: block;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 120px;
+
+    p {
+      margin-bottom: 15px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+  &__img {
+    img {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 22px;
+    }
+  }
+}
