@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale = 1.0">
+
+    <!-- Берется из js -->
+    <title></title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="../../../Новая папка/app/scss/blocks/_header.scss">
+</head>
+
+<body>
+<div class="main-bg"></div>
+
+<header class="header">
+    <div class="container">
+        <div class="header__left">
+            <a class="header__logo" href="/"></a>
+
+            <!-- кнопка-бургер -->
+            <button class="header__burger" aria-label="Open menu">
+                <svg width="53" height="35" viewBox="0 0 53 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 51.5 17.5 H 9"/>
+                    <path d="M 32 29 L 9 5  C 0 -4 -3 10 9 10 H 32"/>
+                    <path d="M 32 6  L 9 30 C 0 39 -3 25 9 25 H 32"/>
+                </svg>
+            </button>
+
+            <nav class="nav">
+
+                <ul class="menu">
+
+                    <li class="menu-item">
+
+                        <a href="##">Торговля</a>
+
+                        <ul class="sub-menu">
+
+                            <li class="menu-item">
+
+                                <a href="conditions.html">Условия торговли</a>
+
+                            </li>
+
+                            <li class="menu-item">
+
+                                <a href="instruments.html">Торговые инструменты</a>
+
+                            </li>
+
+                            <li class="menu-item">
+
+                                <a href="platform.html">Торговая платформа</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a href="##">Аналитика</a>
+
+                        <ul class="sub-menu">
+
+                            <li class="menu-item">
+
+                                <a href="overview.html">Обзор рынка</a>
+
+                            </li>
+
+                            <li class="menu-item">
+
+                                <a href="forecasts.html">Прогнозы рынка</a>
+
+                            </li>
+
+                            <li class="menu-item">
+
+                                <a href="news.html">Новости рынка</a>
+
+                            </li>
+
+                            <li class="menu-item">
+
+                                <a href="calendar.html">Экономический календарь</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="menu-item">
+
+                        <a href="##">Компания</a>
+
+                        <ul class="sub-menu">
+
+                            <li class="menu-item">
+
+                                <a href="about.html">О нас</a>
+
+                            </li>
+
+                            <li class="menu-item">
+
+                                <a href="contacts.html">Контакты</a>
+
+                            </li>
+
+                            <li class="menu-item">
+
+                                <a href="documents.html">Документы</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+                <div class="header__right header__right--mobile">
+
+                    <ul class="menu header__lang">
+
+                        <li class="menu-item">
+
+                            <a href="##">ENG</a>
+
+                            <ul class="sub-menu">
+
+                                <li class="menu-item">
+
+                                    <a href="##">RU</a>
+
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+        <div class="header__right header__right--desktop">
+            <nav>
+                <ul class="menu header__lang">
+                    <li class="menu-item">
+                        <a href="##">ENG</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="##">RU</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+  <section class="instruments">
+    <div class="container">
+      <div class="instruments__left">
+        <h1 class="title-m">Торговые инструменты</h1>
+        <p class="text-m">С MarketPulse вы получаете возможность торговать более чем 500 активами по всему
+          миру — от валют и акций до сырья и криптовалют.</p>
+      </div>
+
+      <div class="instruments__right"></div>
+    </div>
+  </section>
+
+  <section class="instruments-tabs">
+    <div class="container">
+      <div class="instruments-tabs__container">
+        <div class="swiper swiper-btns">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide text-l">Валюта</div>
+            <div class="swiper-slide text-l">Акции</div>
+            <div class="swiper-slide text-l">Криптовалюты</div>
+            <div class="swiper-slide text-l">Товары</div>
+            <div class="swiper-slide text-l">Индексы</div>
+          </div>
+        </div>
+
+        <div class="swiper swiper-page">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-page__content">
+                <div class="swiper-page__top">
+                  <h2 class="title-l">Валютные пары (Форекс)</h2>
+                  <p class="text-m">Валютные пары — один из самых популярных и ликвидных инструментов
+                    на финансовых рынках. Торгуя валютными парами, вы спекулируете на изменении
+                    курса одной валюты относительно другой.</p>
+                  <p class="text-m">В нашем предложении представлены основные, кросс- и экзотические
+                    валютные пары, что позволяет выбрать оптимальные варианты для разных стратегий и
+                    уровней риска. Высокая волатильность и круглосуточная торговля делают валютные
+                    пары привлекательными как для начинающих, так и для опытных трейдеров.</p>
+                </div>
+                <div class="swiper-page__bottom">
+                  <h3 class="title-s">Торгуйте различными валютными парами с MarketPulse:</h3>
+                  <ul>
+                    <li class="text-m">Основные пары: EUR/USD, GBP/USD, USD/JPY и другие. Эти пары
+                      характеризуются высокой ликвидностью и узкими спредами.
+                    </li>
+                    <li class="text-m">Кросс-валютные пары: EUR/GBP, EUR/JPY</li>
+                    <li class="text-m">Экзотические пары: комбинации редких валют, таких как USD/TRY
+                      или EUR/SEK. Предлагают высокую волатильность и потенциально большую
+                      прибыль.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="widget-box">
+                <script src="https://api.marketcheese.com/widgets/quotes/widget.js"
+                        data-config='{"language":"ru","lastColumn":"todayIncrement","adaptive":true,"columns":"ask,bid,dayOpening,dayMax,dayMin,todayIncrement,todayIncrementAbs","groups":[{"name":"Символы","symbols":"286,282,283,287,92,88,91,73,72,68"}],"type":"simplified", "devSource":"WDT"}'></script>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-page__content">
+                <div class="swiper-page__top">
+                  <h2 class="title-l">Акции</h2>
+                  <p class="text-m">Акции — это долевые ценные бумаги, которые дают право на часть собственности
+                    компании и участие в ее прибыли. Торговля акциями позволяет инвесторам получать доход за счет
+                    роста
+                    стоимости бумаг и дивидендных выплат.</p>
+                  <p class="text-m">В нашем ассортименте представлены акции крупнейших мировых компаний из различных
+                    секторов экономики: технологии, финансы, здравоохранение, промышленность и другие. Это дает
+                    возможность диверсифицировать портфель и выбрать активы, соответствующие вашим инвестиционным
+                    целям
+                    и уровню риска.</p>
+                </div>
+                <div class="swiper-page__bottom">
+                  <h3 class="title-s">MarketPulse предлагает:</h3>
+                  <ul>
+                    <li class="text-m">Apple Inc. (AAPL) — технологии
+                    </li>
+                    <li class="text-m">Microsoft Corporation (MSFT) — программное обеспечение и облачные сервисы</li>
+                    <li class="text-m">Amazon.com, Inc. (AMZN) — электронная коммерция и облачные технологии
+                    </li>
+                    <li class="text-m">Tesla, Inc. (TSLA) — электромобили и возобновляемая энергия</li>
+                    <li class="text-m">Alphabet Inc. (GOOGL) — интернет-сервисы и реклама</li>
+                    <li class="text-m">Facebook, Inc. (META) — социальные сети и цифровая реклама</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="widget-box">
+                <script src="https://api.marketcheese.com/widgets/quotes/widget.js"
+                        data-config='{"language":"ru","lastColumn":"todayIncrement","adaptive":true,"columns":"ask,bid,dayOpening,dayMax,dayMin,todayIncrement,todayIncrementAbs","groups":[{"name":"Символы","symbols":"196,197,201,203,205,212,215,219,225,228"}],"type":"simplified", "devSource":"WDT"}'></script>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-page__content">
+                <div class="swiper-page__top">
+                  <h2 class="title-l">Криптовалюты</h2>
+                  <p class="text-m">Криптовалюты — это цифровые валюты, основанные на технологии блокчейн,
+                    обеспечивающей безопасность и прозрачность транзакций без участия посредников. Они представляют
+                    собой инновационный класс активов с высоким потенциалом роста и волатильностью.</p>
+                  <p class="text-m">Торговля криптовалютами позволяет быстро реагировать на изменения рынка и
+                    использовать возможности как для краткосрочной спекуляции, так и для долгосрочного инвестирования.
+                    В
+                    нашем предложении доступны как ведущие криптовалюты, так и перспективные альткоины.</p>
+                </div>
+                <div class="swiper-page__bottom">
+                  <h3 class="title-s">Основные криптовалюты для торговли:</h3>
+                  <ul>
+                    <li class="text-m">Bitcoin (BTC) — первая и самая известная криптовалюта
+                    </li>
+                    <li class="text-m">Ethereum (ETH) — платформа для смарт-контрактов и децентрализованных приложений
+                    </li>
+                    <li class="text-m">Ripple (XRP) — решение для быстрых международных платежей
+                    </li>
+                    <li class="text-m">Litecoin (LTC) — цифровое серебро с быстрыми транзакциями</li>
+                    <li class="text-m">Cardano (ADA) — блокчейн с акцентом на безопасность и масштабируемость</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="widget-box">
+                <script src="https://api.marketcheese.com/widgets/quotes/widget.js"
+                        data-config='{"language":"ru","lastColumn":"todayIncrement","adaptive":true,"columns":"ask,bid,dayOpening,dayMax,dayMin,todayIncrement,todayIncrementAbs","groups":[{"name":"Символы","symbols":"130,132,134,135,137,229,230,269,271,265"}],"type":"simplified", "devSource":"WDT"}'></script>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-page__content">
+                <div class="swiper-page__top">
+                  <h2 class="title-l">Товарные активы</h2>
+                  <p class="text-m">Товарные активы — это сырьевые ресурсы и природные материалы, которые широко
+                    используются в мировой экономике и торговле. К ним относятся металлы, энергоносители,
+                    сельскохозяйственная продукция и другие ресурсы.</p>
+                  <p class="text-m">Торговля товарными активами позволяет инвесторам диверсифицировать портфель и
+                    получать прибыль от колебаний цен на сырье, вызванных изменениями спроса, предложения и
+                    геополитическими факторами.</p>
+                </div>
+                <div class="swiper-page__bottom">
+                  <h3 class="title-s">В нашем ассортименте представлены популярные товарные активы:</h3>
+                  <ul>
+                    <li class="text-m">Нефть (Brent, WTI) — ключевой энергоноситель мирового рынка
+                    </li>
+                    <li class="text-m">Золото — надежный защитный актив и средство сохранения стоимости</li>
+                    <li class="text-m">Серебро — промышленный металл с инвестиционным потенциалом</li>
+                    <li class="text-m">Природный газ — важный источник энергии</li>
+                    <li class="text-m">Кофе, сахар, кукуруза — основные сельскохозяйственные товары</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="widget-box">
+                <script src="https://api.marketcheese.com/widgets/quotes/widget.js"
+                        data-config='{"language":"ru","lastColumn":"todayIncrement","adaptive":true,"columns":"ask,bid,dayOpening,dayMax,dayMin,todayIncrement,todayIncrementAbs","groups":[{"name":"Символы","symbols":"97,98,100,104,128,129,103,187,189,188"}],"type":"simplified", "devSource":"WDT"}'></script>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-page__content">
+                <div class="swiper-page__top">
+                  <h2 class="title-l">Индексы</h2>
+                  <p class="text-m">Индексы — это показатели, отражающие общее состояние и динамику определённого
+                    сегмента фондового рынка или экономики в целом. Они формируются на основе стоимости набора акций
+                    ведущих компаний и служат ориентиром для оценки рыночных тенденций.</p>
+                  <p class="text-m">Торговля индексами позволяет инвесторам получать прибыль от изменения стоимости
+                    целого рынка или сектора, не покупая отдельные акции. Это удобный способ диверсификации и снижения
+                    рисков.</p>
+                </div>
+                <div class="swiper-page__bottom">
+                  <h3 class="title-s">MarketPulse предлагает:</h3>
+                  <ul>
+                    <li class="text-m">S&P 500 — индекс крупнейших компаний США</li>
+                    <li class="text-m">Dow Jones Industrial Average (DJIA) — промышленный индекс США</li>
+                    <li class="text-m">NASDAQ Composite — технологический индекс США</li>
+                    <li class="text-m">FTSE 100 — индекс крупнейших компаний Великобритании</li>
+                    <li class="text-m">DAX — немецкий фондовый индекс</li>
+                    <li class="text-m">Nikkei 225 — японский фондовый индекс</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="widget-box">
+                <script src="https://api.marketcheese.com/widgets/quotes/widget.js"
+                        data-config='{"language":"ru","lastColumn":"todayIncrement","adaptive":true,"columns":"ask,bid,dayOpening,dayMax,dayMin,todayIncrement,todayIncrementAbs","groups":[{"name":"Символы","symbols":"6,107,109,108,115,116,114,110,121,276"}],"type":"simplified", "devSource":"WDT"}'></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="instruments-invest">
+    <div class="container">
+      <div class="instruments-invest__container">
+        <div class="instruments-invest__wrapper">
+          <h2 class="title-l">Торгуйте с MarketPulse — надежным брокером с доступом к мировым рынкам!</h2>
+          <div class="instruments-invest__text">
+            <p class="text-m">Более 500 активов: валюты, акции, индексы, сырьё и криптовалюты.</p>
+            <p class="text-m">Низкие спреды, мгновенное исполнение ордеров и круглосуточная поддержка.</p>
+            <p class="text-m">Начните зарабатывать уже сегодня!</p>
+          </div>
+          <a href="##" class="btn btn-white text-l">Начать инвестировать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__container">
+
+            <div class="footer__top">
+
+                <a href="/" class="footer__logo">
+
+                    <img src="../images/logo-footer.avif" alt="Market Pulse">
+
+                </a>
+
+                <a href="tel:+3581754926" class="footer__contact text-m">+358 17 54926</a>
+
+                <a href="mailto:info@marketpulse.com" class="footer__mail text-m">info@marketpulse.com</a>
+
+            </div>
+
+            <div class="footer__box">
+
+                <nav class="nav">
+
+                    <ul class="menu">
+
+                        <li class="menu-item">
+
+                            <a href="##">Торговля</a>
+
+                            <ul class="sub-menu">
+
+                                <li class="menu-item">
+
+                                    <a href="conditions.html">Условия торговли</a>
+
+                                </li>
+
+                                <li class="menu-item">
+
+                                    <a href="instruments.html">Торговые инструменты</a>
+
+                                </li>
+
+                                <li class="menu-item">
+
+                                    <a href="platform.html">Торговая платформа</a>
+
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="menu-item">
+
+                            <a href="##">Аналитика</a>
+
+                            <ul class="sub-menu">
+
+                                <li class="menu-item">
+
+                                    <a href="overview.html">Обзор рынка</a>
+
+                                </li>
+
+                                <li class="menu-item">
+
+                                    <a href="forecasts.html">Прогнозы рынка</a>
+
+                                </li>
+
+                                <li class="menu-item">
+
+                                    <a href="news.html">Новости рынка</a>
+
+                                </li>
+
+                                <li class="menu-item">
+
+                                    <a href="calendar.html">Экономический календарь</a>
+
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="menu-item">
+
+                            <a href="##">Компания</a>
+
+                            <ul class="sub-menu">
+
+                                <li class="menu-item">
+
+                                    <a href="about.html">О нас</a>
+
+                                </li>
+
+                                <li class="menu-item">
+
+                                    <a href="contacts.html">Контакты</a>
+
+                                </li>
+
+                                <li class="menu-item">
+
+                                    <a href="documents.html">Документы</a>
+
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                    <div class="header__right header__right--mobile">
+
+                        <ul class="menu header__lang">
+
+                            <li class="menu-item">
+
+                                <a href="##">ENG</a>
+
+                                <ul class="sub-menu">
+
+                                    <li class="menu-item">
+
+                                        <a href="##">RU</a>
+
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+                <p class="footer__risk">Уведомление о рисках: инвестирование в группы высокого риска (Forex) и торговля
+
+                    контрактами на разницу (CFD) являются спекулятивными операциями, имеют высокий риск, и не подходят
+
+                    для каждого инвестора. Вы можете понести как частичные, так и полные потери вложенных средств,
+
+                    поэтому мы советуем не инвестировать капитал, которым вы не можете рисковать. Вы должны знать о
+
+                    высоком риске, связанном с использованием кредитного плеча. Мы настоятельно рекомендуем Вам
+
+                    внимательно ознакомиться с условиями работы нашей компании перед началом использования наших
+
+                    сервисов.
+
+                </p>
+
+            </div>
+
+            <p class="footer__copyright text-s">© Market Pulse 2025. Все права защищены</p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<div class="menu-overlay"></div>
+
+<div class="upButton"></div>
+
+<div class="cookies">
+
+    <p>Мы используем файлы cookie, чтобы больше узнать о том, как вы пользуетесь нашим сайтом, и что мы можем улучшить.
+
+        <a href="##">Подробнее</a></p>
+
+    <button class="btn cookies--close">Принять</button>
+
+</div>
+
+<script defer src="js/main.min.js"></script>
+
+</body>
+
+</html>
