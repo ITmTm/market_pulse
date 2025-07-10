@@ -1,0 +1,84 @@
+<!--=include header.html -->
+
+<main>
+  <section class="overview">
+    <div class="container">
+      <div class="overview__left">
+        <h1 class="title-m">Обзор рынка</h1>
+        <p class="text-m">Отслеживайте динамику активов в реальном времени и принимайте обоснованные торговые решения,
+          используя свежие рыночные данные.</p>
+      </div>
+
+      <div class="overview__right"></div>
+    </div>
+  </section>
+
+
+  <section class="overview-state">
+    <div class="container">
+      <h2 class="title-l">Состояние рынка</h2>
+      <p class="text-m">Актуальная информация по финансовым инструментам рынка позволяет отслеживать котировки в
+        режиме реального времени и анализировать динамику цен за разные периоды.</p>
+
+      <script src="https://api.marketcheese.com/widgets/markets/widget.js"
+              data-config='{"language":"ru","orientation":"auto","defaultPeriod":"week","adaptive":true,"groups":[{"name":"Символы","symbols":"99,104,127,129,277,42,48,57,68,87,12,14,201","devSource":"WDT"}]}'></script>
+    </div>
+  </section>
+
+
+  <section class="overview-market">
+    <div class="container">
+      <div class="overview-market__left">
+        <h2 class="title-l">Лидеры рынка</h2>
+        <p class="text-m">Принимайте оперативные торговые решения, используя удобную сортировку инструментов по
+          лидерам роста и падения.</p>
+
+        <script src="https://api.marketcheese.com/widgets/leaders/widget.js"
+                data-config='{"filters":{"segments":"14,4,16,8,5,7,15"},"language":"ru","devSource":"WDT"}'></script>
+      </div>
+
+      <div class="overview-market__right">
+        <h2 class="title-l">Важные события</h2>
+        <p class="text-m">Оставайтесь информированными о важных мировых экономических событиях и оперативно реагируйте
+          на рыночные изменения в режиме реального времени.</p>
+
+        <script src="https://api.marketcheese.com/widgets/notifier/widget.js"
+                data-config='{"language":"ru","period":"all","multipleIndicators":true,"adaptive":true,"currencies":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19","devSource":"WDT"}'></script>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="overview-graphics">
+    <div class="container">
+      <h2 class="title-l">Online-графики</h2>
+      <p class="text-m">Применяйте главный инструмент трейдера — проводите технический анализ финансовых активов на
+        интерактивных графиках в режиме реального времени.</p>
+
+      <div class="widget-box">
+        <script src="https://api.marketcheese.com/widgets/chart/widget.js"
+                data-config='{"timeframe":"H1","barStyle":"Candle","offset":30,"colorScheme":"light","language":"ru","symbolsEnabled":true,"showTools":true,"terminalBtnVisible":false,"symbol":"EURUSD","devSource":"WDT"}'></script>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="overview-invest">
+    <div class="container">
+      <div class="overview-invest__container">
+        <div class="overview-invest__wrapper">
+          <h2 class="title-l">MarketPulse — ваш ключ к глобальным финансовым рынкам!</h2>
+          <div class="overview-invest__text">
+            <p class="text-m">Нам доверяют миллионы инвесторов по всему миру.</p>
+            <p class="text-m">Начни торговать с MarketPulse уже сегодня!</p>
+          </div>
+          <a href="##" class="btn btn-white text-l">Начать инвестировать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+</main>
+
+<!--=include footer.html -->
