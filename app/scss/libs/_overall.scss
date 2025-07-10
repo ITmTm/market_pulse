@@ -143,28 +143,34 @@ body {
   border: none;
   cursor: pointer;
   transition: .5s ease-in;
+
   &-white {
     color: var(--black-color);
     background: var(--white-color);
+
     &:disabled {
       background: #ffe8fe;
       color: var(--purpur-color);
     }
   }
+
   &-purpure {
     background: var(--purpur-color);
-    color:  var(--white-color);
+    color: var(--white-color);
+
     &:disabled {
       background: #ffe8fe;
       color: var(--purpur-color);
     }
   }
+
   &-circle {
     width: 65px;
     height: 65px;
     padding: 20px;
     border-radius: 50px;
     background: var(--white-color) url(../images/circle-button-arrow-black.svg) center center / 24px 24px no-repeat;
+
     &:disabled {
       background: #ffe8fe url(../images/circle-button-arrow-purpur.svg) center center / contain no-repeat;
       transition: .5s ease-out;
