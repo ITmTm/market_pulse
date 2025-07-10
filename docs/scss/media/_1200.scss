@@ -1,0 +1,885 @@
+@media (max-width: 1200px) {
+  .header {
+    transition: .5s ease-in;
+
+    .container {
+      padding-top: 35px;
+      grid-template-columns: 1fr;
+    }
+
+    &__left {
+      padding-left: 20px;
+    }
+
+    &.scrolled {
+      top: 0;
+      background: rgba(59, 166, 177, .9);
+      backdrop-filter: blur(5px);
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+      z-index: 300;
+
+      .container {
+        padding-right: 0;
+        padding-left: 10px;
+      }
+
+      .nav.active {
+        top: 90px;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+
+        path {
+          stroke: var(--white-color);
+          stroke-width: 2;
+          stroke-linecap: round;
+
+          transition: .5s;
+
+          &:nth-child(1) {
+            stroke-dasharray: 13 100;
+            stroke-dashoffset: -20;
+          }
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            stroke-dasharray: 35 150;
+            stroke-dashoffset: -55;
+          }
+        }
+      }
+    }
+
+    &.active {
+      top: 0;
+      background: rgba(59, 166, 177, .9);
+      backdrop-filter: blur(5px);
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+      z-index: 300;
+
+      .container {
+        padding-right: 0;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+
+        path {
+          stroke: var(--white-color);
+          stroke-width: 2;
+          stroke-linecap: round;
+
+          transition: .5s;
+
+          &:nth-child(1) {
+            stroke-dasharray: 13 100;
+            stroke-dashoffset: -20;
+          }
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            stroke-dasharray: 35 150;
+            stroke-dashoffset: -55;
+          }
+        }
+      }
+    }
+
+    .nav {
+      position: fixed;
+      max-width: 400px;
+      width: 100%;
+      top: 105px;
+      right: -100%;
+      background: rgba(59, 166, 177, .9);
+      backdrop-filter: blur(5px);
+      height: 100vh;
+      transition: .5s linear right;
+      opacity: 0;
+      z-index: 100;
+
+      &.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        right: 0;
+        opacity: 1;
+        padding: 0;
+
+        .menu-item {
+          width: 100%;
+
+          a {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+          }
+        }
+      }
+    }
+
+    .nav > .menu {
+      flex-direction: column;
+      width: 100%;
+
+      & > .menu-item {
+        position: relative;
+        border-bottom: 1px solid var(--white-color);
+
+        &:before {
+          content: none;
+        }
+
+        &:first-child {
+          border-top: 1px solid var(--white-color);
+        }
+
+        & > a {
+          display: flex;
+          text-align: left;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: initial;
+          width: 100%;
+          padding: 20px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            width: 8px;
+            height: 8px;
+            border-right: 2px solid currentColor;
+            border-bottom: 2px solid currentColor;
+            transform: translateY(-50%) rotate(45deg);
+            transition: transform .3s;
+          }
+        }
+
+        & > .sub-menu {
+          display: flex;
+          text-align: left;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: initial;
+          padding: initial;
+          position: static;
+          opacity: 1;
+          visibility: visible;
+          transform: none;
+          transition: none;
+          border-radius: initial;
+          border-top: 1px solid var(--white-color);
+
+          &.active {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        &.active > a::after {
+          transform: translateY(-50%) rotate(-135deg);
+        }
+      }
+    }
+
+    &__right {
+      &--mobile {
+        display: block;
+        inset: initial;
+        position: initial;
+        width: 100%;
+        height: initial;
+
+        .menu {
+          & > .menu-item {
+            width: 100%;
+            border-bottom: 1px solid var(--white-color);
+
+            &:before {
+              content: none;
+            }
+
+            & > a {
+              display: block;
+              padding: 20px;
+              border-radius: initial;
+
+              &:after {
+                content: '';
+                position: absolute;
+                right: 40px;
+                top: 50%;
+                width: 8px;
+                height: 8px;
+                border-right: 2px solid currentColor;
+                border-bottom: 2px solid currentColor;
+                transform: translateY(-50%) rotate(45deg);
+                transition: transform .3s;
+              }
+            }
+
+            &.active > a::after {
+              transform: translateY(-50%) rotate(-135deg);
+            }
+
+            & > .sub-menu {
+              position: initial;
+              opacity: 1;
+              visibility: visible;
+              transition: none;
+              padding: 0;
+              width: 100%;
+              border-radius: initial;
+              border-top: 1px solid var(--white-color);
+
+              left: 0;
+              transform: initial;
+            }
+          }
+        }
+      }
+
+      &--desktop {
+        display: none;
+      }
+    }
+
+
+    &__burger {
+      display: block;
+      background: transparent;
+      border: none;
+      order: 1;
+      width: 75px;
+      height: 50px;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      path {
+        stroke: var(--grey-color);
+        stroke-width: 2;
+        stroke-linecap: round;
+
+        transition: .5s;
+
+        &:nth-child(1) {
+          stroke-dasharray: 13 100;
+          stroke-dashoffset: -20;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          stroke-dasharray: 35 150;
+          stroke-dashoffset: -55;
+        }
+      }
+    }
+
+    &:hover svg path {
+      &:nth-child(1) {
+        stroke-dasharray: 22 100;
+        stroke-dashoffset: -20;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        stroke-dasharray: 35 150;
+        stroke-dashoffset: -64;
+      }
+    }
+
+
+    &.active svg path {
+      &:nth-child(1) {
+        stroke-dasharray: 5 100;
+        stroke-dashoffset: 20;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        stroke-dasharray: 32 150;
+        stroke-dashoffset: 0;
+      }
+    }
+
+    &__container {
+      padding-bottom: 15px;
+    }
+  }
+
+
+  .main-hero {
+    padding-bottom: 130px;
+
+    .container {
+      min-height: 670px
+    }
+
+    &__left {
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -95px / auto no-repeat;
+      padding: 130px 30px 30px;
+    }
+
+    .features {
+      gap: 10px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .intro {
+    padding-bottom: 130px;
+
+    .swiper {
+      margin-right: -40px;
+      margin-left: -40px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &__avatars {
+      img {
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__accounts {
+      img {
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .trading {
+    padding-bottom: 130px;
+
+    &__container {
+      background: var(--brizz-color) url(../images/trading-small.avif) top 10px right / 440px 310px no-repeat;
+    }
+  }
+
+  .account {
+    &__grid {
+      .title-l {
+        font-size: 37px;
+      }
+    }
+
+    &__card {
+      &-3 {
+        background: var(--light-grey-color) url(../images/account.avif) top 465px center / contain no-repeat;
+      }
+    }
+  }
+
+  .account {
+    padding: 0 0 130px;
+  }
+
+  .bonuses {
+    padding-bottom: 130px;
+
+    &__text {
+      .title-l {
+        font-size: 42px;
+      }
+    }
+  }
+
+  .trust {
+    padding-bottom: 130px;
+
+    .swiper {
+      margin-right: -40px;
+      margin-left: -40px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .invest {
+    padding-bottom: 130px;
+  }
+
+  .footer {
+    &__mail {
+      padding-right: 0;
+    }
+
+    .header {
+      &__right {
+        &--mobile {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0.5;
+    visibility: hidden;
+    transition: .3s ease;
+    z-index: 50;
+  }
+
+  .menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  body.lock-scroll {
+    overflow: hidden;
+  }
+
+
+  .about {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &__right {
+      background: linear-gradient(270deg, #F0F0F0 15%, rgba(240, 240, 240, 0.65) 25%, rgba(240, 240, 240, 0) 40%), var(--light-grey-color) url(../images/about.avif) left -80px bottom / auto no-repeat;
+    }
+
+    &-market {
+      padding-bottom: 130px;
+    }
+
+    &-trading {
+      padding-bottom: 130px;
+    }
+
+    &-numbers {
+      padding-bottom: 130px;
+
+      .title-m {
+        font-size: 42px;
+      }
+    }
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
+
+  .contacts {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &-trading {
+      padding-bottom: 130px;
+
+      &__wrapper {
+        margin-bottom: 20px;
+      }
+
+      &__control {
+        padding: 15px 15px;
+      }
+    }
+  }
+
+  .documents {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &-intro {
+      padding-bottom: 130px;
+    }
+
+    &-trading {
+      padding-bottom: 130px;
+
+      &__wrapper {
+        margin-bottom: 20px;
+      }
+
+      &__info {
+        .title-l {
+          font-size: 40px;
+        }
+      }
+
+      &__control {
+        padding: 15px 15px;
+      }
+    }
+  }
+
+
+  .overview {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &__right {
+      background: var(--light-grey-color) url(../images/overview-bg.avif) center bottom / auto no-repeat;
+    }
+
+    &-state {
+      padding-bottom: 130px;
+    }
+
+    &-market {
+      padding-bottom: 130px;
+    }
+
+    &-graphics {
+      padding-bottom: 130px;
+    }
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
+
+  .forecasts {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &-state {
+      padding-bottom: 130px;
+    }
+
+    &-intro {
+      padding-bottom: 130px;
+
+      .swiper {
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      &__avatars {
+        img {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+
+      &__accounts {
+        img {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
+
+  .news {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &-state {
+      padding-bottom: 130px;
+    }
+
+    &-intro {
+      padding-bottom: 130px;
+
+      .swiper {
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      &__avatars {
+        img {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+
+      &__accounts {
+        img {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
+
+  .calendar {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &__right {
+      background: var(--light-grey-color) url(../images/economic-bg.avif) bottom right -15px / contain no-repeat;
+    }
+
+    &-state {
+      padding-bottom: 130px;
+    }
+
+    &-trading {
+      padding-bottom: 130px;
+    }
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
+
+  .conditions {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &-tariffs {
+      padding-bottom: 130px;
+
+      .swiper {
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        overflow: hidden;
+      }
+
+      .mod-3 {
+        top: 18px;
+      }
+    }
+
+    &-market {
+      padding-bottom: 130px;
+    }
+
+    &-intro {
+      padding-bottom: 130px;
+
+      .swiper {
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      &__avatars {
+        img {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+
+      &__accounts {
+        img {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
+
+  .instruments {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &-tabs {
+      padding-bottom: 130px;
+
+      .swiper-page .swiper-slide .swiper-page__content {
+        gap: 40px;
+      }
+    }
+
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
+
+  .platform {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 130px 30px 30px;
+    }
+
+    &-trader {
+      padding-bottom: 130px;
+
+      &__text {
+        margin-bottom: 20px;
+
+        .title-l {
+          font-size: 41px;
+        }
+      }
+
+      &__img {
+        img {
+          margin-left: 25px;
+          width: 430px;
+          height: 350px;
+          margin-top: -20px;
+        }
+      }
+    }
+
+    &-mobile {
+      padding-bottom: 130px;
+
+      &__text {
+        width: 460px;
+
+        .title-l {
+          font-size: 41px;
+        }
+      }
+
+      &__descr {
+        p {
+          margin-bottom: 20px;
+        }
+      }
+
+      &__btns {
+        a {
+          width: 100%;
+        }
+      }
+
+      &__img {
+        img {
+          width: 535px;
+          height: 350px;
+          margin-right: -65px;
+        }
+      }
+    }
+
+    &-desktop {
+      padding-bottom: 130px;
+
+      &__text {
+        width: 480px;
+
+        .title-l {
+          font-size: 41px;
+        }
+      }
+
+      &__img {
+        img {
+          width: 285px;
+          height: 325px;
+          margin-top: -25px;
+        }
+      }
+    }
+
+    &-trading {
+      padding-bottom: 130px;
+    }
+
+
+    &-intro {
+      padding-bottom: 130px;
+
+      .swiper {
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      &__avatars {
+        img {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+
+      &__accounts {
+        img {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    &-invest {
+      padding-bottom: 130px;
+    }
+  }
+
+
+  .error-hero {
+    padding-bottom: 130px;
+
+    &__left {
+      padding: 160px 30px 30px;
+    }
+  }
+
+}
+

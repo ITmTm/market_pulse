@@ -1,0 +1,105 @@
+@media (max-width: 1024px) {
+  .trading {
+    &__container {
+      background: var(--brizz-color) url(../images/trading-small.avif) top 25px right/390px 310px no-repeat;
+    }
+
+    &__info {
+      max-width: 600px;
+
+      .text-m {
+        margin-bottom: 35px;
+      }
+    }
+  }
+
+  .bonuses {
+    &__text {
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
+
+  .about {
+    &-trading {
+      &__container {
+        background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right / 625px 400px no-repeat;
+      }
+    }
+  }
+
+
+  .contacts {
+    &-trading {
+      &__container {
+        grid-template-columns: 1fr;
+      }
+
+      &__form {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+
+  .documents {
+    &-trading {
+      &__container {
+        grid-template-columns: 1fr;
+      }
+
+      &__form {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+
+  .news {
+    &-state {
+      .mch-widget-jxpb.mch-widget-news.horizontal {
+        min-width: 100%;
+      }
+    }
+  }
+
+
+  .calendar {
+    &-trading {
+      &__container {
+        background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right / 625px 400px no-repeat;
+      }
+    }
+  }
+
+
+  .instruments {
+    &__right {
+      background: var(--light-grey-color) url(../images/instruments-bg.avif) 75% bottom / 400px 270px no-repeat;
+    }
+  }
+
+
+  .platform {
+    &-desktop {
+      &__img {
+        img {
+          width: 250px;
+          height: 290px;
+          margin-top: -20px;
+        }
+      }
+    }
+
+    &-trading {
+      &__container {
+        background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom right / 625px 400px no-repeat;
+      }
+    }
+  }
+
+}

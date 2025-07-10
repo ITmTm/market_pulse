@@ -1,0 +1,323 @@
+@media (max-width: 360px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .main-bg {
+    background: url(../images/intro-bg.avif) center / 300px 300px no-repeat fixed;
+  }
+
+  .header {
+    &__logo {
+      width: 150px;
+    }
+  }
+
+  .main-hero {
+    &__left {
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -160px / auto no-repeat;
+
+      .title-m {
+        font-size: 25px;
+      }
+    }
+  }
+
+
+  .trading {
+    &__info {
+      background: var(--brizz-color) url(../images/trading-small.avif) center bottom / 280px 210px no-repeat;
+
+      .text-m {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .account {
+    &__card {
+      &-3 {
+        background: var(--light-grey-color) url(../images/account.avif) top 280px center / contain no-repeat;
+      }
+    }
+  }
+
+  .bonuses {
+    &__container {
+      padding: 30px 16px;
+    }
+
+    .btn {
+      font-size: 18px;
+    }
+  }
+
+  .invest {
+    &__container {
+      padding: 35px 16px 60px;
+    }
+
+    .title-l {
+      font-size: 22px;
+    }
+
+    .btn {
+      font-size: 18px;
+    }
+  }
+
+  .footer {
+    &__top {
+      gap: 20px;
+    }
+
+    &__contact {
+      margin-left: 20px;
+
+      &:after {
+        left: -20px;
+      }
+    }
+
+    &__mail {
+      margin-left: 30px;
+
+      &:after {
+        left: -30px;
+      }
+    }
+
+    .text-m {
+      font-size: 16px;
+    }
+  }
+
+
+  .about {
+    &__right {
+      background: #f0f0f0 url(../images/about.avif) bottom center / contain no-repeat;
+    }
+
+    &-market {
+      &__left {
+        max-height: 280px;
+      }
+    }
+
+    &-invest {
+      .title-l {
+        font-size: 24px;
+      }
+
+      .btn {
+        padding: 18px;
+      }
+    }
+  }
+
+
+  .contacts {
+    &__right {
+      background: var(--light-grey-color) url(../images/contacts-bg.avif) center bottom / 270px 260px no-repeat;
+    }
+
+    &-trading {
+      &__check {
+        .text-s {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+
+  .documents {
+    &-intro {
+      &__card {
+        .title-s {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &-trading {
+      &__check {
+        .text-s {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+
+  .overview {
+    &-market {
+      &__right {
+        .mch-widget-jwoy.mch-widget.mch-widget-leaders .widget-wrapper {
+          max-width: 260px;
+        }
+
+        .mch-widget-jywd.mch-widget-notifier .widget-wrapper {
+          max-width: 260px;
+        }
+      }
+    }
+
+    &-graphics {
+      .widget-box {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+    }
+
+    &-invest {
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+  .forecasts {
+    &-invest {
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .news {
+    &-invest {
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+  .calendar {
+    &-state {
+      .widget-box {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+    }
+
+    &-invest {
+      .title-l {
+        font-size: 24px;
+      }
+
+      .btn {
+        padding: 18px;
+      }
+    }
+  }
+
+
+  .conditions {
+    &-invest {
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+  .instruments {
+    &__right {
+      background: var(--light-grey-color) url(../images/instruments-bg.avif) bottom center / 280px 200px no-repeat;
+    }
+
+    &-tabs {
+      &__container {
+        background-size: 280px 380px;
+      }
+    }
+
+    &-invest {
+      .title-l {
+        font-size: 20px;
+      }
+
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+  .platform {
+    &__right {
+      background: var(--light-grey-color) url(../images/platform-bg.avif) center bottom / 290px 265px no-repeat;
+    }
+
+    &-trader {
+      &__container {
+        &:before {
+          top: -25px;
+          right: 25px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      &__text {
+        gap: 20px;
+      }
+
+      .btn {
+        padding: 20px;
+        font-size: 18px;
+      }
+    }
+
+    &-mobile {
+      &__container {
+        &:before {
+          background: var(--brizz-color) url(../images/platform-mobile.svg) center center / 20px 30px no-repeat;
+          top: -25px;
+          right: 25px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      &__text {
+        gap: 20px;
+      }
+
+      .btn {
+        padding: 20px;
+        font-size: 18px;
+      }
+    }
+
+    &-desktop {
+      &__container {
+        &:before {
+          background: var(--brizz-color) url(../images/platform-desktop.svg) center center / 25px 25px no-repeat;
+          top: -25px;
+          right: 25px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      &__text {
+        gap: 20px;
+      }
+
+      .btn {
+        padding: 20px;
+        font-size: 18px;
+      }
+    }
+
+    &-invest {
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
+}

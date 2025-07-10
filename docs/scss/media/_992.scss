@@ -1,0 +1,784 @@
+@media (max-width: 992px) {
+
+  .header {
+    &__logo {
+      width: 205px;
+    }
+
+    .menu {
+      & > .menu-item {
+        &:before {
+          content: none;
+        }
+      }
+    }
+  }
+
+  .main-hero {
+    padding-bottom: 100px;
+
+    .container {
+      min-height: 645px;
+    }
+
+    &__left {
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -100px / auto no-repeat;
+
+      .title-m {
+        font-size: 37px;
+      }
+    }
+  }
+
+  .intro {
+    padding-bottom: 100px;
+
+    &__cards {
+      padding: 40px 0 0;
+      position: relative;
+
+      &-pagination {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+
+    .mod-1,
+    .mod-2,
+    .mod-3,
+    .mod-4, {
+      transform: rotate(0);
+      inset: 0;
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--purpur-color);
+    }
+  }
+
+  .trading {
+    padding-bottom: 100px;
+
+    &__container {
+      display: flex;
+      gap: 50px;
+      flex-direction: column;
+      background: none;
+      padding: 0;
+    }
+
+    &__info {
+      background: var(--brizz-color) url(../images/trading-small.avif) center bottom / 450px 340px no-repeat;
+      border-radius: 55px;
+      padding: 32px 25px 300px;
+      max-width: 100%;
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+
+    &__cards {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      justify-items: stretch;
+      align-items: center;
+      justify-content: start;
+    }
+
+    &__card {
+      max-width: 100%;
+      gap: 70px;
+    }
+  }
+
+  .account {
+    padding: 0 0 100px;
+
+    &__grid {
+      gap: 15px;
+    }
+
+    &__card {
+      padding: 30px 20px;
+
+      &-3 {
+        background: var(--light-grey-color) url(../images/account.avif) top 400px right 0px / contain no-repeat;
+
+        .title-l {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+
+  .bonuses {
+    padding-bottom: 100px;
+
+    &__text {
+      .title-l {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .trust {
+    padding-bottom: 100px;
+
+    &__cards {
+      padding: 40px 0 0;
+      position: relative;
+
+      &-pagination {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+
+
+    .mod-1,
+    .mod-2,
+    .mod-3,
+    .mod-4, {
+      transform: rotate(0);
+      inset: 0;
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--purpur-color);
+    }
+  }
+
+  .invest {
+    padding-bottom: 100px;
+
+    &__container {
+      padding: 80px 40px;
+    }
+
+    .title-l {
+      font-size: 40px;
+    }
+  }
+
+  .footer {
+    &__container {
+      background: var(--light-grey-color) url(../images/footer-bg.avif) top right / 260px 180px no-repeat;
+    }
+
+    &__logo {
+      width: 200px;
+    }
+
+    &__top {
+      margin-bottom: 40px;
+    }
+
+    &__box {
+      grid-template-columns: 1fr;
+
+      &__risk {
+        max-width: 100%;
+      }
+    }
+  }
+
+
+  .about {
+    padding-bottom: 100px;
+
+    &__right {
+      background: linear-gradient(270deg, #F0F0F0 15%, rgba(240, 240, 240, 0.65) 25%, rgba(240, 240, 240, 0) 40%), var(--light-grey-color) url(../images/about.avif) left -115px bottom/auto no-repeat;
+    }
+
+    &-market {
+      padding-bottom: 100px;
+
+      &__right {
+        padding: 40px 30px 30px;
+      }
+    }
+
+    &-trading {
+      padding-bottom: 100px;
+
+      &__container {
+        background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom -60px right / 625px 400px no-repeat;
+      }
+
+      &__cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &-numbers {
+      padding-bottom: 100px;
+
+      .title-m {
+        font-size: 35px;
+      }
+
+      &__cards {
+        margin-top: 60px;
+      }
+    }
+
+    &-invest {
+      padding-bottom: 100px;
+
+      &__container {
+        padding: 80px 40px;
+      }
+
+      .title-l {
+        font-size: 44px;
+      }
+    }
+  }
+
+
+  .contacts {
+    padding-bottom: 100px;
+
+    &__right {
+      background: var(--light-grey-color) url(../images/contacts-bg.avif) center bottom / 360px 320px no-repeat;
+    }
+
+    &-trading {
+      padding-bottom: 100px;
+    }
+  }
+
+
+  .documents {
+    padding-bottom: 100px;
+
+    &-intro {
+      padding-bottom: 100px;
+
+      &__cards {
+        padding: 0;
+        position: relative;
+
+        &-pagination {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .swiper-pagination-bullet {
+          width: 10px;
+          height: 10px;
+        }
+
+        .swiper-pagination-bullet-active {
+          background: var(--purpur-color);
+        }
+      }
+    }
+
+    &-trading {
+      padding-bottom: 100px;
+    }
+  }
+
+
+  .overview {
+    padding-bottom: 100px;
+
+    &__right {
+      background: var(--light-grey-color) url(../images/overview-bg.avif) center bottom / 350px 300px no-repeat;
+    }
+
+    &-state {
+      padding-bottom: 100px;
+
+      .text-m {
+        margin: 0 auto 50px auto;
+      }
+    }
+
+    &-market {
+      padding-bottom: 100px;
+
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      &__left {
+        padding: 32px 24px 24px;
+
+        .title-l {
+          font-size: 41px;
+        }
+
+        .text-m {
+          max-width: 100%;
+        }
+      }
+
+      &__right {
+        padding: 32px 24px 24px;
+
+        .title-l {
+          font-size: 41px;
+        }
+
+        .text-m {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &-graphics {
+      padding-bottom: 100px;
+
+      .text-m {
+        margin: 0 auto 50px auto;
+      }
+    }
+
+    &-invest {
+      padding-bottom: 100px;
+
+      &__container {
+        padding: 80px 40px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
+
+  .forecasts {
+    padding-bottom: 100px;
+
+    &-state {
+      padding-bottom: 100px;
+    }
+
+    &-intro {
+      padding-bottom: 100px;
+
+      &__cards {
+        padding: 40px 0 0;
+        position: relative;
+
+        &-pagination {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+
+      .mod-1,
+      .mod-2,
+      .mod-3,
+      .mod-4, {
+        transform: rotate(0);
+        inset: 0;
+      }
+
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: var(--purpur-color);
+      }
+
+    }
+
+    &-invest {
+      padding-bottom: 100px;
+
+      &__container {
+        padding: 80px 40px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
+
+  .news {
+    padding-bottom: 100px;
+
+    &-state {
+      padding-bottom: 100px;
+    }
+
+    &-intro {
+      padding-bottom: 100px;
+
+      &__cards {
+        padding: 40px 0 0;
+        position: relative;
+
+        &-pagination {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+
+      .mod-1,
+      .mod-2,
+      .mod-3,
+      .mod-4, {
+        transform: rotate(0);
+        inset: 0;
+      }
+
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: var(--purpur-color);
+      }
+
+    }
+
+    &-invest {
+      padding-bottom: 100px;
+
+      &__container {
+        padding: 80px 40px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
+
+  .calendar {
+    padding-bottom: 100px;
+
+    &-state {
+      padding-bottom: 100px;
+    }
+
+    &-trading {
+      padding-bottom: 100px;
+
+      &__container {
+        background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom -60px right / 625px 400px no-repeat;
+      }
+
+      &__cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &-invest {
+      padding-bottom: 100px;
+
+      &__container {
+        padding: 80px 40px;
+      }
+
+      .title-l {
+        font-size: 44px;
+      }
+    }
+  }
+
+
+  .conditions {
+    padding-bottom: 100px;
+
+    &-tariffs {
+      padding-bottom: 100px;
+
+      .swiper-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      &__cards {
+        position: relative;
+        padding-bottom: 0;
+
+        &-pagination {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+
+      .mod-1,
+      .mod-2,
+      .mod-3,
+      .mod-4, {
+        transform: rotate(0);
+        inset: 0;
+      }
+
+      &__descr {
+        gap: 25px;
+      }
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: var(--purpur-color);
+      }
+    }
+
+
+    &-market {
+      padding-bottom: 100px;
+
+      &__left {
+        padding: 40px 30px 30px;
+        background: var(--brizz-color) url(../images/conditions-market-bg.avif) right bottom / auto no-repeat;
+      }
+
+      &__right {
+        padding: 40px 30px 30px;
+      }
+    }
+
+
+    &-intro {
+      padding-bottom: 100px;
+
+      &__cards {
+        padding: 40px 0 0;
+        position: relative;
+
+        &-pagination {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+
+      .mod-1,
+      .mod-2,
+      .mod-3,
+      .mod-4, {
+        transform: rotate(0);
+        inset: 0;
+      }
+
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: var(--purpur-color);
+      }
+
+    }
+
+    &-invest {
+      padding-bottom: 100px;
+
+      &__container {
+        padding: 80px 40px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
+
+  .instruments {
+    padding-bottom: 100px;
+
+    &-tabs {
+      padding-bottom: 100px;
+
+      .swiper-page__top .title-l {
+        font-size: 35px;
+      }
+    }
+
+    &-invest {
+      padding-bottom: 100px;
+
+      &__container {
+        padding: 80px 40px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
+
+  .platform {
+    padding-bottom: 100px;
+
+    &-trader {
+      padding-bottom: 100px;
+
+      &__container {
+        &:before {
+          background: var(--brizz-color) url(../images/platform-trader.svg) center center / 45px 35px no-repeat;
+          top: -35px;
+          right: 30px;
+          width: 75px;
+          height: 75px;
+          border-radius: 10px;
+        }
+      }
+
+      &__img {
+        img {
+          width: 350px;
+          height: 300px;
+          margin-top: 50px;
+        }
+      }
+    }
+
+
+    &-mobile {
+      padding-bottom: 100px;
+
+      &__container {
+        &:before {
+          background: var(--brizz-color) url(../images/platform-mobile.svg) center center / 30px 45px no-repeat;
+          top: -35px;
+          width: 75px;
+          height: 75px;
+          border-radius: 10px;
+        }
+      }
+
+      &__img {
+        img {
+          width: 435px;
+          height: 300px;
+          margin-top: 40px;
+        }
+      }
+    }
+
+
+    &-desktop {
+      padding-bottom: 100px;
+
+      &__container {
+        &:before {
+          background: var(--brizz-color) url(../images/platform-desktop.svg) center center / 40px 40px no-repeat;
+          top: -35px;
+          right: 30px;
+          width: 75px;
+          height: 75px;
+          border-radius: 10px;
+        }
+      }
+
+      img {
+        width: 265px;
+        height: 270px;
+        margin-top: 70px;
+      }
+    }
+
+    &-trading {
+      padding-bottom: 100px;
+
+      &__container {
+        background: var(--brizz-color) url(../images/about-trading-bg.avif) bottom -60px right / 625px 400px no-repeat;
+      }
+
+      &__cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &-intro {
+      padding-bottom: 100px;
+
+      &__cards {
+        padding: 40px 0 0;
+        position: relative;
+
+        &-pagination {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+
+      .mod-1,
+      .mod-2,
+      .mod-3,
+      .mod-4, {
+        transform: rotate(0);
+        inset: 0;
+      }
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: var(--purpur-color);
+      }
+    }
+
+    &-invest {
+      padding-bottom: 100px;
+
+      &__container {
+        padding: 80px 40px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
+
+  .error-hero {
+    padding-bottom: 100px;
+
+    h1 {
+      font-size: 90px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+}

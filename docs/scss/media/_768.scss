@@ -1,0 +1,132 @@
+@media (max-width: 768px) {
+  .main-hero {
+    &__left {
+      background: #3ba6b1 url(../images/main-hero-bg.avif) left bottom -140px / auto no-repeat;
+    }
+  }
+
+  .intro {
+    .title-l {
+      font-size: 40px;
+    }
+
+    &__card {
+      min-height: 330px;
+    }
+  }
+
+
+  .account {
+    &__card {
+      &-1 {
+        .title-s {
+          font-size: 22px;
+        }
+      }
+
+      &-2 {
+        .title-s {
+          font-size: 22px;
+        }
+      }
+
+      &-3 {
+        height: 450px;
+        background: var(--light-grey-color) url(../images/account.avif) top 245px center / contain no-repeat;
+      }
+    }
+  }
+
+  .trust {
+    .title-l {
+      font-size: 40px;
+    }
+
+    &__card {
+      min-height: 300px;
+    }
+  }
+
+  .footer {
+    .sub-menu {
+      gap: 10px;
+    }
+  }
+
+
+  .about {
+    &-numbers {
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .forecasts {
+    &-intro {
+      &__card {
+        min-height: 330px;
+      }
+    }
+  }
+
+  .news {
+    &-intro {
+      &__card {
+        min-height: 330px;
+      }
+    }
+  }
+
+
+  .conditions {
+    &-tariffs {
+      &__items {
+        width: 100%;
+        max-width: 450px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+
+    &-market {
+      &__left {
+        .title-l {
+          font-size: 40px;
+        }
+      }
+    }
+
+    &-intro {
+      &__card {
+        min-height: 330px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
+
+  .platform {
+    &-intro {
+      &__card {
+        min-height: 330px;
+      }
+
+      .title-l {
+        font-size: 40px;
+      }
+    }
+  }
+
+
+  .error-hero {
+    h1 {
+      font-size: 80px;
+    }
+  }
+}

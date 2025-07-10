@@ -1,0 +1,153 @@
+@media (max-width: 1400px) {
+  .header {
+    .container {
+      gap: 40px;
+    }
+
+    &__left {
+      padding-left: 10px;
+
+
+      .menu {
+        & > .menu-item {
+          a {
+            padding: 10px 15px;
+          }
+
+          & > .sub-menu {
+            a {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-hero {
+
+    &__right {
+      background: var(--light-grey-color) url(../images/mine-hero-bg-traid.avif) right bottom / cover no-repeat;
+    }
+  }
+
+  .trading {
+    &__container {
+      background: var(--brizz-color) url(../images/trading.avif) top right / 715px 450px no-repeat;
+    }
+  }
+
+  .footer {
+    &__container {
+      background: var(--light-grey-color) url(../images/footer-bg.avif) top -45px right / auto no-repeat;
+    }
+
+    &__box {
+      .menu {
+        gap: 40px;
+
+        &-item {
+          white-space: nowrap;
+        }
+      }
+    }
+
+    &__logo {
+      width: 300px;
+    }
+  }
+
+
+  .calendar {
+    &-trading {
+      &__cards {
+        align-items: stretch;
+      }
+
+      &__card {
+        .title-s {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+
+  .instruments {
+    &-tabs {
+      &__container {
+        background-position: right 10px bottom 20px;
+        background-size: 350px 460px;
+      }
+
+      .mch-widget-j.mch-widget.mch-widget-quotes.sf .widget-wrapper {
+        margin-right: 10px;
+      }
+    }
+  }
+
+
+  .platform {
+    &-trader {
+      &__container {
+        max-height: 100%;
+
+        &:before {
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      &__wrapper {
+        gap: 10px;
+      }
+
+      &__text {
+        width: 560px;
+        justify-content: space-between;
+      }
+
+      &__img {
+        img {
+          margin-left: 70px;
+        }
+      }
+    }
+
+    &-mobile {
+      &__container {
+        max-height: 100%;
+
+        &:before {
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      &__descr {
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &-desktop {
+      &__container {
+        max-height: 100%;
+
+        &:before {
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      &__wrapper {
+        gap: 10px;
+      }
+
+      &__text {
+        width: 560px;
+      }
+    }
+  }
+}
