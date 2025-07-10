@@ -1,0 +1,36 @@
+@use '../../node_modules/normalize.css/normalize';
+@use '../../node_modules/swiper/swiper-bundle';
+
+@use 'keyframes' as *;
+@use 'hovers' as *;
+
+@use "libs/fonts" as *;
+@use "libs/overall" as *;
+@use "libs/reset" as *;
+
+@use "libs/variables" as *;
+
+@use "blocks/header";
+@use "blocks/main-hero";
+@use "blocks/intro";
+@use "blocks/trading";
+@use "blocks/account";
+@use "blocks/bonuses";
+@use "blocks/trust";
+@use "blocks/invest";
+
+@use "blocks/about";
+@use "blocks/contacts";
+@use "blocks/documents";
+@use "blocks/conditions";
+@use "blocks/platform";
+@use "blocks/instruments";
+@use "blocks/overview";
+@use "blocks/forecasts";
+@use "blocks/news";
+@use "blocks/calendar";
+@use "blocks/error";
+
+@use "blocks/footer";
+
+@use 'media/index' as *;
